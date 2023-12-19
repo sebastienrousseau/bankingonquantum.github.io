@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bankingonquantum.com/tags/index.html/sitemap.xml
