@@ -1,0 +1,22 @@
+{
+  "author": "The Banking On Quantum Team",
+  "banner": "https://cloudcdn.pro/bankingonquantum/v1/github/github-bankingonquantum.svg",
+  "banner_alt": "Banking On Quantum — Post-Quantum Cryptography and Quantum Computing in Finance",
+  "cta_primary": "Explore Platform",
+  "cta_secondary": "Talk to us",
+  "date": "2026-09-01",
+  "description": "Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms.",
+  "eyebrow": "Quantum Financial Engineering",
+  "headline": "Securing Global Banking for the Quantum Computing Era",
+  "keywords": "quantum computing banking, post-quantum cryptography, PQC finance, quantum key distribution, quantum risk analysis, financial cryptography",
+  "language": "en-GB",
+  "layout": "index",
+  "lead": "Quantum computing introduces revolutionary opportunities in risk modeling and portfolio optimization, while rendering legacy RSA and ECC encryption obsolete. Discover how Banking On Quantum provides financial institutions with post-quantum cryptography (PQC) and quantum algorithms.",
+  "name": "Banking On Quantum",
+  "nav_home": true,
+  "permalink": "https://bankingonquantum.com/index.html",
+  "reading_time": 1,
+  "short_name": "bankingonquantum",
+  "title": "The Future of Banking and Finance | Banking On Quantum",
+  "word_count": 177
+}

@@ -1,0 +1,74 @@
+{{#extends "base"}}
+{{#block "main"}}
+<article class="section">
+  <div class="container stack">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1>{{headline}}</h1>
+    <p class="lead">{{lead}}</p>
+
+    <!--
+      The table is the complete, correct answer without JavaScript: it shows
+      monthly pricing, and every figure is real markup rather than a value a
+      script has to supply. The island only adds the control that switches
+      to annual, so no control is ever rendered that cannot work.
+
+      `.table-wrap` is what the generator's reflow pass would add anyway;
+      declaring it here means the scroll container is focusable from the
+      first render rather than after a post-process.
+    -->
+    <ssg-island component="pricing-toggle" hydrate="visible" props='{"saving":"Annual billing saves about 17%."}'>
+      <div class="table-wrap" role="region" aria-label="Plan comparison, scrollable horizontally" tabindex="0">
+        <table data-pricing-table data-period="monthly">
+          <caption class="visually-hidden">
+            Plan comparison. Prices are per user per month; use the billing
+            period control to switch between monthly and annual rates.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Plan</th>
+              <th scope="col">Price</th>
+              <th scope="col">Workspaces</th>
+              <th scope="col">Members</th>
+              <th scope="col">Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Free</th>
+              <td data-monthly="Free" data-annual="Free">
+                <span data-amount>Free</span>
+                <span data-suffix class="hint"></span>
+              </td>
+              <td>1</td>
+              <td>3</td>
+              <td>Community</td>
+            </tr>
+            <tr>
+              <th scope="row">Team</th>
+              <td data-monthly="£12" data-annual="£10">
+                <span data-amount>£12</span>
+                <span data-suffix class="hint">/user/month</span>
+              </td>
+              <td>10</td>
+              <td>50</td>
+              <td>Email, 2 working days</td>
+            </tr>
+            <tr>
+              <th scope="row">Scale</th>
+              <td data-monthly="£24" data-annual="£20">
+                <span data-amount>£24</span>
+                <span data-suffix class="hint">/user/month</span>
+              </td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Named contact</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </ssg-island>
+
+    <div class="prose">{{!content}}</div>
+  </div>
+</article>
+{{/block}}

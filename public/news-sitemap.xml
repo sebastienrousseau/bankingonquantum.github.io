@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+  <loc>http://127.0.0.1:8000/404/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Page Not Found | Banking On Quantum</news:title>
+    <news:keywords>404, not found, banking on quantum</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/about/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>About Mission & Quantum Research | Banking On Quantum</news:title>
+    <news:keywords>about banking on quantum, quantum finance research, post-quantum security mission</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/accessibility/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Accessibility Statement | Banking On Quantum</news:title>
+    <news:keywords>accessibility statement, WCAG 2.2 AAA, banking on quantum accessibility</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/contact/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Get in Touch | Banking On Quantum</news:title>
+    <news:keywords>contact banking on quantum, quantum finance consulting, PQC advisory</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/faqs/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Frequently Asked Questions | Banking On Quantum</news:title>
+    <news:keywords>quantum banking FAQs, PQC timeline, harvest now decrypt later FAQ</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/made-with-ssg/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Made with Static Site Generator (SSG) | Banking On Quantum</news:title>
+    <news:keywords>made with ssg, static site generator, rust ssg, kinetic theme</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/platform/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Quantum Architecture & Cryptographic Agility | Banking On Quantum</news:title>
+    <news:keywords>post-quantum cryptography architecture, quantum key distribution, ML-KEM, ML-DSA, financial quantum computing</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/pricing/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Advisory & Engagement Tiers | Banking On Quantum</news:title>
+    <news:keywords>quantum banking advisory, PQC consulting, quantum risk audit</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/privacy/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Privacy Policy | Banking On Quantum</news:title>
+    <news:keywords>privacy policy, data governance, banking on quantum privacy</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/solutions/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Quantum Solutions by Banking Sector | Banking On Quantum</news:title>
+    <news:keywords>quantum banking solutions, quantum risk management, post-quantum payments, quantum capital markets</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/terms/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Terms of Use | Banking On Quantum</news:title>
+    <news:keywords>terms of use, terms of service, banking on quantum</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/thanks/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Banking On Quantum Team</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Thank You | Banking On Quantum</news:title>
+    <news:keywords>thank you, message received, banking on quantum</news:keywords>
+  </news:news>
+</url>
+</urlset>

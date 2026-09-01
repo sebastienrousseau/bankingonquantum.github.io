@@ -1,0 +1,67 @@
+  <!-- Responsive Navbar -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="navbar-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/index.html" aria-label="Banking On Quantum Homepage">
+          <img src="https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg" alt="Banking On Quantum Logo" width="32" height="32" class="d-inline-block" />
+          <span class="navbar-brand-text">Banking On Quantum</span>
+        </a>
+
+        <!-- Mobile actions (Search + Theme + Toggle) -->
+        <div class="navbar-actions d-flex d-lg-none">
+          <button type="button" class="btn search-trigger" id="searchTriggerMobile" aria-label="Search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+
+          <div class="theme-switcher" role="radiogroup" aria-label="Theme mode">
+            <button type="button" class="theme-btn" data-theme-mode="light" aria-label="Light mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+            <button type="button" class="theme-btn" data-theme-mode="dark" aria-label="Dark mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button type="button" class="theme-btn active" data-theme-mode="system" aria-label="System mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </button>
+          </div>
+
+          <button type="button" class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarMenu" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Links menu -->
+      <div class="navbar-menu" id="navbarMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="/platform/index.html">Platform</a></li>
+          <li class="nav-item"><a class="nav-link" href="/solutions/index.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pricing/index.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/faqs/index.html">FAQs</a></li>
+          <li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/contact/index.html">Get in touch</a></li>
+        </ul>
+      </div>
+
+      <!-- Desktop actions -->
+      <div class="navbar-actions d-none d-lg-flex">
+        <button type="button" class="btn search-trigger" id="searchTrigger" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd class="search-kbd">⌘K</kbd>
+        </button>
+
+        <div class="theme-switcher" role="radiogroup" aria-label="Theme mode">
+          <button type="button" class="theme-btn" data-theme-mode="light" aria-label="Light mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button type="button" class="theme-btn" data-theme-mode="dark" aria-label="Dark mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <button type="button" class="theme-btn active" data-theme-mode="system" aria-label="System mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>

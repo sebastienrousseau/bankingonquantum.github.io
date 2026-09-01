@@ -1,0 +1,189 @@
+{
+  "feed_url": "http://127.0.0.1:8000/feed.json",
+  "home_page_url": "http://127.0.0.1:8000/",
+  "items": [
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "The page you are looking for does not exist or has been moved.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/404/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Page Not Found | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/404/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Discover the mission behind Banking On Quantum: securing the world's financial systems against quantum threats while harnessing quantum computation.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/about/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "About Mission & Quantum Research | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/about/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Accessibility conformance standards for Banking On Quantum, adhering to WCAG 2.2 Level AAA standards.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/accessibility/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Accessibility Statement | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/accessibility/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Contact the Banking On Quantum team for PQC readiness assessments, keynote speaking, and quantum algorithmic advisory.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/contact/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Get in Touch | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/contact/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Answers to common questions regarding post-quantum cryptography, quantum threat timelines, and quantum computing in banking.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/faqs/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Frequently Asked Questions | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/faqs/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibility.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/made-with-ssg/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Made with Static Site Generator (SSG) | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/made-with-ssg/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Architectural blueprint for post-quantum cryptographic migration, quantum algorithm integration, and hybrid quantum-classical computing.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/platform/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Quantum Architecture & Cryptographic Agility | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/platform/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Engagement tiers for financial institutions, from open quantum research to PQC cryptographic audits and enterprise co-development.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/pricing/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Advisory & Engagement Tiers | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/pricing/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Privacy policy and data governance practices for Banking On Quantum.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/privacy/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Privacy Policy | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/privacy/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Targeted quantum applications for Treasury, Capital Markets, Enterprise Cybersecurity, and Retail Payment Rails.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/solutions/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Quantum Solutions by Banking Sector | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/solutions/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Terms of service and usage conditions for Banking On Quantum.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/terms/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Terms of Use | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/terms/"
+    },
+    {
+      "authors": [
+        {
+          "name": "The Banking On Quantum Team"
+        }
+      ],
+      "content_html": "Thank you for reaching out to Banking On Quantum.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/thanks/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Thank You | Banking On Quantum",
+      "url": "http://127.0.0.1:8000/thanks/"
+    }
+  ],
+  "language": "en-GB",
+  "title": "MySsgSite",
+  "version": "https://jsonfeed.org/version/1.1"
+}

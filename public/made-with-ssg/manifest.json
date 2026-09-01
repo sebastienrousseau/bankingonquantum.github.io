@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibili",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Banking On Quantum",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "bankingonqua",
+  "start_url": ".",
+  "theme_color": null
+}

@@ -1,298 +1,198 @@
-<!DOCTYPE html>
-<html lang="{{language}}">
-  <head>
-    <meta charset="{{charset}}" />
-    <meta itemprop="datePublished" content="{{item_pub_date}}" id="date">
-    <meta itemprop="dateModified" content="{{last_build_date}}" id="last-modified">
-    <title>{{title}}</title>
+{{#extends "base"}}
+{{#block "main"}}
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1>{{headline}}</h1>
+    <p class="lead">{{lead}}</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="{{locale_path}}contact/">{{cta_primary}}</a>
+      <a class="btn btn-secondary" href="{{locale_path}}platform/">{{cta_secondary}}</a>
+    </div>
+  </div>
+</section>
 
-    <!-- # Start Primary Meta Tags -->
-    {{primary}}
-    <!-- # End Primary Meta Tags -->
-
-    <!-- # Start Open Graph / Facebook Meta Tags -->
-    {{opengraph}}
-    <!-- # End Open Graph / Facebook Meta Tags -->
-
-    <!-- # Start Accessibility Meta Tags -->
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
-    <!-- # End Accessibility Meta Tags -->
-
-    <!-- # Start Apple Meta Tags -->
-    {{apple}}
-    <!-- # End Apple Meta Tags -->
-
-<!-- # Start Content Security Policy Meta Tags -->
-<meta http-equiv="Content-Security-Policy"
-content="default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
-  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
-  img-src 'self' data: https: kura.pro www.googletagmanager.com;
-  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com;
-  media-src 'self';" />
-<!-- # End Content Security Policy Meta Tags -->
-
-
-
-    <!-- # Start Microsoft Meta Tags -->
-    {{microsoft}}
-    <!-- # End Microsoft Meta Tags -->
-
-    <!-- # Start Twitter Meta Tags -->
-    {{twitter}}
-    <!-- # End Twitter Meta Tags -->
-
-    <!-- # Start Links -->
-    <link rel="alternate" href="{{url}}" hreflang="{{hreflang}}" />
-    <link rel="preload" as="image" href="{{banner}}">
-    <link rel="canonical" href="{{url}}" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{cdn}}/{{short_name}}/images/favicon.ico"
-      sizes="16x16 32x32"
-    />
-    <link
-      as="style"
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="{{cdn}}/{{short_name}}/images/icons/{{apple_touch_icon_sizes}}.png"
-      sizes="{{apple_touch_icon_sizes}}"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <!-- # End Links -->
-
-    <!-- # Start Styles -->
-    <style>
-      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down{animation:1.618s dropDown}.fade-in{animation:3s fadeIn}*{font-weight:300}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}.content .container{padding:30px 20px;box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a}.container .rollers{flex:0 0 230px}.container .start-roller{left:0;top:0;background-image:linear-gradient(to right,#fff 30%,transparent)}.container .end-roller,.container .start-roller{height:100%;width:40px;position:absolute;z-index:1}.container .end-roller{right:0;top:0;background-image:linear-gradient(to left,#fff 30%,transparent)}.container .rollers .wrapper{position:relative;width:1400px;height:100px;margin:0 0 20px;flex:0 0 auto}.container .rollers .wrapper .items-container{display:flex;align-items:center;position:absolute;width:200%;height:100%;animation-duration:16s;animation-iteration-count:infinite;animation-timing-function:linear}.container .rollers .wrapper .items-container.roll-LL{animation-name:roll}@keyframes roll{from{left:0}to{left:-100%}}.container .rollers .wrapper .items-container .item{flex:1 1 200px;min-width:0;margin:20px}.container .rollers .wrapper .items-container .item .company{filter:grayscale(100%);opacity:.2;width:100%;object-fit:contain}.container .rollers .wrapper .items-container .item .company:hover{filter:grayscale(0);opacity:1;cursor:not-allowed}.container img{vertical-align:middle}:root{--theme-color:rgb({{theme-color}})}a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}.active,.article-info,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info,h1,h2,h3,h4,h5,h6{color:var(--theme-color)}
-    </style>
-    <!-- # End Styles -->
-  </head>
-  <body
-    id="page-top"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-    class="fw-light text-center bg-white text-start fs-6"
-  >
-    <!-- # Start Responsive navbar -->
-    <nav
-      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
-      id="mainNav"
-      itemscope
-      itemtype="http://schema.org/SiteNavigationElement"
-    >
-    <div class="container-xxl p-3">
-      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
-        <img
-          class="d-inline-block align-top"
-          width="{{logo_width}}"
-          height="{{logo_height}}"
-          src="{{logo}}"
-          alt="{{logo_alt}}"
-          title="{{logo_alt}}"
-          loading="lazy"
-        />
-      </a>
-      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="{{name}} - {{description}}" class="text-danger text-decoration-none">{{name}}</a></span>
-      <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbarSupportedContent"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav navbar-white ms-auto mb-2 bg-transparent">
-            <li class="nav-item">
-              <a
-                class="nav-link {{menu}}"
-                aria-current="page"
-                href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-              class="nav-link text-danger"
-              href="/about/index.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link text-danger dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Resources</a>
-              <ul
-                class="dropdown-menu dropdown-menu-end border border-info bg-white"
-                aria-labelledby="resourcesDropdown"
-              >
-                <li>
-                  <a class="bg-transparent dropdown-item text-danger" href="/made-with-shokunin/index.html">Made with Shokunin</a>
-                </li>
-                <li>
-                  <a class="bg-transparent dropdown-item text-danger" href="/tags/index.html">Tags</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="button btn btn-danger rounded-pill text-white"
-                aria-current="page"
-                href="/contact/index.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+<section class="section">
+  <div class="container">
+    <h2 class="visually-hidden">By the numbers</h2>
+    <!--
+      Illustrative figures for a fictional product. They are marked up as a
+      description list rather than headings so a screen-reader user gets the
+      figure and its label as a pair, not four orphaned numbers.
+    -->
+    <dl class="grid grid-4">
+      <div class="stat">
+        <dt class="stat-label">Teams onboarded</dt>
+        <dd><span class="stat-figure">1,200+</span></dd>
       </div>
-    </nav>
-    <!-- # End Responsive navbar -->
+      <div class="stat">
+        <dt class="stat-label">Median setup time</dt>
+        <dd><span class="stat-figure">18 min</span></dd>
+      </div>
+      <div class="stat">
+        <dt class="stat-label">Integrations</dt>
+        <dd><span class="stat-figure">60</span></dd>
+      </div>
+      <div class="stat">
+        <dt class="stat-label">Uptime, trailing year</dt>
+        <dd><span class="stat-figure">99.98%</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
 
-    <!-- Header-->
-    <header class="w-100 py-5 position-relative">
-      <img
-        alt="{{banner_alt}}"
-        aria-hidden="false"
-        class="fade-in position-relative top-0 start-0 w-75 h-75"
-        data-has-animated="true"
-        data-show-type="fade-in"
-        height="{{banner_height}}"
-        loading="lazy"
-        src="{{banner}}"
-        style="object-fit: cover; z-index: -1;"
-        title="{{banner_alt}}"
-        width="{{banner_width}}"
-      />
-    </header>
-    <!-- # End Header-->
+<section class="section" id="platform">
+  <div class="container stack">
+    <h2>One workspace, four surfaces</h2>
+    <p class="lead">
+      Each surface is a full page of content on its own. The tab strip is an
+      enhancement, not the structure.
+    </p>
 
-    <!-- Main content-->
-    <main id="main" class="bd-masthead fs-5 p-5" aria-label="main">
-      <div class="text-start justify-content-between">{{content}}</div>
-    </main>
+    <!--
+      The complete, correct answer without JavaScript is the stack of
+      labelled sections below. The island adds a tab strip that shows one at
+      a time; it never renders a control it cannot wire up, so nothing here
+      is broken when the bundle fails to arrive.
+    -->
+    <ssg-island component="feature-tabs" hydrate="visible" props='{"label":"Platform surfaces"}'>
+      <div data-tabs>
+        <section class="tab-panel" id="panel-plan" data-tab-title="Plan">
+          <h3>Plan</h3>
+          <p>
+            Break an objective into work that fits in a week. Dependencies
+            are declared once and drawn everywhere, so a slipped date shows
+            up on the plan it affects rather than in someone's inbox.
+          </p>
+        </section>
+        <section class="tab-panel" id="panel-build" data-tab-title="Build">
+          <h3>Build</h3>
+          <p>
+            Boards, lists and a calendar over the same records. Changing the
+            view never changes the data, so two teams can look at one
+            backlog through the lens each prefers.
+          </p>
+        </section>
+        <section class="tab-panel" id="panel-review" data-tab-title="Review">
+          <h3>Review</h3>
+          <p>
+            Comments resolve against a revision rather than floating free,
+            and an approval records who approved what, not merely that
+            somebody did.
+          </p>
+        </section>
+        <section class="tab-panel" id="panel-report" data-tab-title="Report">
+          <h3>Report</h3>
+          <p>
+            Dashboards read from the same records the work lives in. There
+            is no export step, so a number on a dashboard is never a
+            fortnight behind the thing it describes.
+          </p>
+        </section>
+      </div>
+    </ssg-island>
+  </div>
+</section>
 
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
-      <img
-        alt="{{subtitle}}"
-        height="32"
-        src="{{cdn}}/{{short_name}}/images/logos/{{short_name}}.webp"
-        width="32"
-      />
-      <span class="px-2">{{copyright}}</span>
-      <p class="mb-0">
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
-      </p>
-      <p class="mb-0">
-        <a class="btn btn-floating btn-lg m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/youtube-speech-bubble-21668.svg" alt="Banking On Quantum YouTube Channel" title="Banking On Quantum YouTube Channel" width="32" height="32" /></a>
-        <a class="btn btn-floating btn-lg m-1" target="_blank" href="https://twitter.com/BankingOnQT"><img src="{{cdn}}/common/images/buttons/x-speech-bubble-blue-logo-21670.svg" alt="Banking On Quantum Twitter Channel" title="Banking On Quantum Twitter Channel" width="32" height="32" /></a>
-        <a class="btn btn-floating btn-lg m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="{{cdn}}/common/images/buttons/linkedin-speech-bubble--21671.svg" alt="Banking On Quantum LinkedIn Channel" title="Banking On Quantum LinkedIn Channel" width="32" height="32" /></a>
-        <a class="btn btn-floating btn-lg m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/medium-speech-bubble-21698.svg" alt="Banking On Quantum Medium Channel" title="Banking On Quantum Medium Channel" width="32" height="32" /></a>
-      </p>
-    </footer>
+<section class="section" style="background: var(--bg-soft)">
+  <div class="container stack">
+    <h2>What you get on day one</h2>
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7" /></svg>
+        </div>
+        <h3>Structured work</h3>
+        <p>
+          Tasks, docs and decisions in one record type, so a search returns
+          the decision as readily as the ticket that prompted it.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" /></svg>
+        </div>
+        <h3>Views that compose</h3>
+        <p>
+          Filter, group and sort are independent. Any combination is a URL,
+          which means a view is something you can send to a colleague.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg>
+        </div>
+        <h3>Automation you can read</h3>
+        <p>
+          Rules are stated as sentences and shown in full before they run.
+          An automation nobody can read is an outage waiting for a quiet
+          afternoon.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+        </div>
+        <h3>History that survives</h3>
+        <p>
+          Every field keeps its previous values. Reverting is reading the
+          record, not restoring a backup.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z" /></svg>
+        </div>
+        <h3>Permissions by default</h3>
+        <p>
+          A workspace starts closed. Sharing is a deliberate act with an
+          audit line attached to it.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 17V7l8 5 8-5v10" /></svg>
+        </div>
+        <h3>Exports that round-trip</h3>
+        <p>
+          What you export imports again. Leaving is supported rather than
+          merely permitted.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <script
-      async
-      crossorigin="anonymous"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "WebPage",
-        "author": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "copyrightHolder": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "copyrightYear": "{{copyright}}",
-        "creator": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "dateModified": "{{last_build_date}}",
-        "datePublished": "{{item_pub_date}}",
-        "description": "{{description}}",
-        "headline": "{{subtitle}}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{image}}"
-        },
-        "inLanguage": "{{language}}",
-        "mainEntityOfPage": "{{permalink}}",
-        "name": "{{name}}",
-        "publisher": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        }
-      }
-    </script>
-    <script type="module" defer>
-      // This is an Immediately Invoked Function Expression (IIFE) which helps
-      // to avoid declaring any globals.
-      (function () {
-        // Create a new script element
-        var script = document.createElement("script");
+<section class="section">
+  <div class="container stack">
+    <h2>Built for the way teams actually split up</h2>
+    <div class="grid grid-3">
+      <article class="card">
+        <h3>Product</h3>
+        <p>Roadmaps that survive contact with a shipping date.</p>
+      </article>
+      <article class="card">
+        <h3>Marketing</h3>
+        <p>Campaign calendars with the assets attached to the dates.</p>
+      </article>
+      <article class="card">
+        <h3>Operations</h3>
+        <p>Recurring work that does not depend on anyone remembering it.</p>
+      </article>
+    </div>
+    <p>
+      <a href="{{locale_path}}solutions/">See all team templates</a>
+    </p>
+  </div>
+</section>
 
-        // Set the source of the script element to "/main.js".
-        // A timestamp is appended as a query string to ensure the browser
-        // always fetches the latest version of the script, bypassing the
-        // cache.
-        script.src = "/main.js";
-
-        // The script is of type "text/javascript"
-
-        // The script is set to execute asynchronously as soon as it's
-        //available
-
-        // Append the script element to the head of the document
-        document.head.appendChild(script);
-      })(); // The function is immediately invoked
-    </script>
-    <script>
-      // JavaScript code
-      var dropDownElements = document.querySelectorAll('.drop-down');
-      dropDownElements.forEach(function(element) {
-        element.classList.add('animate');
-      });
-
-      window.addEventListener('scroll', function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        dropDownElements.forEach(function(element) {
-          if (scrollTop === 0) {
-            element.classList.add('animate');
-          } else {
-            element.classList.remove('animate');
-          }
-        });
-      });
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{measurementID}}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{measurementID}}');
-    </script>
-  </body>
-</html>
+<section class="section" style="background: var(--bg-soft)">
+  <div class="container stack">
+    <div class="prose">{{!content}}</div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="{{locale_path}}contact/">{{cta_primary}}</a>
+      <a class="btn btn-secondary" href="{{locale_path}}pricing/">See pricing</a>
+    </div>
+  </div>
+</section>
+{{/block}}

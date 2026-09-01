@@ -1,0 +1,16 @@
+{
+  "author": "The Banking On Quantum Team",
+  "banner": "https://cloudcdn.pro/bankingonquantum/v1/github/github-bankingonquantum.svg",
+  "banner_alt": "Banking On Quantum — Post-Quantum Cryptography and Quantum Computing in Finance",
+  "date": "2026-09-01",
+  "description": "Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibility.",
+  "keywords": "made with ssg, static site generator, rust ssg, kinetic theme",
+  "language": "en-GB",
+  "layout": "page",
+  "name": "Banking On Quantum",
+  "permalink": "https://bankingonquantum.com/made-with-ssg/index.html",
+  "reading_time": 1,
+  "short_name": "bankingonquantum",
+  "title": "Made with Static Site Generator (SSG) | Banking On Quantum",
+  "word_count": 79
+}

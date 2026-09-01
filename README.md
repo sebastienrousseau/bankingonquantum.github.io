@@ -1,55 +1,127 @@
-<!-- markdownlint-disable MD033 MD041 -->
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
-<img
-  align="right"
-  alt="Logo of Banking On Quantum: Revolutionising the Financial Industry with Quantum Computing"
-  height="261"
-  src="https://kura.pro/bankingonquantum/images/logos/bankingonquantum.webp"
-  width="261"
-  />
+<p align="center">
+  <img src="https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg" alt="Banking on Quantum logo" width="128" />
+</p>
 
-<!-- markdownlint-enable MD033 MD041 -->
+<h1 align="center">Banking on Quantum</h1>
 
-# bankingonquantum.com - Official Website 🌏
+<p align="center">
+  Comprehensive insights and architectural strategies for quantum-safe financial infrastructure and post-quantum cryptography in banking.
+</p>
 
-Welcome to the repository for [bankingonquantum.com][00], the digital presence of
-Banking On Quantum, Revolutionising the Financial Industry with Quantum Computing
+<p align="center">
+  <a href="https://github.com/sebastienrousseau/bankingonquantum.github.io/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/bankingonquantum.github.io/ci.yml?style=for-the-badge&logo=github" alt="Build" /></a>
+  <a href="https://github.com/sebastienrousseau/bankingonquantum.github.io/releases"><img src="https://img.shields.io/github/v/release/sebastienrousseau/bankingonquantum.github.io?style=for-the-badge&color=fc8d62&logo=git" alt="Release" /></a>
+  <a href="https://static-site-generator.com/"><img src="https://img.shields.io/badge/SSG-0.0.56-66c2a5?style=for-the-badge&labelColor=555555&logo=rust" alt="Built with SSG" /></a>
+  <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/bankingonquantum.github.io"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/bankingonquantum.github.io?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
+</p>
 
-## Quick Start Guide
+---
 
-Setting up and running the website locally is easy and quick with the
-[Shokunin Static Site Generator (SSG)][00].
+## Contents
+
+**Getting started**
+
+- [Overview](#overview) — architecture and design principles
+- [Quick Start](#quick-start) — build and serve locally in minutes
+
+**Ecosystem & Architecture**
+
+- [Features](#features) — core capabilities and performance highlights
+- [Technology Stack](#technology-stack) — SSG, Rust, and modern web standards
+- [Accessibility & Compliance](#accessibility--compliance) — 100% WCAG 2.1 AAA and Lighthouse scores
+
+**Operational**
+
+- [Development](#development) — make targets, quality gates, and automated testing
+- [Security](#security) — Subresource Integrity (SRI) and Content Security Policy (CSP)
+- [License](#license) — dual Apache-2.0 and MIT licensing
+
+---
+
+## Overview
+
+`bankingonquantum.github.io` is engineered for speed, privacy, and accessibility. Built with **Static Site Generator (SSG)** and the **Skeletonic Design System**, it delivers lightning-fast static page generation, zero third-party tracking cookies, and responsive Apple Human Interface Guidelines (HIG) navigation.
+
+---
+
+## Quick Start
 
 ### Prerequisites
 
-Ensure you have the **Rust toolchain** installed. If not, follow the guide on
-the [Rust website][01] to set it up.
+Ensure you have `ssg` installed via Cargo:
 
-### Installation & Usage
-
-1. Install Shokunin SSG:
-
-```shell
+```bash
 cargo install ssg
 ```
 
-2. Clone the repository
+### Local Build & Development
 
-```shell
+Clone the repository and compile the static assets:
+
+```bash
 git clone https://github.com/sebastienrousseau/bankingonquantum.github.io.git
-```
-
-3. Change into the repository directory:
-
-```shell
 cd bankingonquantum.github.io
+
+# Compile with Static Site Generator (SSG)
+ssg build --content _posts --template _layouts --output docs
+
+# Or serve locally using Makefile
+make serve
 ```
 
-4. Generate the static site for bankingonquantum.com:
+---
 
-```shell
-ssg -n=docs -c=_posts -t=_layouts -o=output -s=public
+## Features
+
+- **Static Site Generator (SSG) Compilation**: High-throughput Markdown and Tera template processing with pre-rendered HTML.
+- **Apple HIG Responsive Navigation**: Sticky blur glass header with horizontal/vertical element alignment, squarcle buttons, and mobile hamburger drawer.
+- **Subresource Integrity (SRI)**: SHA-384 cryptographic hashing on all external and internal stylesheets and scripts.
+- **Content Security Policy (CSP)**: Hardened security headers restricting unvetted origins while permitting high-performance execution.
+- **Full Client Search Engine**: Instant multi-term indexing and live modal search via `search-index.json`.
+- **System Theme Auto-Detection**: Instant switching between Light, Dark, and System modes with zero visual flash.
+- **100% WCAG AAA Compliance**: High contrast ratios, full keyboard navigation, ARIA landmarks, and semantic heading hierarchies.
+
+---
+
+## Technology Stack
+
+| Component | Technology | Description |
+|---|---|---|
+| **Static Engine** | [Static Site Generator (SSG)](https://static-site-generator.com/) | High-speed Rust static site generator |
+| **Design Framework** | [Skeletonic CSS](https://skeletonic.io) | Minimalist, zero-dependency layout engine |
+| **Icons & Assets** | [CloudCDN](https://cloudcdn.pro) | Distributed edge CDN for SVG vector assets |
+| **Runtime** | Vanilla ECMAScript | Zero runtime framework overhead |
+
+---
+
+## Development
+
+Run automated regression tests and the 10-pillar quality audit:
+
+```bash
+# Run repository regression test
+python3 scripts/regression-test.py
+
+# Run portfolio master quality gate
+make test
 ```
 
-[00]: https://bankingonquantum.com "Banking On Quantum Official Website"
-[01]: https://www.rust-lang.org/learn/get-started "Rust Getting started guide"
+---
+
+## Security
+
+Every deployment adheres to strict security and integrity standards:
+
+- **Zero Inline Code Execution**: All scripts are isolated and digest-verified.
+- **Cryptographic Asset Integrity**: Guaranteed Subresource Integrity via SHA-384 digests.
+- **Privacy by Default**: No user tracking, analytics cookies, or third-party fingerprinting.
+
+---
+
+## License
+
+Copyright © 2024 - 2026 Sebastien Rousseau. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 or the MIT license at your option.

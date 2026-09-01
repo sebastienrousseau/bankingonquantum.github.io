@@ -1,10 +1,445 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"><url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/contact/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/privacy/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/terms/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/about/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/tags/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/made-with-shokunin/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/thanks/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/404/index.html</loc></url>
-<url><changefreq>weekly</changefreq><lastmod>2023-12-18T06:06:06+01:00</lastmod><loc>https://bankingonquantum.com/offline/index.html/offline/index.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/offline/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/404/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/thanks/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/made-with-ssg/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/clicks/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/website-content/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/help/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/delve-deeper/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/story/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/intellectual-property/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/builder/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/accessibility/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/mouse-movements/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/seo/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-computing-in-finance/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/trademark/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-computing-advancements/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/future-of-banking/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/copyright/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/explore-topics/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/matter-most/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/finance/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/static-site-generator-ssg/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-key-distribution/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/banking-on-quantum/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/secure/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/links/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/support/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/rights/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/banking/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-resistant-cryptography/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/user-behaviour-analytics/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/use/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/personal-data/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/mission/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/get-to-the-subjects/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/microsoft-clarity/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/explore-by-tag/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/scrolls/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/fast/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/website-topics/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/solutions/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/tracking-tools/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/values/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/agreement/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/financial-industry-revolution/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/terms/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/website/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-cryptography-in-banking/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/free/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/cryptography/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/technology/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-risk-analysis/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/website-tags/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/privacy/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/liability/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/reliable/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/website-search/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/google-analytics/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/contact/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-banking/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/quantum-computing-applications/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/limitation/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/easy/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/innovation/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/tags/website-navigation/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/about/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/terms/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/privacy/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-12-18</lastmod>
+  <loc>https://bankingonquantum.com/offline/index.html/contact/index.html</loc>
+</url></urlset>
