@@ -2,7 +2,7 @@
 > The independent reference desk for quantum-era finance: regulatory clock, readiness index, and open-source cryptography for banks, payment infrastructures and fintechs.
 
 ## Core Documentation & Resources
-- Homepage: https://bankingonquantum.com/index.html
+- Homepage: https://bankingonquantum.com/
 - Banks & Infrastructure: https://bankingonquantum.com/banks/index.html
 - PQC Architecture & CBOM: https://bankingonquantum.com/banks/secure/index.html
 - Quantum Algorithms & Trading: https://bankingonquantum.com/banks/compute/index.html

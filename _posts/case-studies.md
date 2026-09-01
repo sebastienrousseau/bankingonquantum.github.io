@@ -22,14 +22,14 @@ Detailed examination of publicly disclosed tier-1 banking quantum initiatives an
 <div class="bento-card bento-col-6">
 <div class="bento-tag">Public Research: HSBC & IBM</div>
 <h2 class="bento-title">Quantum Algorithmic Bond Trading (Sep 2025)</h2>
-<p class="bento-desc">HSBC and IBM deployed hybrid quantum machine learning algorithms to model fixed-income bond order fills across production market liquidity datasets. The trial demonstrated a <strong>34% improvement</strong> in fill-probability prediction accuracy compared to classical baseline models, showcasing practical quantum utility on today's hardware.</p>
-<div class="bento-citation"><a href="https://www.hsbc.com/news-and-media/media-releases/2025/hsbc-and-ibm-explore-quantum-computing-for-bond-trading" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release, 25 September 2025 ↗</a></div>
+<p class="bento-desc">HSBC and IBM deployed hybrid quantum machine learning algorithms to model fixed-income bond order fills across production market liquidity datasets. The trial demonstrated <strong>up to a 34% improvement</strong> in fill-probability prediction accuracy compared to classical baseline models, showcasing practical quantum utility on today's hardware.</p>
+<div class="bento-citation"><a href="https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-demonstrates-worlds-first-known-quantum-enabled-algorithmic-trading-with-ibm" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release, 25 September 2025 ↗</a></div>
 </div>
 
 <div class="bento-card bento-col-6">
-<div class="bento-tag">Public Research: JPMorgan Chase</div>
+<div class="bento-tag">Public Research: JPMorgan Chase, Toshiba & Ciena</div>
 <h2 class="bento-title">Metropolitan Quantum Key Distribution (QKD) Trial</h2>
-<p class="bento-desc">JPMorgan Chase, in partnership with Toshiba and Ciena, demonstrated a research trial of an 800 Gbps QKD-secured optical network operating across a metropolitan testbed. The implementation validated real-time key exchange under continuous 800 Gbps encrypted traffic with zero latency degradation.</p>
-<div class="bento-citation"><a href="https://www.jpmorgan.com/technology/technology-blog/quantum-key-distribution-blockchain" target="_blank" rel="noopener noreferrer">Source: JPMorgan Chase Applied Research ↗</a></div>
+<p class="bento-desc">JPMorgan Chase, in partnership with Toshiba and Ciena, demonstrated a research trial of an 800 Gbps QKD-secured optical network operating across a metropolitan testbed for mission-critical blockchain applications (Liink). The implementation validated real-time quantum key exchange multiplexed over 800 Gbps encrypted traffic.</p>
+<div class="bento-citation"><a href="https://arxiv.org/abs/2303.01358" target="_blank" rel="noopener noreferrer">Source: arXiv:2303.01358 Applied Research Paper ↗</a></div>
 </div>
 </div>

@@ -8,7 +8,7 @@
   <meta name="author" content="Sebastien Rousseau">
   <meta name="description" content="{{description}}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; connect-src 'self' https://formspree.io; img-src 'self' data: https: https://cloudcdn.pro; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self'; form-action 'self' https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self' https://formspree.io; img-src 'self' data: https: https://cloudcdn.pro; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self'; form-action 'self' https://formspree.io;" />
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -33,6 +33,120 @@
   <link rel="manifest" href="/manifest.json" />
   <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
   <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bankingonquantum.com/#organization",
+      "name": "Banking On Quantum",
+      "url": "https://bankingonquantum.com/",
+      "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
+      "founder": {
+        "@type": "Person",
+        "name": "Sebastien Rousseau",
+        "url": "https://sebastienrousseau.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bankingonquantum.com/#website",
+      "url": "https://bankingonquantum.com/",
+      "name": "Banking On Quantum",
+      "publisher": {
+        "@id": "https://bankingonquantum.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bankingonquantum.com/#webpage",
+      "url": "https://bankingonquantum.com/",
+      "name": "Banking On Quantum | Independent Reference Desk for Quantum-Era Finance",
+      "description": "Independent research, a board-ready readiness index, and open-source cryptography for banks, payment infrastructures and fintechs preparing for the post-quantum era.",
+      "author": {
+        "@type": "Person",
+        "name": "Sebastien Rousseau",
+        "url": "https://sebastienrousseau.com"
+      },
+      "isPartOf": {
+        "@id": "https://bankingonquantum.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bankingonquantum.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the 'Harvest Now, Decrypt Later' (HNDL) attack vector?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Adversaries are actively intercepting and storing encrypted financial communications, wire transactions, and sensitive customer data today. When Cryptanalytically Relevant Quantum Computers (CRQCs) become operational, this stored ciphertext can be decrypted retroactively. Assets with 10\u201330 year confidentiality requirements require post-quantum protection today."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Post-Quantum Cryptography differ from Quantum Key Distribution?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Post-Quantum Cryptography (PQC) relies on mathematical problems (such as lattice-based cryptography in NIST FIPS 203 ML-KEM) running on standard servers, routers, and existing internet protocols. Quantum Key Distribution (QKD) uses quantum physics (photons) over dedicated optical fibre lines to exchange encryption keys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are regulators mandating PQC migrations with fines today?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Neither the US SEC/Fed nor European financial supervisors (EBA/ESAs) have issued a binding private-sector PQC penalty mandate yet. However, DORA Article 9 enforces cryptographic agility in Europe, the Bank of Israel requires transition roadmaps, and the G7 Cyber Expert Group has established coordinated transition expectations. Claims of active fines are vendor marketing overreach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the NIST FIPS 140-2 sunset matter on 21 September 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On 21 September 2026, the NIST Cryptographic Module Validation Program (CMVP) moves all remaining FIPS 140-2 certificates to the Historical list. Banking Hardware Security Modules (HSMs) must transition to FIPS 140-3 compliance to maintain procurement and regulatory validation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can quantum algorithms actually speed up derivative pricing on today's hardware?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No bank currently runs a live production trading system on pure quantum hardware. However, hybrid quantum-classical algorithms (such as HSBC/IBM's 2025 bond-fill research) demonstrate up to 34% accuracy improvements in predictive modeling on noisy quantum processors with classical co-processing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Cryptographic Bill of Materials (CBOM)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A CBOM is a structured, machine-readable inventory (typically in CycloneDX format) that details every cryptographic algorithm, key length, certificate, protocol, and library deployed across an institution's software supply chain and network infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Banking On Quantum accept vendor sponsorship or fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Banking On Quantum is completely vendor-neutral and independent. No vendor pays to appear in our research, vendor landscape maps, or readiness scorecards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can our institution schedule a confidential briefing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book an exploratory 30-minute discovery call directly via our Contact Page or by requesting an executive briefing pack for your risk committee."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -69,7 +183,7 @@
         </div>
       </div>
 
-      <div class="navbar-menu" id="navbarMenu"><ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/banks/index.html">Banks</a></li><li class="nav-item"><a class="nav-link" href="/fintech/index.html">Fintech</a></li><li class="nav-item"><a class="nav-link" href="/boards/index.html">Boards</a></li><li class="nav-item"><a class="nav-link" href="/clock/index.html">Clock</a></li><li class="nav-item"><a class="nav-link" href="/scorecard/index.html">Scorecard</a></li><li class="nav-item"><a class="nav-link" href="/research/index.html">Research</a></li><li class="nav-item"><a class="nav-link" href="/toolkit/index.html">Toolkit</a></li><li class="nav-item"><a class="nav-link" href="/services/index.html">Services</a></li><li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/contact/index.html">Get in touch</a></li></ul></div>
+      <div class="navbar-menu" id="navbarMenu"><ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/banks/index.html">Banks</a></li><li class="nav-item"><a class="nav-link" href="/fintech/index.html">Fintech</a></li><li class="nav-item"><a class="nav-link" href="/boards/index.html">Boards</a></li><li class="nav-item"><a class="nav-link" href="/clock/index.html">Clock</a></li><li class="nav-item"><a class="nav-link" href="/research/index.html">Research</a></li><li class="nav-item"><a class="nav-link" href="/services/index.html">Services</a></li><li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/contact/index.html">Get in touch</a></li></ul></div>
 
       <!-- Desktop actions -->
       <div class="navbar-actions d-none d-lg-flex">
@@ -94,7 +208,7 @@
     </div>
   </nav>
 
-  <!-- Clean Main Content (No duplicated header / No double H1) -->
+  <!-- Single H1 Clean Main Content -->
   <main id="main" class="content-wrapper" aria-label="Main content">
     {{content}}
   </main>
