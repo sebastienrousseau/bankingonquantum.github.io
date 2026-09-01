@@ -58,7 +58,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>Global PQC Regulatory Matrix: G7, US, EU, UK, Singapore & Israel</news:title>
-    <news:keywords>PQC regulation banking, DORA crypto agility, G7 cyber expert group, NIST CMVP 2026, MAS quantum advisory</news:keywords>
+    <news:keywords>PQC regulation banking, DORA crypto agility, G7 cyber expert group, NIST CMVP 2026, MAS quantum advisory, HKMA index</news:keywords>
   </news:news>
 </url>
 <url>
@@ -106,7 +106,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>Bank Programmes & Case Studies: Quantum Deployments in Practice</news:title>
-    <news:keywords>quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM</news:keywords>
+    <news:keywords>quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM, BIS Project Leap</news:keywords>
   </news:news>
 </url>
 <url>
@@ -118,7 +118,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock</news:title>
-    <news:keywords>quantum migration deadlines, PQC timeline tracker, NIST CMVP sunset, US EO 14409 timeline</news:keywords>
+    <news:keywords>quantum migration deadlines, PQC timeline tracker, NIST CMVP sunset, US EO 14412, HKMA quantum index, G7 CEG roadmap</news:keywords>
   </news:news>
 </url>
 <url>
@@ -236,7 +236,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard</news:title>
-    <news:keywords>quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator</news:keywords>
+    <news:keywords>quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator, HKMA benchmark</news:keywords>
   </news:news>
 </url>
 <url>
@@ -306,8 +306,8 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility</news:title>
-    <news:keywords>trust page banking on quantum, sigstore signed, WCAG AAA compliance, SBOM cycloneDX</news:keywords>
+    <news:title>Security Posture, Cryptographic Trust & Provenance</news:title>
+    <news:keywords>quantum trust, Sigstore Cosign, CBOM verification, vendor neutrality</news:keywords>
   </news:news>
 </url>
 <url>

@@ -1,9 +1,9 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
-title: "The Migration Clock is Running. Here is Exactly Where it Stands."
-description: "Independent research, a board-ready readiness index, and open-source cryptography for banks, payment infrastructures and fintechs preparing for the post-quantum era."
-keywords: "quantum banking, post-quantum cryptography, PQC banking, quantum risk index, CBOM, NIST FIPS 203, financial cryptography"
+title: "Post-Quantum Cryptography for Banks & Payments"
+description: "Independent research, a board-ready readiness index, and open-source cryptography for banks and payment networks preparing for the post-quantum era."
+keywords: "quantum banking, post-quantum cryptography, PQC banking, quantum risk index, CBOM, NIST FIPS 203, financial cryptography, HKMA quantum index"
 author: "Sebastien Rousseau"
 date: "2026-09-01"
 language: "en-GB"
@@ -27,7 +27,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 </section>
 
-<!-- SECTION 2: THE CLOCK (LIVE STAT TICKER) -->
+<!-- SECTION 2: THE CLOCK (LIVE STAT TICKER WITH PRIMARY CITATIONS) -->
 <section class="clock-ticker-section" aria-label="Quantum Migration Deadlines">
 <div class="clock-header">
 <div class="clock-title">
@@ -41,37 +41,37 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="clock-card">
 <div class="clock-num urgent" id="countFipsSunset">20 days</div>
 <div class="clock-label">NIST FIPS 140-2 Sunset</div>
-<div class="clock-sub">21 Sep 2026: Remaining FIPS 140-2 module certificates move to Historical list. Impact: HSM validation.</div>
+<div class="clock-sub">21 Sep 2026: Remaining FIPS 140-2 module certificates move to Historical list. Impact: HSM validation.<sup><a href="#fn1">[1]</a></sup></div>
 </div>
 <div class="clock-card">
-<div class="clock-num" id="countUsEo">1,582 days</div>
-<div class="clock-label">US Federal Key Est.</div>
-<div class="clock-sub">31 Dec 2030: White House EO deadline for federal key establishment systems to migrate to PQC.</div>
+<div class="clock-num">End 2026</div>
+<div class="clock-label">EU National Transition Roadmaps</div>
+<div class="clock-sub">31 Dec 2026: European Commission recommendation for member states to establish PQC banking transition plans.<sup><a href="#fn2">[2]</a></sup></div>
 </div>
 <div class="clock-card">
 <div class="clock-num">2028</div>
-<div class="clock-label">UK NCSC Discovery</div>
-<div class="clock-sub">Target discovery & cryptographic inventory milestone under UK national cyber strategy.</div>
+<div class="clock-label">UK NCSC Discovery Milestone</div>
+<div class="clock-sub">Target discovery & cryptographic inventory milestone under UK national cyber strategy.<sup><a href="#fn3">[3]</a></sup></div>
 </div>
 <div class="clock-card">
-<div class="clock-num">2030 / 2035</div>
-<div class="clock-label">EU CRA & DORA Horizon</div>
-<div class="clock-sub">EU Coordinated Roadmap: High-risk systems targeted by 2030; medium-risk by 2035.</div>
+<div class="clock-num" id="countUsEo">1,582 days</div>
+<div class="clock-label">US Federal HVAs (EO 14412)</div>
+<div class="clock-sub">31 Dec 2030: Key establishment on High-Value Assets. 31 Dec 2031: Digital signatures. Contractor rule: end 2030.<sup><a href="#fn4">[4]</a></sup></div>
 </div>
 <div class="clock-card">
-<div class="clock-num">2029</div>
-<div class="clock-label">Google Internal PQC</div>
-<div class="clock-sub">Self-imposed target for 100% quantum-resistant encryption across production infrastructure.</div>
+<div class="clock-num">2030 / 2032</div>
+<div class="clock-label">G7 Cyber Expert Group Window</div>
+<div class="clock-sub">Target migration window for systemic financial institutions published in 13 Jan 2026 Roadmap.<sup><a href="#fn5">[5]</a></sup></div>
 </div>
 </div>
 
 <div class="clock-footer">
-<span><strong>Binding for whom?</strong> Direct PQC penalty mandates do not exist today. Supervisory expectations apply via DORA (EU), CRA, and CNSA 2.0 (for US National Security Systems).</span>
+<span><strong>Binding for whom?</strong> Direct PQC penalty mandates do not exist today. Supervisory expectations apply via DORA Article 9 & its RTS (EU), CRA, and CNSA 2.0 (for US National Security Systems).</span>
 <a href="/banks/comply/index.html">Read regulatory analysis →</a>
 </div>
 </section>
 
-<!-- SECTION 3: AUDIENCE SEGMENTATION (APPLE AT WORK STYLE) -->
+<!-- SECTION 3: AUDIENCE SEGMENTATION -->
 <section class="my-5" aria-label="Audience Pathways">
 <div class="text-center mb-4">
 <h2 class="h3 fw-bold">Who are you planning for?</h2>
@@ -150,9 +150,9 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-grid">
 <div class="bento-card bento-col-6">
 <div class="bento-tag">Algorithmic Trading & Liquidity</div>
-<h3 class="bento-title">HSBC & IBM: Up to 34% Fill-Probability Lift</h3>
-<p class="bento-desc">In September 2025, HSBC and IBM published joint research demonstrating a hybrid quantum-classical pipeline improving bond-trading execution prediction on production market data — a credible real-world computational benchmark.</p>
-<div class="bento-stat-callout">Up to 34% Accuracy</div>
+<h3 class="bento-title">HSBC & IBM: Up to 34% Fill-Prediction Accuracy Lift</h3>
+<p class="bento-desc">In September 2025, HSBC and IBM published joint research demonstrating a hybrid quantum-classical machine learning pipeline that achieved up to a 34% improvement in bond-fill prediction accuracy on production market data — a validated algorithmic accuracy benchmark on noisy hardware with classical co-processing.</p>
+<div class="bento-stat-callout">Up to 34% Accuracy Lift</div>
 <div class="bento-citation"><a href="https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-demonstrates-worlds-first-known-quantum-enabled-algorithmic-trading-with-ibm" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release (Sep 2025) ↗</a></div>
 <a href="/banks/compute/index.html" class="author-link">Read Algorithmic State of Play →</a>
 </div>
@@ -171,17 +171,17 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-card bento-col-6">
 <div class="bento-tag">Supervisory Nuance</div>
 <h3 class="bento-title">The Real Regulatory Map (No Sensationalism)</h3>
-<p class="bento-desc">No US or European financial supervisors (EBA/ESAs) have issued a binding PQC private-sector penalty mandate yet. However, <strong>DORA Article 9</strong> (crypto-agility), the <strong>EU Cyber Resilience Act</strong>, and the <strong>G7 CEG Roadmap</strong> set supervisory expectations for inventory readiness. Overclaiming mandates destroys credibility with auditors.</p>
+<p class="bento-desc">No US or European financial supervisors (EBA/ESAs) have issued a binding PQC private-sector penalty mandate yet. However, <strong>DORA Article 9 and its RTS on ICT risk management</strong> (crypto-agility), the <strong>EU Cyber Resilience Act</strong>, and the <strong>G7 CEG Roadmap (13 Jan 2026)</strong> set supervisory expectations for inventory readiness.</p>
 <a href="/banks/comply/index.html" class="btn-secondary-quantum">View Global Matrix by Jurisdiction →</a>
 </div>
 <div class="bento-card bento-col-6">
 <div class="bento-tag">Central Bank Action</div>
 <h3 class="bento-title">Active Supervisory Frameworks</h3>
 <ul class="service-deliverables-list">
-<li><strong>Bank of Israel:</strong> Required transition roadmaps by early 2026.</li>
-<li><strong>MAS (Singapore):</strong> Quantum risk advisory & discovery guidelines.</li>
-<li><strong>US Treasury / BoE:</strong> G7 Cyber Expert Group co-chairs.</li>
-<li><strong>NCSC (UK):</strong> High-priority migration milestone set for 2031.</li>
+<li><strong>HKMA (Hong Kong):</strong> Sector readiness score 2.3/10 (July 2026); target 2030.</li>
+<li><strong>Bank of Israel:</strong> Mandatory institutional transition plans (Jan 2026).</li>
+<li><strong>G7 CEG / BoE / Fed:</strong> 2030–2032 critical systems transition window.</li>
+<li><strong>BIS Project Leap:</strong> Experimental PQC in central bank settlement rails.</li>
 </ul>
 <a href="/clock/index.html" class="author-link">Check Deadline Tracker →</a>
 </div>
@@ -193,8 +193,8 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-grid">
 <div class="bento-card bento-col-12">
 <div class="bento-tag">Production Open Source</div>
-<h3 class="bento-title">45.7 Million Downloads. Apache-2.0 / MIT. Runs on Your Hardware.</h3>
-<p class="bento-desc">Complete, production-tested Rust implementations of ML-KEM (KyberLib), cryptographic password and digest suites (hsh), and automated ISO 20022 message parsers with zero external cloud dependencies.</p>
+<h3 class="bento-title">45.7M+ Downloads (as of Sep 2026). Apache-2.0 / MIT. Zero Cloud Lock-In.</h3>
+<p class="bento-desc">Complete, production-tested Rust implementations of ML-KEM (KyberLib), cryptographic password and digest suites (hsh), and automated ISO 20022 message parsers with zero external network dependencies.</p>
 <div class="d-flex gap-3 flex-wrap">
 <a href="/toolkit/index.html" class="btn-primary-quantum">Explore Open Source Toolkit →</a>
 <a href="https://github.com/sebastienrousseau" target="_blank" rel="noopener noreferrer" class="btn-secondary-quantum">View on GitHub (672+ Stars) ↗</a>
@@ -271,7 +271,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="col-lg-7">
 <div class="eyebrow-badge">Self-Assessment Tool</div>
 <h2 class="h2 fw-bold text-headline mb-3">Post-Quantum Banking Resilience Index (PQ-BRI)</h2>
-<p class="text-muted fs-5 mb-4">Evaluate your institution's exposure across 6 core dimensions: Governance, Cryptographic Inventory, Crypto-Agility, Payment Rails, Supply Chain, and Testing. Generate an instant score and request the formal PDF assessment.</p>
+<p class="text-muted fs-5 mb-4">Evaluate your institution's exposure across 6 core dimensions: Governance, Cryptographic Inventory, Crypto-Agility, Payment Rails, Supply Chain, and Testing. Compare your posture against the HKMA July 2026 banking benchmark (2.3/10).</p>
 <div class="d-flex gap-3 flex-wrap">
 <a href="/scorecard/index.html" class="btn-primary-quantum">Launch Interactive Scorecard (8 mins) →</a>
 <a href="/boards/index.html" class="btn-secondary-quantum">Download Board Briefing Template</a>
@@ -302,16 +302,16 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 
 <div class="bento-grid">
 <div class="bento-card bento-col-6">
-<div class="bento-tag">HSBC & IBM</div>
+<div class="bento-tag">HSBC & IBM (Sep 2025)</div>
 <h3 class="bento-title">Quantum Algorithmic Bond Trading</h3>
-<p class="bento-desc">Trained hybrid quantum machine learning models on high-volume production fixed-income market data, achieving up to 34% lift in bond-fill prediction accuracy.</p>
-<div class="bento-citation"><a href="https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-demonstrates-worlds-first-known-quantum-enabled-algorithmic-trading-with-ibm" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release (Sep 2025) ↗</a></div>
+<p class="bento-desc">Trained hybrid quantum machine learning models on high-volume production fixed-income market data, achieving up to 34% lift in bond-fill prediction accuracy compared to classical baseline models.</p>
+<div class="bento-citation"><a href="https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-demonstrates-worlds-first-known-quantum-enabled-algorithmic-trading-with-ibm" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release (25 Sep 2025) ↗</a></div>
 </div>
 
 <div class="bento-card bento-col-6">
-<div class="bento-tag">JPMorgan Chase, Toshiba & Ciena</div>
-<h3 class="bento-title">Quantum Key Distribution (QKD) Research Trial</h3>
-<p class="bento-desc">Demonstrated a research trial of 800 Gbps QKD across a metropolitan optical testbed in partnership with Toshiba and Ciena to evaluate physical-layer key exchange for mission-critical blockchain workloads.</p>
+<div class="bento-tag">JPMorgan Chase, Toshiba & Ciena (2022)</div>
+<h3 class="bento-title">Metropolitan Quantum Key Distribution (QKD) Trial</h3>
+<p class="bento-desc">Demonstrated a 2022 research proof-of-concept trial of 800 Gbps QKD across a metropolitan dark-fibre testbed in partnership with Toshiba and Ciena to evaluate physical-layer key exchange for mission-critical blockchain workloads.</p>
 <div class="bento-citation"><a href="https://arxiv.org/abs/2303.01358" target="_blank" rel="noopener noreferrer">Source: arXiv:2303.01358 Applied Research Paper ↗</a></div>
 </div>
 </div>
@@ -356,7 +356,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 </section>
 
-<!-- SECTION 9: AUTHOR & PEDIGREE STRIP -->
+<!-- SECTION 9: AUTHOR & PEDIGREE STRIP WITH TRANSPARENCY DISCLOSURE -->
 <section class="author-pedigree-strip" aria-label="Author and Pedigree">
 <div class="author-avatar-wrap">
 <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-1-320.webp" alt="Sebastien Rousseau" class="author-avatar" width="96" height="96" />
@@ -364,7 +364,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="author-bio-content">
 <h3 class="author-name">Sebastien Rousseau</h3>
 <div class="author-role">Founder & Principal Cryptographic Architect · 19 Years in Production Finance</div>
-<p class="author-text">19 years designing, shipping, and securing high-throughput payment rails, institutional ledgers, and cryptographic infrastructure. Author of open-source cryptographic suites with over <strong>45.7 million downloads</strong>. Maintains KyberLib, hsh, and ISO 20022 message parsers. Every published analysis on this site is Sigstore-signed for provenance and cryptographic integrity.</p>
+<p class="author-text">19 years designing, shipping, and securing high-throughput payment rails, institutional ledgers, and cryptographic infrastructure. Author of open-source cryptographic suites with over <strong>45.7 million downloads</strong> (as of September 2026). Maintains KyberLib, hsh, and ISO 20022 message parsers. Every published analysis on this site is Sigstore-signed for provenance and cryptographic integrity.</p>
+<div class="p-2 my-2 rounded bg-dark border border-secondary small text-muted">
+<strong>Transparency & Independence Disclosure:</strong> All research, scoring models, and open-source tools on Banking On Quantum are published independently by Sebastien Rousseau under open-source licences (Apache-2.0 / MIT) without institutional sponsorship. Professional affiliations with financial institutions do not represent corporate endorsement.
+</div>
 <div class="author-links">
 <a href="/about/index.html" class="author-link">Full Bio & Credentials →</a>
 <a href="/trust/index.html" class="author-link">Security Posture & Trust Page →</a>
@@ -412,7 +415,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>No. Neither the US SEC/Fed nor European financial supervisors (EBA/ESAs) have issued a binding private-sector PQC penalty mandate yet. However, <strong>DORA Article 9</strong> enforces cryptographic agility in Europe, the <strong>Bank of Israel</strong> requires transition roadmaps, and the <strong>G7 Cyber Expert Group</strong> has established coordinated transition expectations. Claims of active fines are vendor marketing overreach.</p>
+<p>No. Neither the US SEC/Fed nor European financial supervisors (EBA/ESAs) have issued a binding private-sector PQC penalty mandate yet. However, <strong>DORA Article 9 and its RTS on ICT risk management</strong> enforces cryptographic agility in Europe, the <strong>Bank of Israel</strong> requires transition roadmaps, and the <strong>G7 Cyber Expert Group (13 Jan 2026)</strong> established coordinated transition expectations. Claims of active fines are vendor marketing overreach.</p>
 </div>
 </details>
 
@@ -474,8 +477,20 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <h2 class="h2 fw-bold text-headline mb-3">Take the Next Step in Quantum Readiness</h2>
 <p class="text-muted fs-5 mb-4 max-w-2xl mx-auto">Three clear routes to accelerate your institution's post-quantum roadmap:</p>
 <div class="d-flex justify-content-center gap-3 flex-wrap">
-<a href="/contact/index.html" class="btn-primary-quantum">Book a 30-Min Discovery Call →</a>
+<a href="/scorecard/index.html" class="btn-primary-quantum">Launch Interactive Scorecard (8 mins) →</a>
 <a href="/boards/index.html" class="btn-secondary-quantum">Download Board Briefing (PDF)</a>
-<a href="/newsletter/index.html" class="btn-secondary-quantum">Subscribe to Monthly Briefing</a>
+<a href="/contact/index.html" class="btn-secondary-quantum">Schedule Technical Discovery Call</a>
 </div>
+</section>
+
+<!-- FOOTNOTES SECTION (APPLE BENCHMARK STANDARD) -->
+<section class="border-top pt-4 mt-5 text-muted small" aria-label="Primary Source Citations and Footnotes">
+<h3 class="h6 text-uppercase fw-bold text-muted mb-2">Primary Source Citations & Footnotes</h3>
+<ol class="ps-3 mb-0">
+<li id="fn1">NIST Cryptographic Module Validation Program (CMVP), <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/fips-140-2-transition" target="_blank" rel="noopener noreferrer">FIPS 140-2 Transition Notice</a> (Moving all remaining FIPS 140-2 modules to Historical List on 21 September 2026).</li>
+<li id="fn2">European Commission, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-recommendation-post-quantum-cryptography" target="_blank" rel="noopener noreferrer">Recommendation on Post-Quantum Cryptography</a> (Member-state national transition roadmaps by end-2026).</li>
+<li id="fn3">UK National Cyber Security Centre (NCSC), <a href="https://www.ncsc.gov.uk/whitepaper/next-generation-cryptography-quantum-readiness" target="_blank" rel="noopener noreferrer">Next Generation Cryptography: Quantum Readiness</a> (Discovery milestone: 2028; high-priority milestone: 2031; full migration: 2035).</li>
+<li id="fn4">Executive Office of the President, <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/" target="_blank" rel="noopener noreferrer">Executive Order 14412 on Post-Quantum Cryptography Migration</a> (High-Value Assets key establishment: 31 Dec 2030; digital signatures: 31 Dec 2031; contractor FIPS compliance: end-2030).</li>
+<li id="fn5">G7 Cyber Expert Group (CEG), <a href="https://home.treasury.gov/news/press-releases/jy2813" target="_blank" rel="noopener noreferrer">Fundamental Elements for Quantum Readiness in Financial Services</a> (Published 13 January 2026; 2030–2032 critical systems transition window).</li>
+</ol>
 </section>

@@ -1,10 +1,10 @@
 {
   "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.",
-  "keywords": "trust page banking on quantum, sigstore signed, WCAG AAA compliance, SBOM cycloneDX",
+  "description": "Security commitments, Sigstore provenance signatures, zero external analytics, and vendor neutrality standards.",
+  "keywords": "quantum trust, Sigstore Cosign, CBOM verification, vendor neutrality",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -12,6 +12,6 @@
   "permalink": "https://bankingonquantum.com/trust/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility",
-  "word_count": 182
+  "title": "Security Posture, Cryptographic Trust & Provenance",
+  "word_count": 223
 }

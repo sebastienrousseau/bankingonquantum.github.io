@@ -3,15 +3,15 @@
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
   "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Independent research, a board-ready readiness index, and open-source cryptography for banks, payment infrastructures and fintechs preparing for the post-quantum era.",
-  "keywords": "quantum banking, post-quantum cryptography, PQC banking, quantum risk index, CBOM, NIST FIPS 203, financial cryptography",
+  "description": "Independent research, a board-ready readiness index, and open-source cryptography for banks and payment networks preparing for the post-quantum era.",
+  "keywords": "quantum banking, post-quantum cryptography, PQC banking, quantum risk index, CBOM, NIST FIPS 203, financial cryptography, HKMA quantum index",
   "language": "en-GB",
   "layout": "index",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
   "name": "Banking On Quantum",
   "permalink": "https://bankingonquantum.com/",
-  "reading_time": 12,
+  "reading_time": 14,
   "short_name": "bankingonquantum",
-  "title": "The Migration Clock is Running. Here is Exactly Where it Stands.",
-  "word_count": 2557
+  "title": "Post-Quantum Cryptography for Banks & Payments",
+  "word_count": 2850
 }

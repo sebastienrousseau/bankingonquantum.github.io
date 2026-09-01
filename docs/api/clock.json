@@ -3,6 +3,27 @@
   "last_verified": "2026-09-01",
   "deadlines": [
     {
+      "date": "2026-01-31",
+      "jurisdiction": "Israel",
+      "title": "Bank of Israel Directive: PQC Roadmaps submitted",
+      "binding": true,
+      "source": "https://www.boi.org.il"
+    },
+    {
+      "date": "2026-01-13",
+      "jurisdiction": "G7 Nations",
+      "title": "G7 Cyber Expert Group Roadmap published",
+      "binding": false,
+      "source": "https://home.treasury.gov/news/press-releases/jy2813"
+    },
+    {
+      "date": "2026-07-31",
+      "jurisdiction": "Hong Kong",
+      "title": "HKMA Quantum Preparedness Index Baseline (2.3/10)",
+      "binding": false,
+      "source": "https://www.hkma.gov.hk"
+    },
+    {
       "date": "2026-09-21",
       "jurisdiction": "NIST CMVP",
       "title": "FIPS 140-2 modules to Historical List",
@@ -33,9 +54,16 @@
     {
       "date": "2030-12-31",
       "jurisdiction": "United States",
-      "title": "Federal Key Establishment Migration (EO)",
+      "title": "Executive Order 14412: High-Value Assets Key Establishment Migration",
       "binding": true,
       "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/"
+    },
+    {
+      "date": "2030-12-31",
+      "jurisdiction": "United States",
+      "title": "Federal Contractors FIPS PQC Compliance",
+      "binding": true,
+      "source": "https://www.whitehouse.gov/omb/management/"
     },
     {
       "date": "2030-12-31",
@@ -47,9 +75,16 @@
     {
       "date": "2031-12-31",
       "jurisdiction": "United States",
-      "title": "Federal Digital Signature Migration Complete",
+      "title": "Executive Order 14412: High-Value Assets Digital Signatures Complete",
       "binding": true,
       "source": "https://www.whitehouse.gov/omb/management/"
+    },
+    {
+      "date": "2031-12-31",
+      "jurisdiction": "United Kingdom",
+      "title": "NCSC High-Priority Infrastructure Transition Milestone",
+      "binding": false,
+      "source": "https://www.ncsc.gov.uk"
     },
     {
       "date": "2035-12-31",

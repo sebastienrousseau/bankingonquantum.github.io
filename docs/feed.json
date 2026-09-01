@@ -143,7 +143,7 @@
           "name": "Sebastien Rousseau"
         }
       ],
-      "content_html": "Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
+      "content_html": "Verified timeline of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
       "date_modified": "",
       "date_published": "",
       "id": "http://127.0.0.1:8000/clock/",
@@ -383,13 +383,13 @@
           "name": "Sebastien Rousseau"
         }
       ],
-      "content_html": "Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.",
+      "content_html": "Security commitments, Sigstore provenance signatures, zero external analytics, and vendor neutrality standards.",
       "date_modified": "",
       "date_published": "",
       "id": "http://127.0.0.1:8000/trust/",
       "language": "en-GB",
       "tags": [],
-      "title": "Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility",
+      "title": "Security Posture, Cryptographic Trust & Provenance",
       "url": "http://127.0.0.1:8000/trust/"
     },
     {

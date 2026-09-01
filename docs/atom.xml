@@ -92,7 +92,7 @@
     <id>http://127.0.0.1:8000/clock/</id>
     <updated></updated>
     <published></published>
-    <summary>Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.</summary>
+    <summary>Verified timeline of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
@@ -231,12 +231,12 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Security Posture, Provenance &amp; Trust: Sigstore, SBOMs &amp; Accessibility</title>
+    <title>Security Posture, Cryptographic Trust &amp; Provenance</title>
     <link href="http://127.0.0.1:8000/trust/"/>
     <id>http://127.0.0.1:8000/trust/</id>
     <updated></updated>
     <published></published>
-    <summary>Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.</summary>
+    <summary>Security commitments, Sigstore provenance signatures, zero external analytics, and vendor neutrality standards.</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>

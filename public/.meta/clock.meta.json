@@ -3,15 +3,15 @@
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
   "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
-  "keywords": "quantum migration deadlines, PQC timeline tracker, NIST CMVP sunset, US EO 14409 timeline",
+  "description": "Verified timeline of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
+  "keywords": "quantum migration deadlines, PQC timeline tracker, NIST CMVP sunset, US EO 14412, HKMA quantum index, G7 CEG roadmap",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
   "name": "Banking On Quantum",
   "permalink": "https://bankingonquantum.com/clock/index.html",
-  "reading_time": 1,
+  "reading_time": 2,
   "short_name": "bankingonquantum",
   "title": "The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock",
-  "word_count": 353
+  "word_count": 530
 }

@@ -4,7 +4,7 @@
   "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
   "description": "Public bank disclosures and research benchmarks across algorithmic trading, risk simulation, and optical quantum key distribution.",
-  "keywords": "quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM",
+  "keywords": "quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM, BIS Project Leap",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -13,5 +13,5 @@
   "reading_time": 1,
   "short_name": "bankingonquantum",
   "title": "Bank Programmes & Case Studies: Quantum Deployments in Practice",
-  "word_count": 173
+  "word_count": 259
 }
