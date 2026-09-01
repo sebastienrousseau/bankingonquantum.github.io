@@ -304,13 +304,13 @@
   function updateCounters() {
     var now = new Date();
     
-    // NIST FIPS 140-2 Sunset: 2026-09-21
+/* NIST FIPS 140-2 Sunset: 2026-09-21 */
     var fipsDate = new Date('2026-09-21T00:00:00Z');
     var fipsDays = Math.ceil((fipsDate - now) / (1000 * 60 * 60 * 24));
     var fipsEl = document.getElementById('countFipsSunset');
     if (fipsEl) fipsEl.textContent = fipsDays > 0 ? fipsDays + ' days' : 'Historical';
 
-    // US Federal Key Est. Deadline (EO): 2030-12-31
+/* US Federal Key Est. Deadline (EO): 2030-12-31 */
     var usDate = new Date('2030-12-31T23:59:59Z');
     var usDays = Math.ceil((usDate - now) / (1000 * 60 * 60 * 24));
     var usEl = document.getElementById('countUsEo');
