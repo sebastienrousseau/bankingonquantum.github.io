@@ -1,5 +1,22 @@
-# MySsgSite
+# Banking On Quantum
+> The independent reference desk for quantum-era finance: regulatory clock, readiness index, and open-source cryptography for banks, payment infrastructures and fintechs.
 
-> A site built with SSG
-
-Language: en-GB
+## Core Documentation & Resources
+- Homepage: https://bankingonquantum.com/index.html
+- Banks & Infrastructure: https://bankingonquantum.com/banks/index.html
+- PQC Architecture & CBOM: https://bankingonquantum.com/banks/secure/index.html
+- Quantum Algorithms & Trading: https://bankingonquantum.com/banks/compute/index.html
+- Regulatory Matrix: https://bankingonquantum.com/banks/comply/index.html
+- Fintech Due Diligence: https://bankingonquantum.com/fintech/index.html
+- Board & Risk Committees: https://bankingonquantum.com/boards/index.html
+- Deadline Tracker (HTML): https://bankingonquantum.com/clock/index.html
+- Deadline Tracker (JSON): https://bankingonquantum.com/api/clock.json
+- Resilience Index Scorecard: https://bankingonquantum.com/scorecard/index.html
+- Signed Research Papers: https://bankingonquantum.com/research/index.html
+- Open Source Toolkit (KyberLib, hsh): https://bankingonquantum.com/toolkit/index.html
+- Vendor Landscape Map: https://bankingonquantum.com/vendors/index.html
+- Case Studies (HSBC, JPMorgan): https://bankingonquantum.com/case-studies/index.html
+- Advisory Services & Price Bands: https://bankingonquantum.com/services/index.html
+- Security Posture & Trust: https://bankingonquantum.com/trust/index.html
+- About Sebastien Rousseau: https://bankingonquantum.com/about/index.html
+- The Quantum-Safe Briefing: https://bankingonquantum.com/newsletter/index.html
