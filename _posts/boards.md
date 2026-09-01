@@ -27,33 +27,33 @@ For Non-Executive Directors, Audit Chairs, and Chief Risk Officers, quantum comp
 ## Five Critical Questions for the CISO / CTO
 
 <div class="bento-grid">
-  <div class="bento-card bento-col-6">
-    <div class="bento-tag">Question 1: Inventory</div>
-    <h3 class="bento-title">"Do we have an automated Cryptographic Bill of Materials (CBOM)?"</h3>
-    <p class="bento-desc">If the security team relies on manual spreadsheets rather than automated discovery across payment rails, the inventory has significant blind spots.</p>
-  </div>
+<div class="bento-card bento-col-6">
+<div class="bento-tag">Question 1: Inventory</div>
+<h3 class="bento-title">"Do we have an automated Cryptographic Bill of Materials (CBOM)?"</h3>
+<p class="bento-desc">If the security team relies on manual spreadsheets rather than automated discovery across payment rails, the inventory has significant blind spots.</p>
+</div>
 
-  <div class="bento-card bento-col-6">
-    <div class="bento-tag">Question 2: Critical Rails</div>
-    <h3 class="bento-title">"Which payment gateways still depend on RSA-2048 or ECDSA?"</h3>
-    <p class="bento-desc">Identify high-value settlement rails (SWIFT, Fedwire, CHAPS) and establish prioritized migration milestones.</p>
-  </div>
+<div class="bento-card bento-col-6">
+<div class="bento-tag">Question 2: Critical Rails</div>
+<h3 class="bento-title">"Which payment gateways still depend on RSA-2048 or ECDSA?"</h3>
+<p class="bento-desc">Identify high-value settlement rails (SWIFT, Fedwire, CHAPS) and establish prioritized migration milestones.</p>
+</div>
 
-  <div class="bento-card bento-col-6">
-    <div class="bento-tag">Question 3: Hardware</div>
-    <h3 class="bento-title">"Are our Hardware Security Modules (HSMs) FIPS 140-3 ready?"</h3>
-    <p class="bento-desc">Ensure hardware refresh budgets account for the September 2026 NIST FIPS 140-2 sunset.</p>
-  </div>
+<div class="bento-card bento-col-6">
+<div class="bento-tag">Question 3: Hardware</div>
+<h3 class="bento-title">"Are our Hardware Security Modules (HSMs) FIPS 140-3 ready?"</h3>
+<p class="bento-desc">Ensure hardware refresh budgets account for the September 2026 NIST FIPS 140-2 sunset.</p>
+</div>
 
-  <div class="bento-card bento-col-6">
-    <div class="bento-tag">Question 4: Supply Chain</div>
-    <h3 class="bento-title">"What are our critical fintech vendors doing about PQC?"</h3>
-    <p class="bento-desc">Require third-party software vendors to submit cryptographic agility roadmaps during procurement renewals.</p>
-  </div>
+<div class="bento-card bento-col-6">
+<div class="bento-tag">Question 4: Supply Chain</div>
+<h3 class="bento-title">"What are our critical fintech vendors doing about PQC?"</h3>
+<p class="bento-desc">Require third-party software vendors to submit cryptographic agility roadmaps during procurement renewals.</p>
+</div>
 </div>
 
 <div class="card-surface p-4 text-center my-4">
-  <h3 class="h4 fw-bold text-headline mb-2">Download the Executive Board Briefing (PDF)</h3>
-  <p class="text-muted mb-3">Six-page executive summary formatted for board risk committee packs, refreshed quarterly.</p>
-  <a href="/contact/index.html" class="btn-primary-quantum">Request Board Briefing Pack →</a>
+<h3 class="h4 fw-bold text-headline mb-2">Download the Executive Board Briefing (PDF)</h3>
+<p class="text-muted mb-3">Six-page executive summary formatted for board risk committee packs, refreshed quarterly.</p>
+<a href="/contact/index.html" class="btn-primary-quantum">Request Board Briefing Pack →</a>
 </div>

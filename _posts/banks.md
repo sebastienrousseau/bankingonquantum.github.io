@@ -21,26 +21,26 @@ Global banking systems operate on multi-tiered cryptographic layers that have re
 ## The Quantum Migration Blueprint
 
 <div class="bento-grid">
-  <div class="bento-card bento-col-4">
-    <div class="bento-tag">Phase 1: Discovery</div>
-    <h3 class="bento-title">Cryptographic Bill of Materials (CBOM)</h3>
-    <p class="bento-desc">Automated static code analysis, network packet inspection, and database schema scans to identify every RSA, ECDSA, and Diffie-Hellman instance across core transaction paths.</p>
-    <a href="/banks/secure/index.html" class="author-link">Explore Secure Pillar →</a>
-  </div>
+<div class="bento-card bento-col-4">
+<div class="bento-tag">Phase 1: Discovery</div>
+<h3 class="bento-title">Cryptographic Bill of Materials (CBOM)</h3>
+<p class="bento-desc">Automated static code analysis, network packet inspection, and database schema scans to identify every RSA, ECDSA, and Diffie-Hellman instance across core transaction paths.</p>
+<a href="/banks/secure/index.html" class="author-link">Explore Secure Pillar →</a>
+</div>
 
-  <div class="bento-card bento-col-4">
-    <div class="bento-tag">Phase 2: Transition</div>
-    <h3 class="bento-title">Hybrid TLS 1.3 & Encapsulation</h3>
-    <p class="bento-desc">Deploy dual-key encapsulation mechanisms combining X25519 with FIPS 203 (ML-KEM-768). Zero-downtime backwards compatibility for legacy endpoints.</p>
-    <a href="/toolkit/index.html" class="author-link">View Rust Implementation →</a>
-  </div>
+<div class="bento-card bento-col-4">
+<div class="bento-tag">Phase 2: Transition</div>
+<h3 class="bento-title">Hybrid TLS 1.3 & Encapsulation</h3>
+<p class="bento-desc">Deploy dual-key encapsulation mechanisms combining X25519 with FIPS 203 (ML-KEM-768). Zero-downtime backwards compatibility for legacy endpoints.</p>
+<a href="/toolkit/index.html" class="author-link">View Rust Implementation →</a>
+</div>
 
-  <div class="bento-card bento-col-4">
-    <div class="bento-tag">Phase 3: Hardware</div>
-    <h3 class="bento-title">FIPS 140-3 HSM Upgrades</h3>
-    <p class="bento-desc">Prepare hardware security modules for the September 2026 FIPS 140-2 sunset. Update firmware to support lattice-based signature key ceremonies.</p>
-    <a href="/clock/index.html" class="author-link">Check Hardware Deadlines →</a>
-  </div>
+<div class="bento-card bento-col-4">
+<div class="bento-tag">Phase 3: Hardware</div>
+<h3 class="bento-title">FIPS 140-3 HSM Upgrades</h3>
+<p class="bento-desc">Prepare hardware security modules for the September 2026 FIPS 140-2 sunset. Update firmware to support lattice-based signature key ceremonies.</p>
+<a href="/clock/index.html" class="author-link">Check Hardware Deadlines →</a>
+</div>
 </div>
 
 ## Key Architectural Domains
@@ -55,7 +55,7 @@ Immutable audit trails and write-ahead transaction logs sealed with SHA-256 / RS
 For ultra-high-value wire settlement networks, physical-layer Quantum Key Distribution (QKD) paired with mathematical PQC provides defence-in-depth against both mathematical cryptanalysis and optical physical tapping.
 
 <div class="card-surface p-4 text-center my-4">
-  <h3 class="h4 fw-bold text-headline mb-2">Need a bank-specific technical architecture review?</h3>
-  <p class="text-muted mb-3">We conduct confidential CBOM discovery and migration roadmaps for Tier-1 and Tier-2 financial institutions.</p>
-  <a href="/contact/index.html" class="btn-primary-quantum">Schedule Technical Discovery →</a>
+<h3 class="h4 fw-bold text-headline mb-2">Need a bank-specific technical architecture review?</h3>
+<p class="text-muted mb-3">We conduct confidential CBOM discovery and migration roadmaps for Tier-1 and Tier-2 financial institutions.</p>
+<a href="/contact/index.html" class="btn-primary-quantum">Schedule Technical Discovery →</a>
 </div>

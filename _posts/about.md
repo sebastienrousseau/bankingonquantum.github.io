@@ -17,14 +17,14 @@ banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilutio
 # About Sebastien Rousseau
 
 <div class="author-pedigree-strip my-4">
-  <div class="author-avatar-wrap">
-    <img src="https://cloudcdn.pro/cmn/v1/logos/cmn.svg" alt="Sebastien Rousseau" class="author-avatar" width="96" height="96" />
-  </div>
-  <div class="author-bio-content">
-    <h2 class="author-name mb-1">Sebastien Rousseau</h2>
-    <div class="author-role">Principal Cryptographic Architect & Founder · 19 Years in Production Banking Infrastructure</div>
-    <p class="author-text">Sebastien Rousseau has spent nearly two decades architecting, building, and securing high-volume transaction processing systems, institutional payment rails, and cryptographic protocols across global financial centres.</p>
-  </div>
+<div class="author-avatar-wrap">
+<img src="https://cloudcdn.pro/cmn/v1/logos/cmn.svg" alt="Sebastien Rousseau" class="author-avatar" width="96" height="96" />
+</div>
+<div class="author-bio-content">
+<h2 class="author-name mb-1">Sebastien Rousseau</h2>
+<div class="author-role">Principal Cryptographic Architect & Founder · 19 Years in Production Banking Infrastructure</div>
+<p class="author-text">Sebastien Rousseau has spent nearly two decades architecting, building, and securing high-volume transaction processing systems, institutional payment rails, and cryptographic protocols across global financial centres.</p>
+</div>
 </div>
 
 ## Professional Background & Credentials
@@ -35,7 +35,7 @@ banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilutio
 - **Editorial Standard:** Every paper on Banking On Quantum is independently authored, free of vendor sponsorship, and signed with Sigstore cryptographic provenance.
 
 <div class="d-flex gap-3 flex-wrap my-4">
-  <a href="/contact/index.html" class="btn-primary-quantum">Get in Touch →</a>
-  <a href="https://github.com/sebastienrousseau" target="_blank" rel="noopener noreferrer" class="btn-secondary-quantum">GitHub Profile (672★) ↗</a>
-  <a href="https://news.bankingonquantum.com" target="_blank" rel="noopener noreferrer" class="btn-secondary-quantum">Newsletter Archive ↗</a>
+<a href="/contact/index.html" class="btn-primary-quantum">Get in Touch →</a>
+<a href="https://github.com/sebastienrousseau" target="_blank" rel="noopener noreferrer" class="btn-secondary-quantum">GitHub Profile (672★) ↗</a>
+<a href="https://news.bankingonquantum.com" target="_blank" rel="noopener noreferrer" class="btn-secondary-quantum">Newsletter Archive ↗</a>
 </div>

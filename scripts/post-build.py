@@ -64,24 +64,13 @@ def post_build():
             content = content.replace("http://127.0.0.1:8000", base_url)
             content = content.replace("http://localhost:8000", base_url)
 
-            # Strip any <pre><code> wrappers accidentally introduced by markdown on custom HTML blocks
-            content = re.sub(r'<pre><code class="language-html">(&lt;section.*?&lt;/section&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
-            content = re.sub(r'<pre><code>(&lt;section.*?&lt;/section&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
-            content = re.sub(r'<pre><code>(&lt;div.*?&lt;/div&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
-            content = re.sub(r'<pre><code>(&lt;details.*?&lt;/details&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
+            # Strip any pre-code spans wrapped around HTML
+            content = re.sub(r'<pre><code><span class="text plain">(.*?)</span></code></pre>', r'\1', content, flags=re.DOTALL)
+            content = re.sub(r'<pre><code class="language-html">(.*?)</code></pre>', r'\1', content, flags=re.DOTALL)
+            content = re.sub(r'<pre><code>(.*?)</code></pre>', lambda m: m.group(1) if ('<div' in m.group(1) or '<section' in m.group(1) or '<details' in m.group(1) or '<table' in m.group(1)) else m.group(0), content, flags=re.DOTALL)
 
-            # Unescape remaining HTML entities
-            unescape_patterns = [
-                ("&quot;", '"'),
-                ("&lt;", '<'),
-                ("&gt;", '>'),
-                ("&#39;", "'"),
-                ("&#x27;", "'"),
-                ("&amp;", '&')
-            ]
-            
-            # Check if there is still escaped markup inside content-body
-            if "&lt;details" in content or "&lt;section" in content or "&lt;div class=" in content:
+            # Unescape remaining HTML entities if inside HTML tags
+            if "&lt;details" in content or "&lt;section" in content or "&lt;div" in content:
                 for ent, val in [("&lt;", "<"), ("&gt;", ">"), ("&quot;", '"'), ("&#39;", "'"), ("&#x27;", "'")]:
                     content = content.replace(ent, val)
 

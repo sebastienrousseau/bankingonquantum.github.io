@@ -36,7 +36,7 @@ Quantum Approximate Optimization Algorithms solve NP-hard financial optimization
 - Cross-border multi-currency payment routing.
 
 <div class="card-surface p-4 text-center my-4">
-  <h3 class="h4 fw-bold text-headline mb-2">Evaluate Quantum Compute for Your Treasury</h3>
-  <p class="text-muted mb-3">Our team evaluates quantum readiness for capital markets and algorithmic trading desks.</p>
-  <a href="/contact/index.html" class="btn-primary-quantum">Request Treasury Briefing →</a>
+<h3 class="h4 fw-bold text-headline mb-2">Evaluate Quantum Compute for Your Treasury</h3>
+<p class="text-muted mb-3">Our team evaluates quantum readiness for capital markets and algorithmic trading desks.</p>
+<a href="/contact/index.html" class="btn-primary-quantum">Request Treasury Briefing →</a>
 </div>

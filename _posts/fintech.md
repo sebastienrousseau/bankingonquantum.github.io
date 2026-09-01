@@ -21,17 +21,17 @@ As Tier-1 global banks initiate their post-quantum migration programmes, third-p
 ## The Fintech Due Diligence Checklist
 
 <div class="bento-grid">
-  <div class="bento-card bento-col-6">
-    <div class="bento-tag">Audit Requirement 1</div>
-    <h3 class="bento-title">Cryptographic Supply-Chain Transparency</h3>
-    <p class="bento-desc">Can your engineering team produce an automated Cryptographic Bill of Materials (CBOM) for your APIs, mobile SDKs, and webhook gateways within 24 hours of an enterprise bank RFP?</p>
-  </div>
+<div class="bento-card bento-col-6">
+<div class="bento-tag">Audit Requirement 1</div>
+<h3 class="bento-title">Cryptographic Supply-Chain Transparency</h3>
+<p class="bento-desc">Can your engineering team produce an automated Cryptographic Bill of Materials (CBOM) for your APIs, mobile SDKs, and webhook gateways within 24 hours of an enterprise bank RFP?</p>
+</div>
 
-  <div class="bento-card bento-col-6">
-    <div class="bento-tag">Audit Requirement 2</div>
-    <h3 class="bento-title">Hybrid TLS 1.3 Ingress Support</h3>
-    <p class="bento-desc">Support for post-quantum key encapsulation (X25519 + ML-KEM-768) on partner API endpoints without degrading latency or breaking existing client libraries.</p>
-  </div>
+<div class="bento-card bento-col-6">
+<div class="bento-tag">Audit Requirement 2</div>
+<h3 class="bento-title">Hybrid TLS 1.3 Ingress Support</h3>
+<p class="bento-desc">Support for post-quantum key encapsulation (X25519 + ML-KEM-768) on partner API endpoints without degrading latency or breaking existing client libraries.</p>
+</div>
 </div>
 
 ## Practical Steps for Engineering Teams
@@ -41,7 +41,7 @@ As Tier-1 global banks initiate their post-quantum migration programmes, third-p
 3. **Embed Open Source Primitives:** Integrate verified, zero-dependency Rust/WebAssembly libraries such as KyberLib for client-side key generation.
 
 <div class="card-surface p-4 text-center my-4">
-  <h3 class="h4 fw-bold text-headline mb-2">Preparing for a Tier-1 Bank RFP or Security Audit?</h3>
-  <p class="text-muted mb-3">We review fintech cryptographic postures and prepare compliance dossiers for bank vendor reviews.</p>
-  <a href="/contact/index.html" class="btn-primary-quantum">Book Fintech Audit Review →</a>
+<h3 class="h4 fw-bold text-headline mb-2">Preparing for a Tier-1 Bank RFP or Security Audit?</h3>
+<p class="text-muted mb-3">We review fintech cryptographic postures and prepare compliance dossiers for bank vendor reviews.</p>
+<a href="/contact/index.html" class="btn-primary-quantum">Book Fintech Audit Review →</a>
 </div>
