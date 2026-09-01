@@ -215,7 +215,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 
 <div class="article-grid">
-<a href="https://sebastienrousseau.com/articles/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
 <span>28 July 2026</span>
@@ -227,7 +227,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="author-link">Read Full Essay ↗</span>
 </a>
 
-<a href="https://sebastienrousseau.com/articles/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
 <span>29 June 2026</span>
@@ -239,7 +239,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="author-link">Read Full Essay ↗</span>
 </a>
 
-<a href="https://sebastienrousseau.com/articles/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
 <span>26 June 2026</span>
@@ -251,7 +251,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="author-link">Read Full Essay ↗</span>
 </a>
 
-<a href="https://sebastienrousseau.com/articles/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
 <span>29 July 2026</span>
