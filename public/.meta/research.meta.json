@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "date": "2026-09-01",
+  "description": "Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financial practitioners.",
+  "keywords": "quantum finance research, PQC papers, CBOM technical essay, quantum banking whitepapers",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
+  "name": "Banking On Quantum",
+  "permalink": "https://bankingonquantum.com/research/index.html",
+  "reading_time": 2,
+  "short_name": "bankingonquantum",
+  "title": "Research & Technical Essays: Quantum-Safe Banking Architecture",
+  "word_count": 409
+}

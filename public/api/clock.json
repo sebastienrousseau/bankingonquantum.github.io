@@ -1,0 +1,62 @@
+{
+  "title": "Banking On Quantum Deadline Tracker",
+  "last_verified": "2026-09-01",
+  "deadlines": [
+    {
+      "date": "2026-09-21",
+      "jurisdiction": "NIST CMVP",
+      "title": "FIPS 140-2 modules to Historical List",
+      "binding": true,
+      "source": "https://csrc.nist.gov"
+    },
+    {
+      "date": "2026-12-31",
+      "jurisdiction": "European Union",
+      "title": "Member-state PQC migration strategies & pilots",
+      "binding": false,
+      "source": "https://digital-strategy.ec.europa.eu"
+    },
+    {
+      "date": "2028-12-31",
+      "jurisdiction": "United Kingdom",
+      "title": "NCSC Cryptographic Discovery Milestone",
+      "binding": true,
+      "source": "https://www.ncsc.gov.uk"
+    },
+    {
+      "date": "2029-12-31",
+      "jurisdiction": "Google",
+      "title": "100% internal PQC encryption target",
+      "binding": false,
+      "source": "https://security.googleblog.com"
+    },
+    {
+      "date": "2030-12-31",
+      "jurisdiction": "United States",
+      "title": "Federal Key Establishment Migration (EO 14409)",
+      "binding": true,
+      "source": "https://www.whitehouse.gov"
+    },
+    {
+      "date": "2030-12-31",
+      "jurisdiction": "European Union",
+      "title": "High-risk critical financial infrastructure PQC transition",
+      "binding": true,
+      "source": "https://digital-strategy.ec.europa.eu"
+    },
+    {
+      "date": "2031-12-31",
+      "jurisdiction": "United States",
+      "title": "Federal Digital Signature Migration Complete",
+      "binding": true,
+      "source": "https://www.whitehouse.gov"
+    },
+    {
+      "date": "2035-12-31",
+      "jurisdiction": "G7 Cyber Expert Group",
+      "title": "Full deprecation of legacy asymmetric algorithms (RSA/ECC)",
+      "binding": false,
+      "source": "https://home.treasury.gov"
+    }
+  ]
+}

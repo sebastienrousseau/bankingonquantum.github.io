@@ -293,3 +293,113 @@
     initApp();
   }
 })();
+
+
+/* ==========================================================================
+   Banking On Quantum — Enterprise Controllers (Clock & Scorecard)
+   ========================================================================== */
+
+/* 1. Live Countdown Engine */
+(function() {
+  function updateCounters() {
+    var now = new Date();
+    
+    // NIST FIPS 140-2 Sunset: 2026-09-21
+    var fipsDate = new Date('2026-09-21T00:00:00Z');
+    var fipsDays = Math.ceil((fipsDate - now) / (1000 * 60 * 60 * 24));
+    var fipsEl = document.getElementById('countFipsSunset');
+    if (fipsEl) fipsEl.textContent = fipsDays > 0 ? fipsDays + ' days' : 'Historical';
+
+    // US Federal Key Est. Deadline (EO): 2030-12-31
+    var usDate = new Date('2030-12-31T23:59:59Z');
+    var usDays = Math.ceil((usDate - now) / (1000 * 60 * 60 * 24));
+    var usEl = document.getElementById('countUsEo');
+    if (usEl) usEl.textContent = usDays.toLocaleString() + ' days';
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateCounters);
+  } else {
+    updateCounters();
+  }
+})();
+
+/* 2. Pillar Tab Controller */
+(function() {
+  function initPillarTabs() {
+    var tabBtns = document.querySelectorAll('.pillar-tab-btn');
+    var panes = document.querySelectorAll('.pillar-content-pane');
+    if (!tabBtns.length) return;
+
+    tabBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = btn.getAttribute('data-target');
+        tabBtns.forEach(function(b) { b.classList.remove('active'); });
+        panes.forEach(function(p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        var targetPane = document.getElementById(targetId);
+        if (targetPane) targetPane.classList.add('active');
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPillarTabs);
+  } else {
+    initPillarTabs();
+  }
+})();
+
+/* 3. Resilience Index Scorecard Calculator */
+(function() {
+  function initScorecard() {
+    var sliders = document.querySelectorAll('.score-slider');
+    var totalScoreEl = document.getElementById('scoreTotal');
+    var gradeEl = document.getElementById('scoreGrade');
+    var recEl = document.getElementById('scoreRecommendation');
+    if (!sliders.length || !totalScoreEl) return;
+
+    function recalculate() {
+      var total = 0;
+      sliders.forEach(function(slider) {
+        var val = parseFloat(slider.value);
+        total += val;
+        var valDisplay = document.getElementById(slider.id + 'Val');
+        if (valDisplay) valDisplay.textContent = val.toFixed(1) + ' / 5.0';
+      });
+
+      var avg = total / sliders.length;
+      totalScoreEl.textContent = avg.toFixed(2) + ' / 5.00';
+
+      var grade = 'Tier 4 (Initial)';
+      var rec = 'Immediate Cryptographic Bill of Materials (CBOM) inventory recommended.';
+
+      if (avg >= 4.2) {
+        grade = 'Tier 1 (Quantum Agility Leader)';
+        rec = 'Production hybrid PQC operational; continue scheduled multi-rail stress testing.';
+      } else if (avg >= 3.2) {
+        grade = 'Tier 2 (Structured Transition)';
+        rec = 'CBOM baseline complete; accelerate hybrid TLS 1.3 and HSM firmware upgrades.';
+      } else if (avg >= 2.0) {
+        grade = 'Tier 3 (Discovery Phase)';
+        rec = 'Prioritise SWIFT / ISO 20022 payment rails for asymmetric algorithm discovery.';
+      }
+
+      if (gradeEl) gradeEl.textContent = grade;
+      if (recEl) recEl.textContent = rec;
+    }
+
+    sliders.forEach(function(slider) {
+      slider.addEventListener('input', recalculate);
+    });
+
+    recalculate();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScorecard);
+  } else {
+    initScorecard();
+  }
+})();

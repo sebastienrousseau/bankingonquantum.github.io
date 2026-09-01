@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Boardroom-level guidance for Non-Executive Directors, Chief Risk Officers, and Audit Committees on quantum cryptographic",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Banking On Quantum",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "bankingonqua",
+  "start_url": ".",
+  "theme_color": null
+}

@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "date": "2026-09-01",
+  "description": "Deep technical guide on executing a post-quantum cryptographic migration across banking networks.",
+  "keywords": "CBOM banking, post-quantum cryptography architecture, hybrid TLS 1.3, FIPS 203, FIPS 204",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
+  "name": "Banking On Quantum",
+  "permalink": "https://bankingonquantum.com/banks/secure/index.html",
+  "reading_time": 1,
+  "short_name": "bankingonquantum",
+  "title": "PQC Migration: Inventory, CBOM, Hybrid TLS & HSM Architecture",
+  "word_count": 258
+}

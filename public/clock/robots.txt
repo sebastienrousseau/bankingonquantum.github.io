@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bankingonquantum.com/clock/index.html/sitemap.xml

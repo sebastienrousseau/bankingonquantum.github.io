@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "date": "2026-09-01",
+  "description": "Honest state of play on quantum computational finance: Monte Carlo acceleration, QAOA portfolio balancing, and HSBC/IBM benchmarks.",
+  "keywords": "quantum finance algorithms, quantum monte carlo, QAE, QAOA banking, quantum derivative pricing",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
+  "name": "Banking On Quantum",
+  "permalink": "https://bankingonquantum.com/banks/compute/index.html",
+  "reading_time": 1,
+  "short_name": "bankingonquantum",
+  "title": "Quantum Algorithms in Finance: Derivative Pricing, Risk & Optimization",
+  "word_count": 227
+}

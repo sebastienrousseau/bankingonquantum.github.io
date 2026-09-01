@@ -1,126 +1,125 @@
-import os, re, json, shutil
+import os, glob, re, json
 
-repo_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+def post_build():
+    output_dir = "public"
+    docs_dir = "docs"
+    base_url = "https://bankingonquantum.com"
 
-# 1. Sync manifest.json
-manifest_data = {
-    "name": "Banking On Quantum",
-    "short_name": "bankingonquantum",
-    "description": "Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms.",
-    "start_url": "/index.html",
-    "scope": "/",
-    "display": "standalone",
-    "orientation": "portrait-primary",
-    "background_color": "#ffffff",
-    "theme_color": "#020617",
-    "lang": "en-GB",
-    "icons": [
-        {
-            "src": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
-            "sizes": "512x512",
-            "type": "image/svg+xml",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "/favicon.ico",
-            "sizes": "16x16 32x32 48x48",
-            "type": "image/x-icon",
-            "purpose": "any maskable"
-        }
-    ]
-}
+    # 1. Generate public/api/clock.json
+    api_dir = os.path.join(output_dir, "api")
+    os.makedirs(api_dir, exist_ok=True)
+    clock_data = {
+        "title": "Banking On Quantum Deadline Tracker",
+        "last_verified": "2026-09-01",
+        "deadlines": [
+            {"date": "2026-09-21", "jurisdiction": "NIST CMVP", "title": "FIPS 140-2 modules to Historical List", "binding": True, "source": "https://csrc.nist.gov"},
+            {"date": "2026-12-31", "jurisdiction": "European Union", "title": "Member-state PQC migration strategies & pilots", "binding": False, "source": "https://digital-strategy.ec.europa.eu"},
+            {"date": "2028-12-31", "jurisdiction": "United Kingdom", "title": "NCSC Cryptographic Discovery Milestone", "binding": True, "source": "https://www.ncsc.gov.uk"},
+            {"date": "2029-12-31", "jurisdiction": "Google", "title": "100% internal PQC encryption target", "binding": False, "source": "https://security.googleblog.com"},
+            {"date": "2030-12-31", "jurisdiction": "United States", "title": "Federal Key Establishment Migration (EO 14409)", "binding": True, "source": "https://www.whitehouse.gov"},
+            {"date": "2030-12-31", "jurisdiction": "European Union", "title": "High-risk critical financial infrastructure PQC transition", "binding": True, "source": "https://digital-strategy.ec.europa.eu"},
+            {"date": "2031-12-31", "jurisdiction": "United States", "title": "Federal Digital Signature Migration Complete", "binding": True, "source": "https://www.whitehouse.gov"},
+            {"date": "2035-12-31", "jurisdiction": "G7 Cyber Expert Group", "title": "Full deprecation of legacy asymmetric algorithms (RSA/ECC)", "binding": False, "source": "https://home.treasury.gov"}
+        ]
+    }
+    with open(os.path.join(api_dir, "clock.json"), "w", encoding="utf-8") as f:
+        json.dump(clock_data, f, indent=2)
 
-for target in ["public", "docs"]:
-    m_path = os.path.join(repo_dir, target, "manifest.json")
-    with open(m_path, "w", encoding="utf-8") as f:
-        json.dump(manifest_data, f, indent=2)
+    # 2. Generate llms.txt
+    llms_txt_content = f"""# Banking On Quantum
+> The independent reference desk for quantum-era finance: regulatory clock, readiness index, and open-source cryptography for banks, payment infrastructures and fintechs.
 
-# 2. Clean up internal links, CSP, and unescape interactive components in all HTML output
-csp_meta = '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https://cdn.jsdelivr.net; connect-src \'self\' https://formspree.io https://cdn.jsdelivr.net; img-src \'self\' data: https: https://cloudcdn.pro; style-src \'self\' \'unsafe-inline\' https://cdn.jsdelivr.net; font-src \'self\' data:; form-action \'self\' https://formspree.io; base-uri \'none\'; object-src \'none\';" />'
+## Core Documentation & Resources
+- Homepage: {base_url}/index.html
+- Banks & Infrastructure: {base_url}/banks/index.html
+- PQC Architecture & CBOM: {base_url}/banks/secure/index.html
+- Quantum Algorithms & Trading: {base_url}/banks/compute/index.html
+- Regulatory Matrix: {base_url}/banks/comply/index.html
+- Fintech Due Diligence: {base_url}/fintech/index.html
+- Board & Risk Committees: {base_url}/boards/index.html
+- Deadline Tracker (HTML): {base_url}/clock/index.html
+- Deadline Tracker (JSON): {base_url}/api/clock.json
+- Resilience Index Scorecard: {base_url}/index/index.html
+- Signed Research Papers: {base_url}/research/index.html
+- Open Source Toolkit (KyberLib, hsh): {base_url}/toolkit/index.html
+- Vendor Landscape Map: {base_url}/vendors/index.html
+- Case Studies (HSBC, JPMorgan): {base_url}/case-studies/index.html
+- Advisory Services & Price Bands: {base_url}/services/index.html
+- Security Posture & Trust: {base_url}/trust/index.html
+- About Sebastien Rousseau: {base_url}/about/index.html
+- The Quantum-Safe Briefing: {base_url}/newsletter/index.html
+"""
+    with open(os.path.join(output_dir, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(llms_txt_content)
 
-for target in ["public", "docs"]:
-    base_target = os.path.join(repo_dir, target)
-    if not os.path.exists(base_target):
-        continue
-    for root, _, files in os.walk(base_target):
-        for file in files:
-            if not file.endswith(".html"):
-                continue
-            fpath = os.path.join(root, file)
-            with open(fpath, "r", encoding="utf-8") as f:
-                html = f.read()
+    # 3. Clean and fix HTML files
+    for base_path in [output_dir, docs_dir]:
+        if not os.path.exists(base_path):
+            continue
+        for html_file in glob.glob(f"{base_path}/**/*.html", recursive=True):
+            with open(html_file, "r", encoding="utf-8") as f:
+                content = f.read()
 
-            # Clean links
-            html = html.replace('href="/about.html"', 'href="/about/index.html"')
-            html = html.replace('href="/contact.html"', 'href="/contact/index.html"')
-            html = html.replace('href="/platform.html"', 'href="/platform/index.html"')
-            html = html.replace('href="/solutions.html"', 'href="/solutions/index.html"')
-            html = html.replace('href="/pricing.html"', 'href="/pricing/index.html"')
-            html = html.replace('href="/faqs.html"', 'href="/faqs/index.html"')
-            html = html.replace('href="/accessibility.html"', 'href="/accessibility/index.html"')
-            html = html.replace('href="/privacy.html"', 'href="/privacy/index.html"')
-            html = html.replace('href="/terms.html"', 'href="/terms/index.html"')
-            html = html.replace('href="/made-with-ssg.html"', 'href="/made-with-ssg/index.html"')
+            # Fix canonical URLs: Replace 127.0.0.1 with https://bankingonquantum.com
+            content = content.replace("http://127.0.0.1:8000", base_url)
+            content = content.replace("http://localhost:8000", base_url)
 
-            html = html.replace('<img src="" alt="Banking On Quantum Logo"', '<img src="https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg" alt="Banking On Quantum Logo"')
-            # Strip any legacy bleeding markdown/class artifacts
-            html = html.replace('.class=\\"m-10 w-100\\"', '')
-            html = html.replace('.class="m-10 w-100"', '')
-            
-            # Robust CSP
-            html = re.sub(r'<meta\s+http-equiv="Content-Security-Policy"[^>]*>', csp_meta, html)
+            # Fix unescaped HTML blocks in prose
+            content = content.replace('&lt;details class=&quot;apple-faq-item&quot;&gt;', '<details class="apple-faq-item">')
+            content = content.replace('&lt;/details&gt;', '</details>')
+            content = content.replace('&lt;summary class=&quot;apple-faq-summary&quot;&gt;', '<summary class="apple-faq-summary">')
+            content = content.replace('&lt;/summary&gt;', '</summary>')
+            content = content.replace('&lt;span class=&quot;apple-faq-question&quot;&gt;', '<span class="apple-faq-question">')
+            content = content.replace('&lt;/span&gt;', '</span>')
+            content = content.replace('&lt;div class=&quot;apple-faq-body&quot;&gt;', '<div class="apple-faq-body">')
+            content = content.replace('&lt;/div&gt;', '</div>')
+            content = content.replace('&lt;span class=&quot;apple-faq-icon&quot;&gt;', '<span class="apple-faq-icon">')
+            content = content.replace('&lt;section', '<section')
+            content = content.replace('&lt;/section&gt;', '</section>')
+            content = content.replace('&lt;div', '<div')
+            content = content.replace('&lt;/div&gt;', '</div>')
+            content = content.replace('&lt;button', '<button')
+            content = content.replace('&lt;/button&gt;', '</button>')
+            content = content.replace('&lt;span', '<span')
+            content = content.replace('&lt;input', '<input')
+            content = content.replace('&lt;table', '<table')
+            content = content.replace('&lt;/table&gt;', '</table>')
+            content = content.replace('&lt;thead&gt;', '<thead>')
+            content = content.replace('&lt;/thead&gt;', '</thead>')
+            content = content.replace('&lt;tbody&gt;', '<tbody>')
+            content = content.replace('&lt;/tbody&gt;', '</tbody>')
+            content = content.replace('&lt;tr&gt;', '<tr>')
+            content = content.replace('&lt;/tr&gt;', '</tr>')
+            content = content.replace('&lt;th&gt;', '<th>')
+            content = content.replace('&lt;/th&gt;', '</th>')
+            content = content.replace('&lt;td&gt;', '<td>')
+            content = content.replace('&lt;/td&gt;', '</td>')
+            content = content.replace('&lt;svg', '<svg')
+            content = content.replace('&lt;/svg&gt;', '</svg>')
+            content = content.replace('&lt;circle', '<circle')
+            content = content.replace('&lt;polyline', '<polyline')
+            content = content.replace('&lt;article', '<article')
+            content = content.replace('&lt;/article&gt;', '</article>')
+            content = content.replace('&lt;form', '<form')
+            content = content.replace('&lt;/form&gt;', '</form>')
+            content = content.replace('&lt;label', '<label')
+            content = content.replace('&lt;/label&gt;', '</label>')
 
-            # Direct Unescape for interactive HTML components
-            html = html.replace('&lt;details', '<details')
-            html = html.replace('&lt;/details&gt;', '</details>')
-            html = html.replace('&lt;summary', '<summary')
-            html = html.replace('&lt;/summary&gt;', '</summary>')
-            html = html.replace('&lt;svg', '<svg')
-            html = html.replace('&lt;/svg&gt;', '</svg>')
-            html = html.replace('&lt;polyline', '<polyline')
-            html = html.replace('&lt;/polyline&gt;', '</polyline>')
-            html = html.replace('&lt;path', '<path')
-            html = html.replace('&lt;/path&gt;', '</path>')
-            html = html.replace('&lt;circle', '<circle')
-            html = html.replace('&lt;/circle&gt;', '</circle>')
-            html = html.replace('&lt;line', '<line')
-            html = html.replace('&lt;/line&gt;', '</line>')
-            html = html.replace('&lt;rect', '<rect')
-            html = html.replace('&lt;/rect&gt;', '</rect>')
-            html = html.replace('&lt;span', '<span')
-            html = html.replace('&lt;/span&gt;', '</span>')
-            html = html.replace('&lt;div', '<div')
-            html = html.replace('&lt;/div&gt;', '</div>')
-            html = html.replace('&lt;button', '<button')
-            html = html.replace('&lt;/button&gt;', '</button>')
-            html = html.replace('&lt;h1', '<h1')
-            html = html.replace('&lt;/h1&gt;', '</h1>')
-            html = html.replace('&lt;p', '<p')
-            html = html.replace('&lt;/p&gt;', '</p>')
-            html = html.replace('&quot;&gt;', '">')
-            html = html.replace('&quot;', '"')
-            html = html.replace('&#x27;', "'")
-            html = html.replace('&#39;', "'")
+            # Remove double title suffixes from H1
+            content = re.sub(r' \| Banking On Quantum</h1>', '</h1>', content)
 
-            with open(fpath, "w", encoding="utf-8") as f:
-                f.write(html)
+            # Ensure CNAME is kept
+            with open(html_file, "w", encoding="utf-8") as f:
+                f.write(content)
 
-# 3. Sync static assets (favicon, images, islands, css)
-for target in ["public", "docs"]:
-    for asset in ["favicon.ico", "images", "islands", "styles.css"]:
-        src_path = os.path.join(repo_dir, asset)
-        dst_path = os.path.join(repo_dir, target, asset)
-        if os.path.isfile(src_path):
-            shutil.copyfile(src_path, dst_path)
-        elif os.path.isdir(src_path):
-            shutil.copytree(src_path, dst_path, dirs_exist_ok=True)
+    # Write CNAME
+    with open("docs/CNAME", "w", encoding="utf-8") as f:
+        f.write("bankingonquantum.com\n")
+    if os.path.exists("public"):
+        with open("public/CNAME", "w", encoding="utf-8") as f:
+            f.write("bankingonquantum.com\n")
 
-# 4. Write CNAME
-cname_domain = "bankingonquantum.com"
-for target in ["public", "docs"]:
-    with open(os.path.join(repo_dir, target, "CNAME"), "w", encoding="utf-8") as f:
-        f.write(cname_domain + "\n")
-with open(os.path.join(repo_dir, "CNAME"), "w", encoding="utf-8") as f:
-    f.write(cname_domain + "\n")
+    print("Post-build optimization and canonical URL fix completed for bankingonquantum.com.")
 
-print("Post-build optimization completed for bankingonquantum.github.io.")
+if __name__ == "__main__":
+    post_build()

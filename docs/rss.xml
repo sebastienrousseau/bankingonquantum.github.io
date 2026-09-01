@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Future of Banking and Finance | Banking On Quantum</title>
+    <title>The Migration Clock is Running. Here is Exactly Where it Stands.</title>
     <link>https://bankingonquantum.com/index.html</link>
-    <description>Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms.</description>
+    <description>Independent research, a board-ready readiness index, and open-source cryptography for banks, payment infrastructures and fintechs preparing for the post-quantum era.</description>
     <atom:link href="http://127.0.0.1:8000/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <item>
-      <title>About Mission & Quantum Research | Banking On Quantum</title>
+      <title>About Sebastien Rousseau & Banking On Quantum</title>
       <link>http://127.0.0.1:8000/about/</link>
-      <description>Discover the mission behind Banking On Quantum: securing the world&apos;s financial systems against quantum threats while harnessing quantum computation.</description>
+      <description>Background, credentials, and 19-year engineering history of Sebastien Rousseau in production financial cryptography.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/about/</guid>
       <pubDate></pubDate>
-      <author>The Banking On Quantum Team</author>
+      <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
@@ -34,6 +34,51 @@
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
+      <title>Advisory & Engineering Services: Scopes, Deliverables & Price Bands</title>
+      <link>http://127.0.0.1:8000/services/</link>
+      <description>Transparent advisory tiers and hands-on cryptographic engineering for banks, payment rails, and fintechs.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/services/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Bank Programmes & Case Studies: Quantum-Safe Deployments in Practice</title>
+      <link>http://127.0.0.1:8000/case-studies/</link>
+      <description>Public bank disclosures, pilot benchmarks, and anonymised production CBOM discovery engagements.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/case-studies/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Banks & Payment Infrastructures: The Quantum Architecture Blueprint</title>
+      <link>http://127.0.0.1:8000/banks/</link>
+      <description>End-to-end PQC migration blueprint for core banking ledgers, SWIFT MT/MX rails, hybrid TLS tunnels, and hardware security modules.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/banks/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Board & Risk Committee Briefing: Fiduciary Oversight in the Quantum Era</title>
+      <link>http://127.0.0.1:8000/boards/</link>
+      <description>Boardroom-level guidance for Non-Executive Directors, Chief Risk Officers, and Audit Committees on quantum cryptographic exposure.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/boards/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Fintech & Scale-ups: PQC for Third-Party Bank Due Diligence</title>
+      <link>http://127.0.0.1:8000/fintech/</link>
+      <description>How fintechs, payment processors, and scale-ups prepare for Tier-1 bank cryptographic security audits and DORA vendor compliance.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/fintech/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
       <title>Frequently Asked Questions | Banking On Quantum</title>
       <link>http://127.0.0.1:8000/faqs/</link>
       <description>Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.</description>
@@ -52,12 +97,48 @@
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
+      <title>Global PQC Regulatory Matrix: G7, US, EU, UK, Singapore & Israel</title>
+      <link>http://127.0.0.1:8000/banks/comply/</link>
+      <description>Comprehensive, regulator-by-regulator mapping of post-quantum cryptographic mandates, discovery expectations, and compliance deadlines.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/banks/comply/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Independent Vendor Landscape: Discovery, PQC Libraries, HSMs & PKI</title>
+      <link>http://127.0.0.1:8000/vendors/</link>
+      <description>Vendor-neutral analysis of commercial post-quantum software vendors, orchestration platforms, and hardware providers.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/vendors/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
       <title>Made with Static Site Generator (SSG) | Banking On Quantum</title>
       <link>http://127.0.0.1:8000/made-with-ssg/</link>
       <description>Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibility.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/made-with-ssg/</guid>
       <pubDate></pubDate>
       <author>The Banking On Quantum Team</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Open Source Engineering Toolkit: KyberLib, hsh & Cryptographic Utilities</title>
+      <link>http://127.0.0.1:8000/toolkit/</link>
+      <description>Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and financial messaging.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/toolkit/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>PQC Migration: Inventory, CBOM, Hybrid TLS & HSM Architecture</title>
+      <link>http://127.0.0.1:8000/banks/secure/</link>
+      <description>Deep technical guide on executing a post-quantum cryptographic migration across banking networks.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/banks/secure/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
@@ -70,12 +151,30 @@
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
+      <title>Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard</title>
+      <link>http://127.0.0.1:8000/scorecard/</link>
+      <description>Interactive self-assessment evaluating financial institution quantum readiness across 6 core governance and cryptographic dimensions.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/scorecard/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
       <title>Privacy Policy | Banking On Quantum</title>
       <link>http://127.0.0.1:8000/privacy/</link>
       <description>Privacy policy and data governance practices for Banking On Quantum.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/privacy/</guid>
       <pubDate></pubDate>
       <author>The Banking On Quantum Team</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Quantum Algorithms in Finance: Derivative Pricing, Risk & Optimization</title>
+      <link>http://127.0.0.1:8000/banks/compute/</link>
+      <description>Honest state of play on quantum computational finance: Monte Carlo acceleration, QAOA portfolio balancing, and HSBC/IBM benchmarks.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/banks/compute/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
@@ -97,6 +196,24 @@
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
+      <title>Research & Technical Essays: Quantum-Safe Banking Architecture</title>
+      <link>http://127.0.0.1:8000/research/</link>
+      <description>Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financial practitioners.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/research/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility</title>
+      <link>http://127.0.0.1:8000/trust/</link>
+      <description>Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/trust/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
       <title>Terms of Use | Banking On Quantum</title>
       <link>http://127.0.0.1:8000/terms/</link>
       <description>Terms of service and usage conditions for Banking On Quantum.</description>
@@ -112,6 +229,24 @@
       <guid isPermaLink="true">http://127.0.0.1:8000/thanks/</guid>
       <pubDate></pubDate>
       <author>The Banking On Quantum Team</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>The Quantum-Safe Briefing: Monthly Intelligence for Financial Leaders</title>
+      <link>http://127.0.0.1:8000/newsletter/</link>
+      <description>Monthly executive newsletter delivering regulator-accurate analysis, migration benchmarks, and cryptographic engineering updates.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/newsletter/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock</title>
+      <link>http://127.0.0.1:8000/clock/</link>
+      <description>Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/clock/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
   </channel>

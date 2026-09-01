@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "date": "2026-09-01",
+  "description": "End-to-end PQC migration blueprint for core banking ledgers, SWIFT MT/MX rails, hybrid TLS tunnels, and hardware security modules.",
+  "keywords": "quantum banking infrastructure, SWIFT PQC, core banking cryptography, hybrid TLS 1.3, bank HSM migration",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
+  "name": "Banking On Quantum",
+  "permalink": "https://bankingonquantum.com/banks/index.html",
+  "reading_time": 1,
+  "short_name": "bankingonquantum",
+  "title": "Banks & Payment Infrastructures: The Quantum Architecture Blueprint",
+  "word_count": 329
+}
