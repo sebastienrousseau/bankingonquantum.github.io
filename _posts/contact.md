@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Get in Touch | Banking On Quantum"
 description: "Contact the Banking On Quantum team for PQC readiness assessments, keynote speaking, and quantum algorithmic advisory."
 keywords: "contact banking on quantum, quantum finance consulting, PQC advisory"

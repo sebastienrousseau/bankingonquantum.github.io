@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Frequently Asked Questions | Banking On Quantum"
 description: "Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation."
 keywords: "frequently asked questions, banking on quantum FAQs, quantum banking technology"

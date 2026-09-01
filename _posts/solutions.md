@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Quantum Solutions by Banking Sector | Banking On Quantum"
 description: "Targeted quantum applications for Treasury, Capital Markets, Enterprise Cybersecurity, and Retail Payment Rails."
 keywords: "quantum banking solutions, quantum risk management, post-quantum payments, quantum capital markets"

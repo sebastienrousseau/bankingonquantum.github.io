@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Terms of Use | Banking On Quantum"
 description: "Terms of service and usage conditions for Banking On Quantum."
 keywords: "terms of use, terms of service, banking on quantum"

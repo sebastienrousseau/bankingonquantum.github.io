@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Privacy Policy | Banking On Quantum"
 description: "Privacy policy and data governance practices for Banking On Quantum."
 keywords: "privacy policy, data governance, banking on quantum privacy"

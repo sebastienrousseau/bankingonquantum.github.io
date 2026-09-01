@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "The Future of Banking and Finance | Banking On Quantum"
 description: "Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms."
 keywords: "quantum computing banking, post-quantum cryptography, PQC finance, quantum key distribution, quantum risk analysis, financial cryptography"

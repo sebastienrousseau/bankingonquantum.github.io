@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Quantum Architecture & Cryptographic Agility | Banking On Quantum"
 description: "Architectural blueprint for post-quantum cryptographic migration, quantum algorithm integration, and hybrid quantum-classical computing."
 keywords: "post-quantum cryptography architecture, quantum key distribution, ML-KEM, ML-DSA, financial quantum computing"

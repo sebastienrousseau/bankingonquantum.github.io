@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Advisory & Engagement Tiers | Banking On Quantum"
 description: "Engagement tiers for financial institutions, from open quantum research to PQC cryptographic audits and enterprise co-development."
 keywords: "quantum banking advisory, PQC consulting, quantum risk audit"

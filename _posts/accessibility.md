@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Accessibility Statement | Banking On Quantum"
 description: "Accessibility conformance standards for Banking On Quantum, adhering to WCAG 2.2 Level AAA standards."
 keywords: "accessibility statement, WCAG 2.2 AAA, banking on quantum accessibility"

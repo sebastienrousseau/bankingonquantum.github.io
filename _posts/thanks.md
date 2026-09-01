@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Thank You | Banking On Quantum"
 description: "Thank you for reaching out to Banking On Quantum."
 keywords: "thank you, message received, banking on quantum"
