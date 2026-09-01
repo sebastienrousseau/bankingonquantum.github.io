@@ -15,7 +15,8 @@ help:
 	@echo "  make clean      - Remove build artifacts and temporary files"
 
 build:
-	@rm -rf public docs/tags
+	@rm -rf public
+	@mkdir -p docs
 	@if [ -x "/Users/seb/Code/Public/Rust/static-site-generator/target/release/ssg" ]; then \
 		/Users/seb/Code/Public/Rust/static-site-generator/target/release/ssg build --content _posts --template _layouts --output public; \
 	elif command -v ssg >/dev/null 2>&1; then \
@@ -25,7 +26,8 @@ build:
 	elif [ -f build.sh ]; then \
 		bash build.sh; \
 	fi
-	@cp -R public/* docs/ 2>/dev/null || true
+	@rm -rf docs/*
+	@cp -R public/* docs/
 	@/usr/bin/python3 scripts/post-build.py
 
 audit: contrast validate

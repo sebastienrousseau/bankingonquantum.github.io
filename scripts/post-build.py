@@ -1,29 +1,36 @@
-import os, glob, re, json, html
+import os, glob, re, json, html, shutil
 
 def post_build():
     output_dir = "public"
     docs_dir = "docs"
     base_url = "https://bankingonquantum.com"
 
-    # 1. Generate public/api/clock.json
-    api_dir = os.path.join(output_dir, "api")
-    os.makedirs(api_dir, exist_ok=True)
+    # Ensure favicon.ico exists
+    if os.path.exists("favicon.ico"):
+        shutil.copy("favicon.ico", os.path.join(output_dir, "favicon.ico"))
+        shutil.copy("favicon.ico", os.path.join(docs_dir, "favicon.ico"))
+
+    # 1. Generate public/api/clock.json and docs/api/clock.json
     clock_data = {
         "title": "Banking On Quantum Deadline Tracker",
         "last_verified": "2026-09-01",
         "deadlines": [
-            {"date": "2026-09-21", "jurisdiction": "NIST CMVP", "title": "FIPS 140-2 modules to Historical List", "binding": True, "source": "https://csrc.nist.gov"},
-            {"date": "2026-12-31", "jurisdiction": "European Union", "title": "Member-state PQC migration strategies & pilots", "binding": False, "source": "https://digital-strategy.ec.europa.eu"},
-            {"date": "2028-12-31", "jurisdiction": "United Kingdom", "title": "NCSC Cryptographic Discovery Milestone", "binding": True, "source": "https://www.ncsc.gov.uk"},
+            {"date": "2026-09-21", "jurisdiction": "NIST CMVP", "title": "FIPS 140-2 modules to Historical List", "binding": True, "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/fips-140-2-transition"},
+            {"date": "2026-12-31", "jurisdiction": "European Union", "title": "Member-state PQC migration strategies & pilots", "binding": False, "source": "https://digital-strategy.ec.europa.eu/en/library/commission-recommendation-post-quantum-cryptography"},
+            {"date": "2028-12-31", "jurisdiction": "United Kingdom", "title": "NCSC Cryptographic Discovery Milestone", "binding": False, "source": "https://www.ncsc.gov.uk/whitepaper/next-generation-cryptography-quantum-readiness"},
             {"date": "2029-12-31", "jurisdiction": "Google", "title": "100% internal PQC encryption target", "binding": False, "source": "https://security.googleblog.com"},
-            {"date": "2030-12-31", "jurisdiction": "United States", "title": "Federal Key Establishment Migration (EO 14409)", "binding": True, "source": "https://www.whitehouse.gov"},
-            {"date": "2030-12-31", "jurisdiction": "European Union", "title": "High-risk critical financial infrastructure PQC transition", "binding": True, "source": "https://digital-strategy.ec.europa.eu"},
-            {"date": "2031-12-31", "jurisdiction": "United States", "title": "Federal Digital Signature Migration Complete", "binding": True, "source": "https://www.whitehouse.gov"},
-            {"date": "2035-12-31", "jurisdiction": "G7 Cyber Expert Group", "title": "Full deprecation of legacy asymmetric algorithms (RSA/ECC)", "binding": False, "source": "https://home.treasury.gov"}
+            {"date": "2030-12-31", "jurisdiction": "United States", "title": "Federal Key Establishment Migration (EO)", "binding": True, "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/"},
+            {"date": "2030-12-31", "jurisdiction": "European Union", "title": "High-risk critical financial infrastructure PQC transition target", "binding": False, "source": "https://digital-strategy.ec.europa.eu"},
+            {"date": "2031-12-31", "jurisdiction": "United States", "title": "Federal Digital Signature Migration Complete", "binding": True, "source": "https://www.whitehouse.gov/omb/management/"},
+            {"date": "2035-12-31", "jurisdiction": "G7 Cyber Expert Group", "title": "Target deprecation horizon for legacy asymmetric algorithms (RSA/ECC)", "binding": False, "source": "https://home.treasury.gov/news/press-releases/jy2813"}
         ]
     }
-    with open(os.path.join(api_dir, "clock.json"), "w", encoding="utf-8") as f:
-        json.dump(clock_data, f, indent=2)
+
+    for d in [output_dir, docs_dir]:
+        api_dir = os.path.join(d, "api")
+        os.makedirs(api_dir, exist_ok=True)
+        with open(os.path.join(api_dir, "clock.json"), "w", encoding="utf-8") as f:
+            json.dump(clock_data, f, indent=2)
 
     # 2. Generate llms.txt
     llms_txt_content = f"""# Banking On Quantum
@@ -49,8 +56,9 @@ def post_build():
 - About Sebastien Rousseau: {base_url}/about/index.html
 - The Quantum-Safe Briefing: {base_url}/newsletter/index.html
 """
-    with open(os.path.join(output_dir, "llms.txt"), "w", encoding="utf-8") as f:
-        f.write(llms_txt_content)
+    for d in [output_dir, docs_dir]:
+        with open(os.path.join(d, "llms.txt"), "w", encoding="utf-8") as f:
+            f.write(llms_txt_content)
 
     # 3. Clean and fix HTML files
     for base_path in [output_dir, docs_dir]:
@@ -77,15 +85,14 @@ def post_build():
             # Remove double title suffixes from H1
             content = re.sub(r' \| Banking On Quantum</h1>', '</h1>', content)
 
-            # Ensure CNAME is kept
             with open(html_file, "w", encoding="utf-8") as f:
                 f.write(content)
 
     # Write CNAME
-    with open("docs/CNAME", "w", encoding="utf-8") as f:
+    with open(os.path.join(docs_dir, "CNAME"), "w", encoding="utf-8") as f:
         f.write("bankingonquantum.com\n")
-    if os.path.exists("public"):
-        with open("public/CNAME", "w", encoding="utf-8") as f:
+    if os.path.exists(output_dir):
+        with open(os.path.join(output_dir, "CNAME"), "w", encoding="utf-8") as f:
             f.write("bankingonquantum.com\n")
 
     print("Post-build optimization and canonical URL fix completed for bankingonquantum.com.")
