@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "About Mission & Quantum Research | Banking On Quantum"
 description: "Discover the mission behind Banking On Quantum: securing the world's financial systems against quantum threats while harnessing quantum computation."
 keywords: "about banking on quantum, quantum finance research, post-quantum security mission"

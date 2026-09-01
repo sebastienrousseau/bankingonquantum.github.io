@@ -1,6 +1,7 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 title: "Made with Static Site Generator (SSG) | Banking On Quantum"
 description: "Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibility."
 keywords: "made with ssg, static site generator, rust ssg, kinetic theme"

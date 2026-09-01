@@ -12,6 +12,7 @@
   "language": "en-GB",
   "layout": "index",
   "lead": "Quantum computing introduces revolutionary opportunities in risk modeling and portfolio optimization, while rendering legacy RSA and ECC encryption obsolete. Discover how Banking On Quantum provides financial institutions with post-quantum cryptography (PQC) and quantum algorithms.",
+  "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
   "name": "Banking On Quantum",
   "nav_home": true,
   "permalink": "https://bankingonquantum.com/index.html",
