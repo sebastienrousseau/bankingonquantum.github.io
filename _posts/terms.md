@@ -10,8 +10,8 @@ date: "2026-09-01"
 language: "en-GB"
 layout: "page"
 permalink: "https://bankingonquantum.com/terms/index.html"
-banner: "https://cloudcdn.pro/bankingonquantum/v1/github/github-bankingonquantum.svg"
-banner_alt: "Banking On Quantum — Post-Quantum Cryptography and Quantum Computing in Finance"
+banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp"
+banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator"
 ---
 
 # Terms of Use
