@@ -1,23 +1,49 @@
 /* ==========================================================================
-   Àkàndé Voice Assistant Design System - Apple HIG Minimalist Precision
+   Banking On Quantum — Design System Tokens (Apple Benchmark Disciplines)
    ========================================================================== */
 
 :root {
+  /* 5.1 Typographic Scale */
+  --fs-display: clamp(2.2rem, 3.8vw, 3.2rem);
+  --fs-section: clamp(1.5rem, 2.4vw, 2.0rem);
+  --fs-subsection: 1.25rem;
+  --fs-body: 1.0625rem;
+  --fs-caption: 0.875rem;
+  --fs-stat: clamp(1.85rem, 3.2vw, 2.5rem);
+
+  --lh-display: 1.15;
+  --lh-section: 1.25;
+  --lh-body: 1.6;
+  --lh-caption: 1.4;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  /* 5.2 Spacing Scale (8px base) */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-12: 6rem;    /* 96px */
+
+  /* 5.3 Colour & AAA Neutrals (Light Mode) */
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   --bg-canvas: #ffffff;
   --bg-surface: #ffffff;
-  --bg-subtle: #f3f4f6;
-  --bg-glass: rgba(255, 255, 255, 0.92);
-  --text-headline: #111827;
-  --text-body: #111827;
-  --text-muted: #374151;
+  --bg-subtle: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.94);
+  --text-headline: #0f172a;
+  --text-body: #0f172a;
+  --text-muted: #334155;
   --cl-primary: #0056b3;
   --cl-primary-hover: #004494;
   --border-hairline: rgba(0, 0, 0, 0.12);
   --border-subtle: rgba(0, 0, 0, 0.22);
   --radius-pill: 980px;
-  --radius-card: 20px;
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --radius-card: 16px;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04);
   --container-max: 68rem;
 }
 
@@ -26,15 +52,15 @@
     --bg-canvas: #090d16;
     --bg-surface: #111827;
     --bg-subtle: #1f2937;
-    --bg-glass: rgba(17, 24, 39, 0.92);
-    --text-headline: #f9fafb;
-    --text-body: #f9fafb;
-    --text-muted: #d1d5db;
+    --bg-glass: rgba(9, 13, 22, 0.94);
+    --text-headline: #f8fafc;
+    --text-body: #f8fafc;
+    --text-muted: #cbd5e1;
     --cl-primary: #3b82f6;
     --cl-primary-hover: #60a5fa;
     --border-hairline: rgba(255, 255, 255, 0.15);
     --border-subtle: rgba(255, 255, 255, 0.25);
-    --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.4);
+    --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -42,31 +68,32 @@
   --bg-canvas: #090d16;
   --bg-surface: #111827;
   --bg-subtle: #1f2937;
-  --bg-glass: rgba(17, 24, 39, 0.92);
-  --text-headline: #f9fafb;
-  --text-body: #f9fafb;
-  --text-muted: #d1d5db;
+  --bg-glass: rgba(9, 13, 22, 0.94);
+  --text-headline: #f8fafc;
+  --text-body: #f8fafc;
+  --text-muted: #cbd5e1;
   --cl-primary: #3b82f6;
   --cl-primary-hover: #60a5fa;
   --border-hairline: rgba(255, 255, 255, 0.15);
   --border-subtle: rgba(255, 255, 255, 0.25);
-  --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 :root[data-theme-mode="light"] {
   --bg-canvas: #ffffff;
   --bg-surface: #ffffff;
-  --bg-subtle: #f3f4f6;
-  --bg-glass: rgba(255, 255, 255, 0.92);
-  --text-headline: #111827;
-  --text-body: #111827;
-  --text-muted: #374151;
+  --bg-subtle: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.94);
+  --text-headline: #0f172a;
+  --text-body: #0f172a;
+  --text-muted: #334155;
   --cl-primary: #0056b3;
   --cl-primary-hover: #004494;
   --border-hairline: rgba(0, 0, 0, 0.12);
   --border-subtle: rgba(0, 0, 0, 0.22);
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
+
 
 *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
 
@@ -1699,4 +1726,143 @@ h1, h2, h3, h4, h5, h6, .editorial-heading {
   font-weight: 800;
   font-family: var(--font-mono);
   color: var(--cl-primary);
+}
+
+/* 5.4 Unified Card Geometry & Bento System */
+.bento-card, .clock-card, .service-card, .article-card, .stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.bento-card:hover, .clock-card:hover, .article-card:hover, .service-card:hover {
+  border-color: var(--border-subtle);
+}
+
+/* 5.5 Reusable Stat Component (Apple Benchmark Standard) */
+.stat-card {
+  text-align: left;
+  padding: var(--space-3);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-card);
+}
+
+.stat-figure {
+  font-size: var(--fs-stat);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  color: var(--cl-primary);
+  margin-bottom: var(--space-1);
+}
+
+.stat-label {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  color: var(--text-headline);
+  line-height: var(--lh-caption);
+  margin-bottom: var(--space-1);
+}
+
+.stat-source {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+  line-height: var(--lh-caption);
+}
+
+.stat-source a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.stat-source a:hover {
+  color: var(--cl-primary);
+}
+
+/* 5.6 CTA Hierarchy */
+.btn-primary-quantum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  background-color: var(--cl-primary);
+  color: #ffffff !important;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary-quantum:hover {
+  background-color: var(--cl-primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary-quantum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  background-color: var(--bg-surface);
+  color: var(--text-headline) !important;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  border: 1px solid var(--border-hairline);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-quantum:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--border-subtle);
+}
+
+/* Terminal & Architecture Visual Container (Replaces Stock Dilution Fridge) */
+.hero-visual-terminal {
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: var(--space-3);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+  text-align: left;
+  overflow-x: auto;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-red { background: #ef4444; }
+.dot-yellow { background: #eab308; }
+.dot-green { background: #22c55e; }
+.terminal-title {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  margin-left: 6px;
 }
