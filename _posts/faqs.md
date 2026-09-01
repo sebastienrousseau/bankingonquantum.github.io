@@ -1,17 +1,17 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
-logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
-title: "Frequently Asked Questions | Banking On Quantum"
-description: "Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation."
-keywords: "frequently asked questions, banking on quantum FAQs, quantum banking technology"
-author: "The Banking On Quantum Team"
+title: "Frequently Asked Questions: Quantum-Safe Banking & Regulation"
+description: "Accurate, practitioner-verified answers regarding post-quantum cryptography timelines, regulatory mandates, and financial algorithms."
+keywords: "PQC FAQs, quantum banking questions, DORA crypto agility FAQ, NIST FIPS 203 FAQ"
+author: "Sebastien Rousseau"
 date: "2026-09-01"
 language: "en-GB"
-layout: "page"
+layout: "faqs"
 permalink: "https://bankingonquantum.com/faqs/index.html"
+logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp"
-banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator"
+banner_alt: "Banking On Quantum"
 ---
 
 <div class="apple-faq-section">
@@ -24,24 +24,13 @@ banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilutio
 </div>
 
 <div class="apple-faq-list">
-
-<details class="apple-faq-item">
-<summary class="apple-faq-summary">
-<span class="apple-faq-question">Do quantum computers pose an immediate threat to financial encryption?</span>
-<span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</summary>
-<div class="apple-faq-body">
-<p>Yes. Although cryptanalytically relevant quantum computers (CRQCs) capable of breaking 2048-bit RSA and ECC are estimated to arrive within the next 5 to 8 years, adversarial entities are actively harvesting encrypted banking communications, ledger payloads, and wire transmissions today. Transitioning to Post-Quantum Cryptography (PQC) is required immediately to prevent retroactive decryption.</p>
-</div>
-</details>
-
 <details class="apple-faq-item">
 <summary class="apple-faq-summary">
 <span class="apple-faq-question">What is the "Harvest Now, Decrypt Later" (HNDL) attack vector?</span>
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>In a Harvest Now, Decrypt Later attack, state actors and cybercriminals record and store ciphertext passing through global financial networks. Even though they cannot decrypt it today with classical computers, the data will be completely decipherable once a quantum computer executes Shor's algorithm. For financial contracts, trade secrets, and sovereign identities with long confidentiality lifespans (10–30 years), the risk is present right now.</p>
+<p>Adversaries are actively intercepting and storing encrypted financial communications, wire transactions, and sensitive customer data today. When Cryptanalytically Relevant Quantum Computers (CRQCs) become operational, this stored ciphertext can be decrypted retroactively. Assets with 10–30 year confidentiality requirements (such as long-dated credit agreements, trade secrets, and institutional ledgers) require post-quantum protection today.</p>
 </div>
 </details>
 
@@ -51,59 +40,68 @@ banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilutio
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p><strong>Post-Quantum Cryptography (PQC)</strong> is mathematical encryption that runs on standard classical servers, cloud environments, and existing internet protocols, relying on hard problems like lattice math that quantum computers cannot solve. <strong>Quantum Key Distribution (QKD)</strong> is physical-layer security using photons over dedicated dark-fibre lines to detect eavesdropping. PQC is deployable globally on existing infrastructure, whereas QKD provides physical-layer assurance between core inter-bank data centres.</p>
+<p><strong>Post-Quantum Cryptography (PQC)</strong> relies on mathematical problems (such as lattice-based cryptography in NIST FIPS 203 ML-KEM) running on standard servers, network routers, and existing internet protocols. <strong>Quantum Key Distribution (QKD)</strong> uses quantum physics (photons) over dedicated optical fibre lines to exchange encryption keys. PQC operates globally over existing infrastructure; QKD provides physical-layer assurance between core inter-bank data centres.</p>
 </div>
 </details>
 
 <details class="apple-faq-item">
 <summary class="apple-faq-summary">
-<span class="apple-faq-question">What are the primary NIST-standardized algorithms adopted in banking?</span>
+<span class="apple-faq-question">Are regulators mandating PQC migrations with fines today?</span>
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>The National Institute of Standards and Technology (NIST) finalized the primary post-quantum standards in 2024: <strong>FIPS 203 (ML-KEM)</strong> for key encapsulation and session establishment, <strong>FIPS 204 (ML-DSA)</strong> for primary digital signatures, and <strong>FIPS 205 (SLH-DSA)</strong> for stateless hash-based backup signatures. Banking On Quantum integrates these standards into existing TLS 1.3 and HSM pipelines.</p>
+<p>No. Neither the US SEC/Fed nor the European Central Bank has issued a binding private-sector PQC penalty mandate yet. However, <strong>DORA Article 9</strong> enforces cryptographic agility in Europe, the <strong>Bank of Israel</strong> requires transition roadmaps, and the <strong>G7 Cyber Expert Group</strong> has established coordinated transition expectations. Claims of active fines are vendor marketing overreach.</p>
 </div>
 </details>
 
 <details class="apple-faq-item">
 <summary class="apple-faq-summary">
-<span class="apple-faq-question">What is the global regulatory timeline for mandatory PQC migration?</span>
+<span class="apple-faq-question">Why does the NIST FIPS 140-2 sunset matter on 21 September 2026?</span>
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>Financial regulators including the US Federal Reserve, European Banking Authority (EBA), Bank of England (BoE), and Monetary Authority of Singapore (MAS) have mandated cryptographic discovery and migration roadmaps beginning in 2025. Full deprecation of legacy RSA and ECC keys in core payment rails and SWIFT messaging is targeted between 2030 and 2033.</p>
+<p>On 21 September 2026, the NIST Cryptographic Module Validation Program (CMVP) moves all remaining FIPS 140-2 certificates to the Historical list. Banking Hardware Security Modules (HSMs) must transition to FIPS 140-3 compliance to maintain procurement and regulatory validation.</p>
 </div>
 </details>
 
 <details class="apple-faq-item">
 <summary class="apple-faq-summary">
-<span class="apple-faq-question">How does quantum computing accelerate risk modeling and derivative pricing?</span>
+<span class="apple-faq-question">Can quantum algorithms actually speed up derivative pricing on today's hardware?</span>
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>Quantum Amplitude Estimation (QAE) provides quadratic speedups over classical Monte Carlo simulations. This allows financial institutions to compute Value-at-Risk (VaR), Credit Valuation Adjustment (CVA), and multi-asset derivative pricing in milliseconds rather than hours, unlocking real-time intraday risk management.</p>
+<p>No bank currently runs a live production trading system on pure quantum hardware. However, hybrid quantum-classical algorithms (such as HSBC/IBM's 2025 bond-fill research) demonstrate up to 34% accuracy improvements in predictive modeling on noisy quantum processors with classical co-processing.</p>
 </div>
 </details>
 
 <details class="apple-faq-item">
 <summary class="apple-faq-summary">
-<span class="apple-faq-question">Can Banking On Quantum architectures be deployed in sovereign on-premises environments?</span>
+<span class="apple-faq-question">What is a Cryptographic Bill of Materials (CBOM)?</span>
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>Yes. All cryptographic algorithms, cryptographic bill of materials (CBOM) scanning engines, and quantum simulation kernels support air-gapped on-premises data centres, sovereign private clouds, and FIPS 140-3 Level 4 Hardware Security Modules (HSMs).</p>
+<p>A CBOM is a structured, machine-readable inventory (typically in CycloneDX format) that details every cryptographic algorithm, key length, certificate, protocol, and library deployed across an institution's software supply chain and network infrastructure.</p>
 </div>
 </details>
 
 <details class="apple-faq-item">
 <summary class="apple-faq-summary">
-<span class="apple-faq-question">How can our institution initiate a cryptographic inventory and readiness assessment?</span>
+<span class="apple-faq-question">Does Banking On Quantum accept vendor sponsorship or fees?</span>
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>You can schedule an engagement via our <a href="/contact/index.html">Contact Page</a>. Our team conducts automated network discovery, generates your Cryptographic Bill of Materials (CBOM), and establishes a prioritized algorithmic migration roadmap tailored to your institution's compliance requirements.</p>
+<p>No. Banking On Quantum is completely vendor-neutral and independent. No vendor pays to appear in our research, vendor landscape maps, or readiness scorecards.</p>
 </div>
 </details>
 
+<details class="apple-faq-item">
+<summary class="apple-faq-summary">
+<span class="apple-faq-question">How can our institution schedule a confidential briefing?</span>
+<span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+</summary>
+<div class="apple-faq-body">
+<p>You can book an exploratory 30-minute discovery call directly via our <a href="/contact/index.html">Contact Page</a> or by requesting an executive briefing pack for your risk committee.</p>
+</div>
+</details>
 </div>
 </div>

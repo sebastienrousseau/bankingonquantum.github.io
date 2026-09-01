@@ -11,7 +11,7 @@ layout: "page"
 permalink: "https://bankingonquantum.com/scorecard/index.html"
 logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp"
-banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator"
+banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure"
 ---
 
 # Post-Quantum Banking Resilience Index (PQ-BRI)
@@ -103,7 +103,7 @@ Adjust the sliders below to reflect your institution's current operational postu
 </div>
 
 <div class="card-surface p-4 text-center my-4">
-<h3 class="h4 fw-bold text-headline mb-2">Export Your Formal Assessment Report</h3>
-<p class="text-muted mb-3">Receive a detailed board-level PDF export with full dimension breakdowns and regulator gap analysis.</p>
-<a href="/contact/index.html" class="btn-primary-quantum">Request Formal Assessment Report →</a>
+<h3 class="h4 fw-bold text-headline mb-2">Request the Formal Assessment Report (PDF)</h3>
+<p class="text-muted mb-3">Receive a detailed board-level PDF assessment with full dimension breakdowns and regulator gap analysis.</p>
+<a href="/contact/index.html" class="btn-primary-quantum">Request Assessment Report (PDF) →</a>
 </div>

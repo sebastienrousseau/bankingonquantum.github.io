@@ -1,18 +1,16 @@
 {
-  "author": "The Banking On Quantum Team",
+  "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum",
   "date": "2026-09-01",
-  "description": "Architectural blueprint for post-quantum cryptographic migration, quantum algorithm integration, and hybrid quantum-classical computing.",
-  "keywords": "post-quantum cryptography architecture, quantum key distribution, ML-KEM, ML-DSA, financial quantum computing",
+  "description": "Redirecting to Banks & Payment Infrastructures...",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
   "name": "Banking On Quantum",
-  "nav_platform": true,
   "permalink": "https://bankingonquantum.com/platform/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "Quantum Architecture & Cryptographic Agility | Banking On Quantum",
-  "word_count": 134
+  "title": "Banks & Payment Infrastructures",
+  "word_count": 11
 }

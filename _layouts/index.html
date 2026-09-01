@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>{{title}}</title>
+  <title>{{title}} | Banking On Quantum</title>
   
-  <meta name="author" content="Banking On Quantum Team">
+  <meta name="author" content="Sebastien Rousseau">
   <meta name="description" content="{{description}}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; connect-src 'self' https://formspree.io; img-src 'self' data: https: https://cloudcdn.pro; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self'; form-action 'self' https://formspree.io;" />
@@ -14,21 +14,21 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Banking On Quantum">
   <meta property="og:locale" content="en_GB">
-  <meta property="og:title" content="{{title}}">
+  <meta property="og:title" content="{{title}} | Banking On Quantum">
   <meta property="og:description" content="{{description}}">
   <meta property="og:image" content="{{banner}}">
-  <meta property="og:url" content="{{url}}">
+  <meta property="og:url" content="https://bankingonquantum.com/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:title" content="{{title}} | Banking On Quantum">
   <meta name="twitter:description" content="{{description}}">
   <meta name="twitter:image" content="{{banner}}">
 
-  <link rel="alternate" href="{{url}}" hreflang="en" />
-  <link rel="canonical" href="{{url}}" />
+  <link rel="alternate" href="https://bankingonquantum.com/" hreflang="en" />
+  <link rel="canonical" href="https://bankingonquantum.com/" />
   <link rel="icon" type="image/svg+xml" href="{{logo}}" />
-  <link rel="icon" type="image/x-icon" href="{{icon}}" sizes="16x16 32x32" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32" />
   <link rel="apple-touch-icon" href="https://cloudcdn.pro/cmn/v1/icons/192x192.png" sizes="192x192" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -40,12 +40,12 @@
   <nav class="navbar" aria-label="Main Navigation">
     <div class="navbar-container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/index.html" aria-label="Banking On Quantum Homepage">
+        <a class="navbar-brand" href="/" aria-label="Banking On Quantum Homepage">
           <img src="https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg" alt="Banking On Quantum Logo" width="32" height="32" class="d-inline-block" />
           <span class="navbar-brand-text">Banking On Quantum</span>
         </a>
 
-        <!-- Mobile actions (Search + Theme + Toggle) -->
+        <!-- Mobile actions -->
         <div class="navbar-actions d-flex d-lg-none">
           <button type="button" class="btn search-trigger" id="searchTriggerMobile" aria-label="Search">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -69,18 +69,7 @@
         </div>
       </div>
 
-      <!-- Links menu -->
-      <div class="navbar-menu" id="navbarMenu">
-        <ul class="nav-list">
-<li class="nav-item"><a class="nav-link" href="/platform/index.html">Platform</a></li>
-<li class="nav-item"><a class="nav-link" href="/solutions/index.html">Solutions</a></li>
-<li class="nav-item"><a class="nav-link" href="/pricing/index.html">Pricing</a></li>
-<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="/faqs/index.html">FAQs</a></li>
-<li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/contact/index.html">Get in touch</a></li>
-
-        </ul>
-      </div>
+      <div class="navbar-menu" id="navbarMenu"><ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/banks/index.html">Banks</a></li><li class="nav-item"><a class="nav-link" href="/fintech/index.html">Fintech</a></li><li class="nav-item"><a class="nav-link" href="/boards/index.html">Boards</a></li><li class="nav-item"><a class="nav-link" href="/clock/index.html">Clock</a></li><li class="nav-item"><a class="nav-link" href="/scorecard/index.html">Scorecard</a></li><li class="nav-item"><a class="nav-link" href="/research/index.html">Research</a></li><li class="nav-item"><a class="nav-link" href="/toolkit/index.html">Toolkit</a></li><li class="nav-item"><a class="nav-link" href="/services/index.html">Services</a></li><li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/contact/index.html">Get in touch</a></li></ul></div>
 
       <!-- Desktop actions -->
       <div class="navbar-actions d-none d-lg-flex">
@@ -105,34 +94,17 @@
     </div>
   </nav>
 
-  <!-- Hero Banner (Isolated to Index) -->
-  <header class="hero-banner-container">
-    <img src="{{banner}}" alt="{{banner_alt}}" class="hero-banner-img" width="1200" height="480" />
-  </header>
-
-  <!-- Main Content -->
+  <!-- Clean Main Content (No duplicated header / No double H1) -->
   <main id="main" class="content-wrapper" aria-label="Main content">
-    <header class="page-header text-center mb-4">
-      <h1 class="display-5 fw-bold text-headline mb-3">{{title}}</h1>
-      <p class="fs-5 text-muted">{{description}}</p>
-    </header>
-
-    <div class="card-surface">
-      <div class="content-body prose">
-        {{content}}
-      </div>
-    </div>
-
+    {{content}}
   </main>
 
-  <!-- Top Anchor -->
   <div class="text-center py-4">
     <a href="#main" class="btn btn-outline-dark" aria-label="Back to the top">Back to the top ↑</a>
   </div>
 
   <footer><div class="container-xxl"><div class="row g-4"><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Architectures & Hubs</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/banks/index.html">Banks & Infrastructure</a></li><li><a href="/fintech/index.html">Fintech & Due Diligence</a></li><li><a href="/boards/index.html">Boards & Risk Committees</a></li><li><a href="/clock/index.html">Deadline Tracker Clock</a></li><li><a href="/scorecard/index.html">Resilience Index Scorecard</a></li></ul></div><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Research & Tooling</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/research/index.html">Signed Research Essays</a></li><li><a href="/toolkit/index.html">Open Source Toolkit</a></li><li><a href="/vendors/index.html">Vendor Landscape Map</a></li><li><a href="/case-studies/index.html">Case Studies & Programmes</a></li><li><a href="/services/index.html">Advisory & Engineering</a></li></ul></div><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Authority & Trust</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/about/index.html">About Sebastien Rousseau</a></li><li><a href="/trust/index.html">Security Posture & Trust</a></li><li><a href="/faqs/index.html">Questions & Answers</a></li><li><a href="/newsletter/index.html">The Quantum-Safe Briefing</a></li><li><a href="/made-with-ssg/index.html">Made with SSG</a></li></ul></div><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Legal & Discovery</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/accessibility/index.html">Accessibility (WCAG AAA)</a></li><li><a href="/terms/index.html">Terms of Use</a></li><li><a href="/privacy/index.html">Privacy Policy</a></li><li><a href="/rss.xml">RSS Feed</a></li><li><a href="/atom.xml">Atom Feed</a></li><li><a href="/feed.json">JSON Feed</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div><div class="text-center pt-4 mt-4 border-top text-muted small">© 2026 Banking On Quantum. Independent reference desk for quantum-era finance. All research Sigstore-signed.</div></div></footer>
 
-  <!-- Search Modal Dialog -->
   <div id="searchModal" class="search-modal" role="dialog" aria-modal="true" aria-label="Site Search">
     <div class="search-backdrop"></div>
     <div class="search-dialog">

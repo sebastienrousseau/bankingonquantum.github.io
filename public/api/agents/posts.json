@@ -6,7 +6,7 @@
     "tags": [],
     "title": "About Sebastien Rousseau & Banking On Quantum",
     "url": "http://127.0.0.1:8000/about/",
-    "wordCount": 187
+    "wordCount": 190
   },
   {
     "date": "2026-09-01",
@@ -64,12 +64,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Public bank disclosures, pilot benchmarks, and anonymised production CBOM discovery engagements.",
+    "description": "Public bank disclosures and research benchmarks across algorithmic trading, risk simulation, and optical quantum key distribution.",
     "locale": "en-GB",
     "tags": [],
-    "title": "Bank Programmes & Case Studies: Quantum-Safe Deployments in Practice",
+    "title": "Bank Programmes & Case Studies: Quantum Deployments in Practice",
     "url": "http://127.0.0.1:8000/case-studies/",
-    "wordCount": 249
+    "wordCount": 166
   },
   {
     "date": "2026-09-01",
@@ -78,7 +78,7 @@
     "tags": [],
     "title": "The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock",
     "url": "http://127.0.0.1:8000/clock/",
-    "wordCount": 346
+    "wordCount": 353
   },
   {
     "date": "2026-09-01",
@@ -91,12 +91,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.",
+    "description": "Accurate, practitioner-verified answers regarding post-quantum cryptography timelines, regulatory mandates, and financial algorithms.",
     "locale": "en-GB",
     "tags": [],
-    "title": "Frequently Asked Questions | Banking On Quantum",
+    "title": "Frequently Asked Questions: Quantum-Safe Banking & Regulation",
     "url": "http://127.0.0.1:8000/faqs/",
-    "wordCount": 722
+    "wordCount": 649
   },
   {
     "date": "2026-09-01",
@@ -114,7 +114,7 @@
     "tags": [],
     "title": "The Migration Clock is Running. Here is Exactly Where it Stands.",
     "url": "http://127.0.0.1:8000/index.html",
-    "wordCount": 2768
+    "wordCount": 2762
   },
   {
     "date": "2026-09-01",
@@ -136,21 +136,21 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Architectural blueprint for post-quantum cryptographic migration, quantum algorithm integration, and hybrid quantum-classical computing.",
+    "description": "Redirecting to Banks & Payment Infrastructures...",
     "locale": "en-GB",
     "tags": [],
-    "title": "Quantum Architecture & Cryptographic Agility | Banking On Quantum",
+    "title": "Banks & Payment Infrastructures",
     "url": "http://127.0.0.1:8000/platform/",
-    "wordCount": 134
+    "wordCount": 11
   },
   {
     "date": "2026-09-01",
-    "description": "Engagement tiers for financial institutions, from open quantum research to PQC cryptographic audits and enterprise co-development.",
+    "description": "Redirecting to Advisory Services & Price Bands...",
     "locale": "en-GB",
     "tags": [],
-    "title": "Advisory & Engagement Tiers | Banking On Quantum",
+    "title": "Advisory Services & Price Bands",
     "url": "http://127.0.0.1:8000/pricing/",
-    "wordCount": 71
+    "wordCount": 12
   },
   {
     "date": "2026-09-01",
@@ -163,12 +163,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financial practitioners.",
+    "description": "Sigstore-signed technical research essays, architectural breakdowns, and supervisory analysis for financial practitioners.",
     "locale": "en-GB",
     "tags": [],
     "title": "Research & Technical Essays: Quantum-Safe Banking Architecture",
     "url": "http://127.0.0.1:8000/research/",
-    "wordCount": 409
+    "wordCount": 426
   },
   {
     "date": "2026-09-01",
@@ -177,7 +177,7 @@
     "tags": [],
     "title": "Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard",
     "url": "http://127.0.0.1:8000/scorecard/",
-    "wordCount": 404
+    "wordCount": 405
   },
   {
     "date": "2026-09-01",
@@ -190,12 +190,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Targeted quantum applications for Treasury, Capital Markets, Enterprise Cybersecurity, and Retail Payment Rails.",
+    "description": "Redirecting to Banks & Payment Infrastructures...",
     "locale": "en-GB",
     "tags": [],
-    "title": "Quantum Solutions by Banking Sector | Banking On Quantum",
+    "title": "Banks & Payment Infrastructures",
     "url": "http://127.0.0.1:8000/solutions/",
-    "wordCount": 142
+    "wordCount": 11
   },
   {
     "date": "2026-09-01",
@@ -217,12 +217,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and financial messaging.",
+    "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, secure password hashing, and financial messaging.",
     "locale": "en-GB",
     "tags": [],
     "title": "Open Source Engineering Toolkit: KyberLib, hsh & Cryptographic Utilities",
     "url": "http://127.0.0.1:8000/toolkit/",
-    "wordCount": 291
+    "wordCount": 289
   },
   {
     "date": "2026-09-01",

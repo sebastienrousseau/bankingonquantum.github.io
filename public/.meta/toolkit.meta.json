@@ -1,9 +1,9 @@
 {
   "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and financial messaging.",
+  "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, secure password hashing, and financial messaging.",
   "keywords": "KyberLib, Rust PQC, ML-KEM Rust, hsh digest, open source financial cryptography",
   "language": "en-GB",
   "layout": "page",
@@ -13,5 +13,5 @@
   "reading_time": 1,
   "short_name": "bankingonquantum",
   "title": "Open Source Engineering Toolkit: KyberLib, hsh & Cryptographic Utilities",
-  "word_count": 291
+  "word_count": 289
 }

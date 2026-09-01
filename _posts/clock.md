@@ -11,7 +11,7 @@ layout: "page"
 permalink: "https://bankingonquantum.com/clock/index.html"
 logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp"
-banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator"
+banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure"
 ---
 
 # The Quantum-Safe Deadline Tracker
@@ -52,7 +52,7 @@ A curated, verified timeline of international regulatory milestones, hardware st
 <th>Date</th>
 <th>Jurisdiction</th>
 <th>Milestone & Standard</th>
-<th>Binding Status</th>
+<th>Regulatory Character</th>
 <th>Primary Source Citation</th>
 </tr>
 </thead>
@@ -62,56 +62,56 @@ A curated, verified timeline of international regulatory milestones, hardware st
 <td>United States / Global</td>
 <td>NIST FIPS 140-2 modules moved to Historical List</td>
 <td>Binding Technical Standard</td>
-<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" target="_blank" rel="noopener noreferrer">NIST CMVP Notice ↗</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/fips-140-2-transition" target="_blank" rel="noopener noreferrer">NIST CMVP Notice ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2026</strong></td>
 <td>European Union</td>
 <td>Member-state PQC migration strategies & pilots complete</td>
 <td>EU Coordinated Recommendation</td>
-<td><a href="https://digital-strategy.ec.europa.eu" target="_blank" rel="noopener noreferrer">European Commission ↗</a></td>
+<td><a href="https://digital-strategy.ec.europa.eu/en/library/commission-recommendation-post-quantum-cryptography" target="_blank" rel="noopener noreferrer">European Commission Recommendation ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2028</strong></td>
 <td>United Kingdom</td>
 <td>Cryptographic asset discovery and CBOM completion milestone</td>
-<td>National Cyber Strategy</td>
-<td><a href="https://www.ncsc.gov.uk" target="_blank" rel="noopener noreferrer">NCSC Next Generation Post-Quantum ↗</a></td>
+<td>National Cyber Strategy Milestone</td>
+<td><a href="https://www.ncsc.gov.uk/whitepaper/next-generation-cryptography-quantum-readiness" target="_blank" rel="noopener noreferrer">NCSC Quantum Readiness Whitepaper ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2029</strong></td>
 <td>Global Tech</td>
 <td>Google 100% internal PQC encryption target</td>
-<td>Corporate Commitment</td>
+<td>Corporate Target</td>
 <td><a href="https://security.googleblog.com" target="_blank" rel="noopener noreferrer">Google Security Blog ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2030</strong></td>
 <td>United States</td>
-<td>Federal key establishment migration complete (EO 14409)</td>
-<td>Statutory Executive Order</td>
-<td><a href="https://www.whitehouse.gov" target="_blank" rel="noopener noreferrer">White House Executive Office ↗</a></td>
+<td>Federal key establishment migration complete (EO)</td>
+<td>Executive Order (Presidential Directive)</td>
+<td><a href="https://www.whitehouse.gov/briefing-room/presidential-actions/" target="_blank" rel="noopener noreferrer">White House Executive Office ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2030</strong></td>
 <td>European Union</td>
-<td>High-risk critical financial infrastructure PQC transition</td>
-<td>EU Coordinated Roadmap</td>
+<td>High-risk critical financial infrastructure PQC transition target</td>
+<td>EU Coordinated Roadmap Target</td>
 <td><a href="https://digital-strategy.ec.europa.eu" target="_blank" rel="noopener noreferrer">EU Digital Omnibus ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2031</strong></td>
 <td>United States</td>
 <td>Federal digital signature migration complete</td>
-<td>Statutory Executive Order</td>
-<td><a href="https://www.whitehouse.gov" target="_blank" rel="noopener noreferrer">OMB M-26-15 ↗</a></td>
+<td>OMB Guidance / Executive Order</td>
+<td><a href="https://www.whitehouse.gov/omb/management/" target="_blank" rel="noopener noreferrer">OMB M-26-15 ↗</a></td>
 </tr>
 <tr>
 <td><strong>31 Dec 2035</strong></td>
 <td>Global / G7</td>
-<td>Full deprecation of legacy asymmetric algorithms (RSA/ECC)</td>
+<td>Target deprecation horizon for legacy asymmetric algorithms (RSA/ECC)</td>
 <td>G7 Cyber Expert Group Roadmap</td>
-<td><a href="https://home.treasury.gov" target="_blank" rel="noopener noreferrer">US Treasury / Bank of England ↗</a></td>
+<td><a href="https://home.treasury.gov/news/press-releases/jy2813" target="_blank" rel="noopener noreferrer">US Treasury & BoE Joint Statement ↗</a></td>
 </tr>
 </tbody>
 </table>

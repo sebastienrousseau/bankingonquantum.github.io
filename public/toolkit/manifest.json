@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and fina",
+  "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, secure password hashing, and financ",
   "display": "standalone",
   "icons": [
     {

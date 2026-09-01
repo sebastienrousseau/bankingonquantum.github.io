@@ -105,8 +105,8 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Bank Programmes & Case Studies: Quantum-Safe Deployments in Practice</news:title>
-    <news:keywords>quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM engagement</news:keywords>
+    <news:title>Bank Programmes & Case Studies: Quantum Deployments in Practice</news:title>
+    <news:keywords>quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM</news:keywords>
   </news:news>
 </url>
 <url>
@@ -137,12 +137,12 @@
   <loc>http://127.0.0.1:8000/faqs/</loc>
   <news:news>
     <news:publication>
-      <news:name>The Banking On Quantum Team</news:name>
+      <news:name>Sebastien Rousseau</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Frequently Asked Questions | Banking On Quantum</news:title>
-    <news:keywords>frequently asked questions, banking on quantum FAQs, quantum banking technology</news:keywords>
+    <news:title>Frequently Asked Questions: Quantum-Safe Banking & Regulation</news:title>
+    <news:keywords>PQC FAQs, quantum banking questions, DORA crypto agility FAQ, NIST FIPS 203 FAQ</news:keywords>
   </news:news>
 </url>
 <url>
@@ -185,24 +185,22 @@
   <loc>http://127.0.0.1:8000/platform/</loc>
   <news:news>
     <news:publication>
-      <news:name>The Banking On Quantum Team</news:name>
+      <news:name>Sebastien Rousseau</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Quantum Architecture & Cryptographic Agility | Banking On Quantum</news:title>
-    <news:keywords>post-quantum cryptography architecture, quantum key distribution, ML-KEM, ML-DSA, financial quantum computing</news:keywords>
+    <news:title>Banks & Payment Infrastructures</news:title>
   </news:news>
 </url>
 <url>
   <loc>http://127.0.0.1:8000/pricing/</loc>
   <news:news>
     <news:publication>
-      <news:name>The Banking On Quantum Team</news:name>
+      <news:name>Sebastien Rousseau</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Advisory & Engagement Tiers | Banking On Quantum</news:title>
-    <news:keywords>quantum banking advisory, PQC consulting, quantum risk audit</news:keywords>
+    <news:title>Advisory Services & Price Bands</news:title>
   </news:news>
 </url>
 <url>
@@ -257,12 +255,11 @@
   <loc>http://127.0.0.1:8000/solutions/</loc>
   <news:news>
     <news:publication>
-      <news:name>The Banking On Quantum Team</news:name>
+      <news:name>Sebastien Rousseau</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Quantum Solutions by Banking Sector | Banking On Quantum</news:title>
-    <news:keywords>quantum banking solutions, quantum risk management, post-quantum payments, quantum capital markets</news:keywords>
+    <news:title>Banks & Payment Infrastructures</news:title>
   </news:news>
 </url>
 <url>
