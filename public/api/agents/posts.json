@@ -6,7 +6,7 @@
     "tags": [],
     "title": "About Sebastien Rousseau & Banking On Quantum",
     "url": "http://127.0.0.1:8000/about/",
-    "wordCount": 190
+    "wordCount": 244
   },
   {
     "date": "2026-09-01",
@@ -33,7 +33,7 @@
     "tags": [],
     "title": "Global PQC Regulatory Matrix: G7, US, EU, UK, Singapore & Israel",
     "url": "http://127.0.0.1:8000/banks/comply/",
-    "wordCount": 272
+    "wordCount": 339
   },
   {
     "date": "2026-09-01",
@@ -69,16 +69,16 @@
     "tags": [],
     "title": "Bank Programmes & Case Studies: Quantum Deployments in Practice",
     "url": "http://127.0.0.1:8000/case-studies/",
-    "wordCount": 173
+    "wordCount": 259
   },
   {
     "date": "2026-09-01",
-    "description": "Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
+    "description": "Verified timeline of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
     "locale": "en-GB",
     "tags": [],
     "title": "The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock",
     "url": "http://127.0.0.1:8000/clock/",
-    "wordCount": 353
+    "wordCount": 530
   },
   {
     "date": "2026-09-01",
@@ -109,12 +109,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Independent research, a board-ready readiness index, and open-source cryptography for banks, payment infrastructures and fintechs preparing for the post-quantum era.",
+    "description": "Independent research, a board-ready readiness index, and open-source cryptography for banks and payment networks preparing for the post-quantum era.",
     "locale": "en-GB",
     "tags": [],
-    "title": "The Migration Clock is Running. Here is Exactly Where it Stands.",
+    "title": "Post-Quantum Cryptography for Banks & Payments",
     "url": "http://127.0.0.1:8000/index.html",
-    "wordCount": 2557
+    "wordCount": 2850
   },
   {
     "date": "2026-09-01",
@@ -177,7 +177,7 @@
     "tags": [],
     "title": "Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard",
     "url": "http://127.0.0.1:8000/scorecard/",
-    "wordCount": 405
+    "wordCount": 410
   },
   {
     "date": "2026-09-01",
@@ -226,12 +226,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.",
+    "description": "Security commitments, Sigstore provenance signatures, zero external analytics, and vendor neutrality standards.",
     "locale": "en-GB",
     "tags": [],
-    "title": "Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility",
+    "title": "Security Posture, Cryptographic Trust & Provenance",
     "url": "http://127.0.0.1:8000/trust/",
-    "wordCount": 182
+    "wordCount": 223
   },
   {
     "date": "2026-09-01",

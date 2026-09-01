@@ -15,13 +15,18 @@ def post_build():
         "title": "Banking On Quantum Deadline Tracker",
         "last_verified": "2026-09-01",
         "deadlines": [
+            {"date": "2026-01-31", "jurisdiction": "Israel", "title": "Bank of Israel Directive: PQC Roadmaps submitted", "binding": True, "source": "https://www.boi.org.il"},
+            {"date": "2026-01-13", "jurisdiction": "G7 Nations", "title": "G7 Cyber Expert Group Roadmap published", "binding": False, "source": "https://home.treasury.gov/news/press-releases/jy2813"},
+            {"date": "2026-07-31", "jurisdiction": "Hong Kong", "title": "HKMA Quantum Preparedness Index Baseline (2.3/10)", "binding": False, "source": "https://www.hkma.gov.hk"},
             {"date": "2026-09-21", "jurisdiction": "NIST CMVP", "title": "FIPS 140-2 modules to Historical List", "binding": True, "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/fips-140-2-transition"},
             {"date": "2026-12-31", "jurisdiction": "European Union", "title": "Member-state PQC migration strategies & pilots", "binding": False, "source": "https://digital-strategy.ec.europa.eu/en/library/commission-recommendation-post-quantum-cryptography"},
             {"date": "2028-12-31", "jurisdiction": "United Kingdom", "title": "NCSC Cryptographic Discovery Milestone", "binding": False, "source": "https://www.ncsc.gov.uk/whitepaper/next-generation-cryptography-quantum-readiness"},
             {"date": "2029-12-31", "jurisdiction": "Google", "title": "100% internal PQC encryption target", "binding": False, "source": "https://security.googleblog.com"},
-            {"date": "2030-12-31", "jurisdiction": "United States", "title": "Federal Key Establishment Migration (EO)", "binding": True, "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/"},
+            {"date": "2030-12-31", "jurisdiction": "United States", "title": "Executive Order 14412: High-Value Assets Key Establishment Migration", "binding": True, "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/"},
+            {"date": "2030-12-31", "jurisdiction": "United States", "title": "Federal Contractors FIPS PQC Compliance", "binding": True, "source": "https://www.whitehouse.gov/omb/management/"},
             {"date": "2030-12-31", "jurisdiction": "European Union", "title": "High-risk critical financial infrastructure PQC transition target", "binding": False, "source": "https://digital-strategy.ec.europa.eu"},
-            {"date": "2031-12-31", "jurisdiction": "United States", "title": "Federal Digital Signature Migration Complete", "binding": True, "source": "https://www.whitehouse.gov/omb/management/"},
+            {"date": "2031-12-31", "jurisdiction": "United States", "title": "Executive Order 14412: High-Value Assets Digital Signatures Complete", "binding": True, "source": "https://www.whitehouse.gov/omb/management/"},
+            {"date": "2031-12-31", "jurisdiction": "United Kingdom", "title": "NCSC High-Priority Infrastructure Transition Milestone", "binding": False, "source": "https://www.ncsc.gov.uk"},
             {"date": "2035-12-31", "jurisdiction": "G7 Cyber Expert Group", "title": "Target deprecation horizon for legacy asymmetric algorithms (RSA/ECC)", "binding": False, "source": "https://home.treasury.gov/news/press-releases/jy2813"}
         ]
     }
@@ -70,8 +75,8 @@ def post_build():
 - Signed Research Papers: {base_url}/research/index.html
 - Open Source Toolkit (KyberLib, hsh): {base_url}/toolkit/index.html
 - Vendor Landscape Map: {base_url}/vendors/index.html
-- Case Studies (HSBC, JPMorgan): {base_url}/case-studies/index.html
-- Advisory Services & Price Bands: {base_url}/services/index.html
+- Case Studies (HSBC, JPMorgan, BIS): {base_url}/case-studies/index.html
+- Technical Advisory: {base_url}/services/index.html
 - Security Posture & Trust: {base_url}/trust/index.html
 - About Sebastien Rousseau: {base_url}/about/index.html
 - The Quantum-Safe Briefing: {base_url}/newsletter/index.html
@@ -88,7 +93,7 @@ def post_build():
             with open(html_file, "r", encoding="utf-8") as f:
                 content = f.read()
 
-            # Fix canonical URLs: Replace 127.0.0.1 with https://bankingonquantum.com
+            # Fix canonical URLs
             content = content.replace("http://127.0.0.1:8000", base_url)
             content = content.replace("http://localhost:8000", base_url)
 

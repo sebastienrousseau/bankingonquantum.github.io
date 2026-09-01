@@ -4,7 +4,7 @@
   "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
   "description": "Interactive self-assessment evaluating financial institution quantum readiness across 6 core governance and cryptographic dimensions.",
-  "keywords": "quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator",
+  "keywords": "quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator, HKMA benchmark",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -13,5 +13,5 @@
   "reading_time": 2,
   "short_name": "bankingonquantum",
   "title": "Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard",
-  "word_count": 405
+  "word_count": 410
 }

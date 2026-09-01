@@ -3,7 +3,7 @@ name: "Banking On Quantum"
 short_name: "bankingonquantum"
 title: "Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard"
 description: "Interactive self-assessment evaluating financial institution quantum readiness across 6 core governance and cryptographic dimensions."
-keywords: "quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator"
+keywords: "quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator, HKMA benchmark"
 author: "Sebastien Rousseau"
 date: "2026-09-01"
 language: "en-GB"
@@ -17,6 +17,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 # Post-Quantum Banking Resilience Index (PQ-BRI)
 
 The **PQ-BRI** is an independent, 6-dimension evaluation framework designed for Chief Information Security Officers, Treasury CTOs, and Risk Committees to quantify institutional exposure to quantum cryptanalytic threats.
+
+<div class="card-surface p-3 my-3">
+<strong>Global Supervisory Benchmark:</strong> In July 2026, the Hong Kong Monetary Authority (HKMA) published its initial sector-wide Quantum Preparedness Index baseline, scoring the banking sector at <strong>2.3 / 10</strong> with a target of full resilience by 2030. The PQ-BRI evaluates institution-specific readiness on a 5.0 scale.
+</div>
 
 ## Interactive Self-Assessment Tool
 
@@ -81,29 +85,21 @@ Adjust the sliders below to reflect your institution's current operational postu
 <div class="score-dimension-row">
 <div>
 <h4 class="h6 fw-bold mb-1">6. Algorithm Testing & HSM Compliance</h4>
-<p class="small text-muted mb-0">FIPS 140-3 HSM validation and active testbed benchmarking for FIPS 203 ML-KEM and FIPS 204 ML-DSA.</p>
+<p class="small text-muted mb-0">FIPS 140-3 transition progress and active hybrid ML-KEM / ML-DSA prototype testing.</p>
 </div>
 <div>
-<input type="range" class="score-slider" id="scoreHsm" min="0" max="5" step="0.5" value="2.0">
+<input type="range" class="score-slider" id="scoreTesting" min="0" max="5" step="0.5" value="2.0">
 </div>
-<div class="score-display-val" id="scoreHsmVal">2.0 / 5.0</div>
-</div>
-
-<div class="scorecard-total-box">
-<div>
-<div class="text-muted small text-uppercase fw-bold">Overall Resilience Score</div>
-<div class="scorecard-grade" id="scoreTotal">1.92 / 5.00</div>
-<div class="text-warning fw-bold mt-1" id="scoreGrade">Tier 3 (Discovery Phase)</div>
-</div>
-<div class="max-w-md">
-<div class="text-muted small mb-1">Strategic Recommendation:</div>
-<div class="small fw-semibold text-headline" id="scoreRecommendation">Prioritise SWIFT / ISO 20022 payment rails for asymmetric algorithm discovery.</div>
-</div>
+<div class="score-display-val" id="scoreTestingVal">2.0 / 5.0</div>
 </div>
 </div>
 
-<div class="card-surface p-4 text-center my-4">
-<h3 class="h4 fw-bold text-headline mb-2">Request the Formal Assessment Report (PDF)</h3>
-<p class="text-muted mb-3">Receive a detailed board-level PDF assessment with full dimension breakdowns and regulator gap analysis.</p>
-<a href="/contact/index.html" class="btn-primary-quantum">Request Assessment Report (PDF) →</a>
+<div class="score-result-card my-4">
+<div class="score-result-title">Your Institution's Aggregate Readiness Score</div>
+<div class="score-result-value" id="scoreTotal">1.92 / 5.00</div>
+<div class="score-result-grade" id="scoreGrade">Tier 3 (Discovery & Inventory Phase)</div>
+<p class="score-result-rec" id="scoreRecommendation">Prioritise SWIFT / ISO 20022 payment rails for asymmetric algorithm discovery.</p>
+<div class="mt-4">
+<a href="/contact/index.html" class="btn-primary-quantum">Request Formal Assessment Pack →</a>
+</div>
 </div>

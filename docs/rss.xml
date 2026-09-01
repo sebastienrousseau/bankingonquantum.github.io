@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Migration Clock is Running. Here is Exactly Where it Stands.</title>
+    <title>Post-Quantum Cryptography for Banks &amp; Payments</title>
     <link>https://bankingonquantum.com/</link>
-    <description>Independent research, a board-ready readiness index, and open-source cryptography for banks, payment infrastructures and fintechs preparing for the post-quantum era.</description>
+    <description>Independent research, a board-ready readiness index, and open-source cryptography for banks and payment networks preparing for the post-quantum era.</description>
     <atom:link href="http://127.0.0.1:8000/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <item>
@@ -187,9 +187,9 @@
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
-      <title>Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility</title>
+      <title>Security Posture, Cryptographic Trust & Provenance</title>
       <link>http://127.0.0.1:8000/trust/</link>
-      <description>Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.</description>
+      <description>Security commitments, Sigstore provenance signatures, zero external analytics, and vendor neutrality standards.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/trust/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
@@ -243,7 +243,7 @@
     <item>
       <title>The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock</title>
       <link>http://127.0.0.1:8000/clock/</link>
-      <description>Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.</description>
+      <description>Verified timeline of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/clock/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>

@@ -15,8 +15,8 @@
 - Signed Research Papers: https://bankingonquantum.com/research/index.html
 - Open Source Toolkit (KyberLib, hsh): https://bankingonquantum.com/toolkit/index.html
 - Vendor Landscape Map: https://bankingonquantum.com/vendors/index.html
-- Case Studies (HSBC, JPMorgan): https://bankingonquantum.com/case-studies/index.html
-- Advisory Services & Price Bands: https://bankingonquantum.com/services/index.html
+- Case Studies (HSBC, JPMorgan, BIS): https://bankingonquantum.com/case-studies/index.html
+- Technical Advisory: https://bankingonquantum.com/services/index.html
 - Security Posture & Trust: https://bankingonquantum.com/trust/index.html
 - About Sebastien Rousseau: https://bankingonquantum.com/about/index.html
 - The Quantum-Safe Briefing: https://bankingonquantum.com/newsletter/index.html
