@@ -1,10 +1,10 @@
 {
   "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Transparent advisory tiers and hands-on cryptographic engineering for banks, payment rails, and fintechs.",
-  "keywords": "PQC consulting banking, quantum advisory pricing, CBOM engagement cost, cryptographic migration services",
+  "description": "Practitioner-led cryptographic review, CBOM discovery, and post-quantum migration architecture for financial institutions.",
+  "keywords": "PQC technical advisory, banking cryptographic architecture, CBOM discovery, post-quantum engineering",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -12,6 +12,6 @@
   "permalink": "https://bankingonquantum.com/services/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "Advisory & Engineering Services: Scopes, Deliverables & Price Bands",
-  "word_count": 251
+  "title": "Technical Advisory & Cryptographic Engineering Capabilities",
+  "word_count": 231
 }

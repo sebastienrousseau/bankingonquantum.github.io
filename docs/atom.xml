@@ -150,12 +150,12 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Advisory Services &amp; Price Bands</title>
+    <title>Technical Advisory &amp; Capabilities</title>
     <link href="http://127.0.0.1:8000/pricing/"/>
     <id>http://127.0.0.1:8000/pricing/</id>
     <updated></updated>
     <published></published>
-    <summary>Redirecting to Advisory Services &amp; Price Bands...</summary>
+    <summary>Redirecting to Technical Advisory...</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
@@ -186,12 +186,12 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Advisory &amp; Engineering Services: Scopes, Deliverables &amp; Price Bands</title>
+    <title>Technical Advisory &amp; Cryptographic Engineering Capabilities</title>
     <link href="http://127.0.0.1:8000/services/"/>
     <id>http://127.0.0.1:8000/services/</id>
     <updated></updated>
     <published></published>
-    <summary>Transparent advisory tiers and hands-on cryptographic engineering for banks, payment rails, and fintechs.</summary>
+    <summary>Practitioner-led cryptographic review, CBOM discovery, and post-quantum migration architecture for financial institutions.</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>

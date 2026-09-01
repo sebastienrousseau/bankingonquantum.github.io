@@ -114,7 +114,7 @@
     "tags": [],
     "title": "The Migration Clock is Running. Here is Exactly Where it Stands.",
     "url": "http://127.0.0.1:8000/index.html",
-    "wordCount": 2779
+    "wordCount": 2557
   },
   {
     "date": "2026-09-01",
@@ -145,12 +145,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Redirecting to Advisory Services & Price Bands...",
+    "description": "Redirecting to Technical Advisory...",
     "locale": "en-GB",
     "tags": [],
-    "title": "Advisory Services & Price Bands",
+    "title": "Technical Advisory & Capabilities",
     "url": "http://127.0.0.1:8000/pricing/",
-    "wordCount": 12
+    "wordCount": 9
   },
   {
     "date": "2026-09-01",
@@ -181,12 +181,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Transparent advisory tiers and hands-on cryptographic engineering for banks, payment rails, and fintechs.",
+    "description": "Practitioner-led cryptographic review, CBOM discovery, and post-quantum migration architecture for financial institutions.",
     "locale": "en-GB",
     "tags": [],
-    "title": "Advisory & Engineering Services: Scopes, Deliverables & Price Bands",
+    "title": "Technical Advisory & Cryptographic Engineering Capabilities",
     "url": "http://127.0.0.1:8000/services/",
-    "wordCount": 251
+    "wordCount": 231
   },
   {
     "date": "2026-09-01",
