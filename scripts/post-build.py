@@ -1,4 +1,4 @@
-import os, glob, re, json
+import os, glob, re, json, html
 
 def post_build():
     output_dir = "public"
@@ -39,7 +39,7 @@ def post_build():
 - Board & Risk Committees: {base_url}/boards/index.html
 - Deadline Tracker (HTML): {base_url}/clock/index.html
 - Deadline Tracker (JSON): {base_url}/api/clock.json
-- Resilience Index Scorecard: {base_url}/index/index.html
+- Resilience Index Scorecard: {base_url}/scorecard/index.html
 - Signed Research Papers: {base_url}/research/index.html
 - Open Source Toolkit (KyberLib, hsh): {base_url}/toolkit/index.html
 - Vendor Landscape Map: {base_url}/vendors/index.html
@@ -64,46 +64,26 @@ def post_build():
             content = content.replace("http://127.0.0.1:8000", base_url)
             content = content.replace("http://localhost:8000", base_url)
 
-            # Fix unescaped HTML blocks in prose
-            content = content.replace('&lt;details class=&quot;apple-faq-item&quot;&gt;', '<details class="apple-faq-item">')
-            content = content.replace('&lt;/details&gt;', '</details>')
-            content = content.replace('&lt;summary class=&quot;apple-faq-summary&quot;&gt;', '<summary class="apple-faq-summary">')
-            content = content.replace('&lt;/summary&gt;', '</summary>')
-            content = content.replace('&lt;span class=&quot;apple-faq-question&quot;&gt;', '<span class="apple-faq-question">')
-            content = content.replace('&lt;/span&gt;', '</span>')
-            content = content.replace('&lt;div class=&quot;apple-faq-body&quot;&gt;', '<div class="apple-faq-body">')
-            content = content.replace('&lt;/div&gt;', '</div>')
-            content = content.replace('&lt;span class=&quot;apple-faq-icon&quot;&gt;', '<span class="apple-faq-icon">')
-            content = content.replace('&lt;section', '<section')
-            content = content.replace('&lt;/section&gt;', '</section>')
-            content = content.replace('&lt;div', '<div')
-            content = content.replace('&lt;/div&gt;', '</div>')
-            content = content.replace('&lt;button', '<button')
-            content = content.replace('&lt;/button&gt;', '</button>')
-            content = content.replace('&lt;span', '<span')
-            content = content.replace('&lt;input', '<input')
-            content = content.replace('&lt;table', '<table')
-            content = content.replace('&lt;/table&gt;', '</table>')
-            content = content.replace('&lt;thead&gt;', '<thead>')
-            content = content.replace('&lt;/thead&gt;', '</thead>')
-            content = content.replace('&lt;tbody&gt;', '<tbody>')
-            content = content.replace('&lt;/tbody&gt;', '</tbody>')
-            content = content.replace('&lt;tr&gt;', '<tr>')
-            content = content.replace('&lt;/tr&gt;', '</tr>')
-            content = content.replace('&lt;th&gt;', '<th>')
-            content = content.replace('&lt;/th&gt;', '</th>')
-            content = content.replace('&lt;td&gt;', '<td>')
-            content = content.replace('&lt;/td&gt;', '</td>')
-            content = content.replace('&lt;svg', '<svg')
-            content = content.replace('&lt;/svg&gt;', '</svg>')
-            content = content.replace('&lt;circle', '<circle')
-            content = content.replace('&lt;polyline', '<polyline')
-            content = content.replace('&lt;article', '<article')
-            content = content.replace('&lt;/article&gt;', '</article>')
-            content = content.replace('&lt;form', '<form')
-            content = content.replace('&lt;/form&gt;', '</form>')
-            content = content.replace('&lt;label', '<label')
-            content = content.replace('&lt;/label&gt;', '</label>')
+            # Strip any <pre><code> wrappers accidentally introduced by markdown on custom HTML blocks
+            content = re.sub(r'<pre><code class="language-html">(&lt;section.*?&lt;/section&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
+            content = re.sub(r'<pre><code>(&lt;section.*?&lt;/section&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
+            content = re.sub(r'<pre><code>(&lt;div.*?&lt;/div&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
+            content = re.sub(r'<pre><code>(&lt;details.*?&lt;/details&gt;)</code></pre>', lambda m: html.unescape(m.group(1)), content, flags=re.DOTALL)
+
+            # Unescape remaining HTML entities
+            unescape_patterns = [
+                ("&quot;", '"'),
+                ("&lt;", '<'),
+                ("&gt;", '>'),
+                ("&#39;", "'"),
+                ("&#x27;", "'"),
+                ("&amp;", '&')
+            ]
+            
+            # Check if there is still escaped markup inside content-body
+            if "&lt;details" in content or "&lt;section" in content or "&lt;div class=" in content:
+                for ent, val in [("&lt;", "<"), ("&gt;", ">"), ("&quot;", '"'), ("&#39;", "'"), ("&#x27;", "'")]:
+                    content = content.replace(ent, val)
 
             # Remove double title suffixes from H1
             content = re.sub(r' \| Banking On Quantum</h1>', '</h1>', content)

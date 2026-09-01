@@ -11,7 +11,7 @@
 - Board & Risk Committees: https://bankingonquantum.com/boards/index.html
 - Deadline Tracker (HTML): https://bankingonquantum.com/clock/index.html
 - Deadline Tracker (JSON): https://bankingonquantum.com/api/clock.json
-- Resilience Index Scorecard: https://bankingonquantum.com/index/index.html
+- Resilience Index Scorecard: https://bankingonquantum.com/scorecard/index.html
 - Signed Research Papers: https://bankingonquantum.com/research/index.html
 - Open Source Toolkit (KyberLib, hsh): https://bankingonquantum.com/toolkit/index.html
 - Vendor Landscape Map: https://bankingonquantum.com/vendors/index.html
