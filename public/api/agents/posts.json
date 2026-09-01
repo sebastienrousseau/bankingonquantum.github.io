@@ -28,12 +28,12 @@
   },
   {
     "date": "2026-09-01",
-    "description": "Answers to common questions regarding post-quantum cryptography, quantum threat timelines, and quantum computing in banking.",
+    "description": "Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.",
     "locale": "en-GB",
     "tags": [],
     "title": "Frequently Asked Questions | Banking On Quantum",
     "url": "http://127.0.0.1:8000/faqs/",
-    "wordCount": 163
+    "wordCount": 722
   },
   {
     "date": "2026-09-01",

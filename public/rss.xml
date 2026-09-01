@@ -36,7 +36,7 @@
     <item>
       <title>Frequently Asked Questions | Banking On Quantum</title>
       <link>http://127.0.0.1:8000/faqs/</link>
-      <description>Answers to common questions regarding post-quantum cryptography, quantum threat timelines, and quantum computing in banking.</description>
+      <description>Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/faqs/</guid>
       <pubDate></pubDate>
       <author>The Banking On Quantum Team</author>

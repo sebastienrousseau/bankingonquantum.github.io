@@ -282,3 +282,51 @@
     initApp();
   }
 })();
+
+
+// Apple FAQ Accordion Controller
+(function() {
+  function initFaq() {
+    var expandBtn = document.getElementById('faqExpandAllBtn');
+    var faqItems = document.querySelectorAll('.apple-faq-item');
+    if (!expandBtn || faqItems.length === 0) return;
+
+    var isAllExpanded = false;
+
+    function updateBtnState() {
+      var allOpen = true;
+      faqItems.forEach(function(item) {
+        if (!item.hasAttribute('open')) allOpen = false;
+      });
+      isAllExpanded = allOpen;
+      expandBtn.setAttribute('aria-expanded', isAllExpanded);
+      var label = expandBtn.querySelector('.apple-faq-btn-text');
+      var chevron = expandBtn.querySelector('.apple-faq-expand-chevron');
+      if (label) label.textContent = isAllExpanded ? 'Collapse all' : 'Expand all';
+      if (chevron) chevron.style.transform = isAllExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+
+    expandBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var newState = !isAllExpanded;
+      faqItems.forEach(function(item) {
+        if (newState) {
+          item.setAttribute('open', '');
+        } else {
+          item.removeAttribute('open');
+        }
+      });
+      updateBtnState();
+    });
+
+    faqItems.forEach(function(item) {
+      item.addEventListener('toggle', updateBtnState);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFaq);
+  } else {
+    initFaq();
+  }
+})();

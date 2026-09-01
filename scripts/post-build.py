@@ -35,7 +35,7 @@ for target in ["public", "docs"]:
     with open(m_path, "w", encoding="utf-8") as f:
         json.dump(manifest_data, f, indent=2)
 
-# 2. Clean up internal links, CSP, and entities in all HTML output
+# 2. Clean up internal links, CSP, and unescape interactive components in all HTML output
 csp_meta = '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https://cdn.jsdelivr.net; connect-src \'self\' https://formspree.io https://cdn.jsdelivr.net; img-src \'self\' data: https: https://cloudcdn.pro; style-src \'self\' \'unsafe-inline\' https://cdn.jsdelivr.net; font-src \'self\' data:; form-action \'self\' https://formspree.io; base-uri \'none\'; object-src \'none\';" />'
 
 for target in ["public", "docs"]:
@@ -66,8 +66,40 @@ for target in ["public", "docs"]:
             html = html.replace('.class=\\"m-10 w-100\\"', '')
             html = html.replace('.class="m-10 w-100"', '')
             
-            # Ensure robust CSP allowing cloudcdn.pro and unsafe-inline styles
+            # Robust CSP
             html = re.sub(r'<meta\s+http-equiv="Content-Security-Policy"[^>]*>', csp_meta, html)
+
+            # Direct Unescape for interactive HTML components
+            html = html.replace('&lt;details', '<details')
+            html = html.replace('&lt;/details&gt;', '</details>')
+            html = html.replace('&lt;summary', '<summary')
+            html = html.replace('&lt;/summary&gt;', '</summary>')
+            html = html.replace('&lt;svg', '<svg')
+            html = html.replace('&lt;/svg&gt;', '</svg>')
+            html = html.replace('&lt;polyline', '<polyline')
+            html = html.replace('&lt;/polyline&gt;', '</polyline>')
+            html = html.replace('&lt;path', '<path')
+            html = html.replace('&lt;/path&gt;', '</path>')
+            html = html.replace('&lt;circle', '<circle')
+            html = html.replace('&lt;/circle&gt;', '</circle>')
+            html = html.replace('&lt;line', '<line')
+            html = html.replace('&lt;/line&gt;', '</line>')
+            html = html.replace('&lt;rect', '<rect')
+            html = html.replace('&lt;/rect&gt;', '</rect>')
+            html = html.replace('&lt;span', '<span')
+            html = html.replace('&lt;/span&gt;', '</span>')
+            html = html.replace('&lt;div', '<div')
+            html = html.replace('&lt;/div&gt;', '</div>')
+            html = html.replace('&lt;button', '<button')
+            html = html.replace('&lt;/button&gt;', '</button>')
+            html = html.replace('&lt;h1', '<h1')
+            html = html.replace('&lt;/h1&gt;', '</h1>')
+            html = html.replace('&lt;p', '<p')
+            html = html.replace('&lt;/p&gt;', '</p>')
+            html = html.replace('&quot;&gt;', '">')
+            html = html.replace('&quot;', '"')
+            html = html.replace('&#x27;', "'")
+            html = html.replace('&#39;', "'")
 
             with open(fpath, "w", encoding="utf-8") as f:
                 f.write(html)
