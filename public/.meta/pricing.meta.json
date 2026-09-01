@@ -1,9 +1,9 @@
 {
   "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum",
+  "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Redirecting to Advisory Services & Price Bands...",
+  "description": "Redirecting to Technical Advisory...",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -11,6 +11,6 @@
   "permalink": "https://bankingonquantum.com/pricing/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "Advisory Services & Price Bands",
-  "word_count": 12
+  "title": "Technical Advisory & Capabilities",
+  "word_count": 9
 }

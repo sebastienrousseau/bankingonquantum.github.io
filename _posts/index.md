@@ -356,66 +356,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 </section>
 
-<!-- SECTION 9: ADVISORY SERVICES WITH TRANSPARENT TIERS -->
-<section class="my-5" aria-label="Advisory Services">
-<div class="text-center mb-4">
-<h2 class="h3 fw-bold">Advisory & Engineering Services</h2>
-<p class="text-muted">Direct practitioner engagements with defined scope, duration, deliverables, and transparent price bands.</p>
-</div>
-
-<div class="services-tier-grid">
-<div class="service-card">
-<div>
-<h3 class="service-tier-title">Readiness Review</h3>
-<div class="service-duration">Duration: 2 Weeks</div>
-<div class="service-price-band">£15,000 – £25,000</div>
-<p class="text-muted small">Rapid baseline assessment for executive committees and risk leadership.</p>
-<ul class="service-deliverables-list">
-<li>Post-Quantum Banking Resilience Index score</li>
-<li>Executive & Board briefing memo</li>
-<li>Initial regulatory gap analysis (DORA / G7)</li>
-<li>Prioritized remediation roadmap</li>
-</ul>
-</div>
-<a href="/contact/index.html" class="btn-secondary-quantum w-100 text-center">Book Review →</a>
-</div>
-
-<div class="service-card featured">
-<span class="service-badge">Most Requested</span>
-<div>
-<h3 class="service-tier-title">CBOM Discovery & Roadmap</h3>
-<div class="service-duration">Duration: 6 Weeks</div>
-<div class="service-price-band">£45,000 – £75,000</div>
-<p class="text-muted small">Complete cryptographic inventory and migration blueprint across payment rails.</p>
-<ul class="service-deliverables-list">
-<li>Automated network & code CBOM scanning</li>
-<li>SWIFT MT/MX & ISO 20022 rail audit</li>
-<li>HSM firmware & TLS 1.3 transition plan</li>
-<li>Full supervisory compliance dossier</li>
-</ul>
-</div>
-<a href="/contact/index.html" class="btn-primary-quantum w-100 text-center">Initiate CBOM Audit →</a>
-</div>
-
-<div class="service-card">
-<div>
-<h3 class="service-tier-title">Co-Development Sprint</h3>
-<div class="service-duration">Sprint-Based (2–8 Weeks)</div>
-<div class="service-price-band">£1,800 / day</div>
-<p class="text-muted small">Hands-on cryptographic engineering embedded alongside your infrastructure team.</p>
-<ul class="service-deliverables-list">
-<li>Hybrid TLS 1.3 gateway integration</li>
-<li>Rust / C++ PQC algorithm optimization</li>
-<li>Hardware Security Module (HSM) key ceremonies</li>
-<li>CI/CD cryptographic regression pipelines</li>
-</ul>
-</div>
-<a href="/contact/index.html" class="btn-secondary-quantum w-100 text-center">Schedule Sprint →</a>
-</div>
-</div>
-</section>
-
-<!-- SECTION 10: AUTHOR & PEDIGREE STRIP -->
+<!-- SECTION 9: AUTHOR & PEDIGREE STRIP -->
 <section class="author-pedigree-strip" aria-label="Author and Pedigree">
 <div class="author-avatar-wrap">
 <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-1-320.webp" alt="Sebastien Rousseau" class="author-avatar" width="96" height="96" />
@@ -433,7 +374,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 </section>
 
-<!-- SECTION 11: QUESTIONS? ANSWERS. (APPLE AT WORK ACCORDION) -->
+<!-- SECTION 10: QUESTIONS? ANSWERS. (APPLE AT WORK ACCORDION) -->
 <section class="my-5" aria-label="Frequently Asked Questions">
 <div class="apple-faq-section">
 <div class="apple-faq-header">
@@ -528,7 +469,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 </section>
 
-<!-- SECTION 12: TAKE THE NEXT STEP (CONVERSION ARCHITECTURE) -->
+<!-- SECTION 11: TAKE THE NEXT STEP (CONVERSION ARCHITECTURE) -->
 <section class="card-surface p-4 p-md-5 my-5 text-center" aria-label="Conversion Next Steps">
 <h2 class="h2 fw-bold text-headline mb-3">Take the Next Step in Quantum Readiness</h2>
 <p class="text-muted fs-5 mb-4 max-w-2xl mx-auto">Three clear routes to accelerate your institution's post-quantum roadmap:</p>

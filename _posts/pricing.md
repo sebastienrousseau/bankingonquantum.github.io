@@ -1,8 +1,8 @@
 ---
 name: "Banking On Quantum"
 short_name: "bankingonquantum"
-title: "Advisory Services & Price Bands"
-description: "Redirecting to Advisory Services & Price Bands..."
+title: "Technical Advisory & Capabilities"
+description: "Redirecting to Technical Advisory..."
 author: "Sebastien Rousseau"
 date: "2026-09-01"
 language: "en-GB"
@@ -10,8 +10,8 @@ layout: "page"
 permalink: "https://bankingonquantum.com/pricing/index.html"
 logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp"
-banner_alt: "Banking On Quantum"
+banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure"
 ---
 
 <meta http-equiv="refresh" content="0; url=https://bankingonquantum.com/services/index.html">
-<p>Redirecting to <a href="https://bankingonquantum.com/services/index.html">Advisory Services & Price Bands</a>...</p>
+<p>Redirecting to <a href="https://bankingonquantum.com/services/index.html">Technical Advisory</a>...</p>

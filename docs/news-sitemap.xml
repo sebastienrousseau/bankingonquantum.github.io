@@ -200,7 +200,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Advisory Services & Price Bands</news:title>
+    <news:title>Technical Advisory & Capabilities</news:title>
   </news:news>
 </url>
 <url>
@@ -247,8 +247,8 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Advisory & Engineering Services: Scopes, Deliverables & Price Bands</news:title>
-    <news:keywords>PQC consulting banking, quantum advisory pricing, CBOM engagement cost, cryptographic migration services</news:keywords>
+    <news:title>Technical Advisory & Cryptographic Engineering Capabilities</news:title>
+    <news:keywords>PQC technical advisory, banking cryptographic architecture, CBOM discovery, post-quantum engineering</news:keywords>
   </news:news>
 </url>
 <url>
