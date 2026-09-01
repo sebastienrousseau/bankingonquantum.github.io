@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and fina",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Banking On Quantum",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "bankingonqua",
+  "start_url": ".",
+  "theme_color": null
+}

@@ -17,12 +17,12 @@
   <loc>http://127.0.0.1:8000/about/</loc>
   <news:news>
     <news:publication>
-      <news:name>The Banking On Quantum Team</news:name>
+      <news:name>Sebastien Rousseau</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>About Mission & Quantum Research | Banking On Quantum</news:title>
-    <news:keywords>about banking on quantum, quantum finance research, post-quantum security mission</news:keywords>
+    <news:title>About Sebastien Rousseau & Banking On Quantum</news:title>
+    <news:keywords>Sebastien Rousseau, Banking On Quantum founder, financial cryptography architect, KyberLib author</news:keywords>
   </news:news>
 </url>
 <url>
@@ -35,6 +35,90 @@
     <news:publication_date></news:publication_date>
     <news:title>Accessibility Statement | Banking On Quantum</news:title>
     <news:keywords>accessibility statement, WCAG 2.2 AAA, banking on quantum accessibility</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/banks/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Banks & Payment Infrastructures: The Quantum Architecture Blueprint</news:title>
+    <news:keywords>quantum banking infrastructure, SWIFT PQC, core banking cryptography, hybrid TLS 1.3, bank HSM migration</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/banks/comply/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Global PQC Regulatory Matrix: G7, US, EU, UK, Singapore & Israel</news:title>
+    <news:keywords>PQC regulation banking, DORA crypto agility, G7 cyber expert group, NIST CMVP 2026, MAS quantum advisory</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/banks/compute/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Quantum Algorithms in Finance: Derivative Pricing, Risk & Optimization</news:title>
+    <news:keywords>quantum finance algorithms, quantum monte carlo, QAE, QAOA banking, quantum derivative pricing</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/banks/secure/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>PQC Migration: Inventory, CBOM, Hybrid TLS & HSM Architecture</news:title>
+    <news:keywords>CBOM banking, post-quantum cryptography architecture, hybrid TLS 1.3, FIPS 203, FIPS 204</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/boards/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Board & Risk Committee Briefing: Fiduciary Oversight in the Quantum Era</news:title>
+    <news:keywords>quantum risk board briefing, CRO quantum governance, fiduciary post-quantum risk, audit committee PQC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/case-studies/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Bank Programmes & Case Studies: Quantum-Safe Deployments in Practice</news:title>
+    <news:keywords>quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM engagement</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/clock/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock</news:title>
+    <news:keywords>quantum migration deadlines, PQC timeline tracker, NIST CMVP sunset, US EO 14409 timeline</news:keywords>
   </news:news>
 </url>
 <url>
@@ -62,6 +146,18 @@
   </news:news>
 </url>
 <url>
+  <loc>http://127.0.0.1:8000/fintech/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Fintech & Scale-ups: PQC for Third-Party Bank Due Diligence</news:title>
+    <news:keywords>fintech PQC, bank due diligence cryptography, DORA third party risk, crypto agility fintech</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>http://127.0.0.1:8000/made-with-ssg/</loc>
   <news:news>
     <news:publication>
@@ -71,6 +167,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Made with Static Site Generator (SSG) | Banking On Quantum</news:title>
     <news:keywords>made with ssg, static site generator, rust ssg, kinetic theme</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/newsletter/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>The Quantum-Safe Briefing: Monthly Intelligence for Financial Leaders</news:title>
+    <news:keywords>The Quantum-Safe Briefing, quantum banking newsletter, PQC intelligence, financial cryptography newsletter</news:keywords>
   </news:news>
 </url>
 <url>
@@ -110,6 +218,42 @@
   </news:news>
 </url>
 <url>
+  <loc>http://127.0.0.1:8000/research/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Research & Technical Essays: Quantum-Safe Banking Architecture</news:title>
+    <news:keywords>quantum finance research, PQC papers, CBOM technical essay, quantum banking whitepapers</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/scorecard/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard</news:title>
+    <news:keywords>quantum banking resilience index, PQC scorecard, bank crypto assessment, quantum readiness calculator</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/services/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Advisory & Engineering Services: Scopes, Deliverables & Price Bands</news:title>
+    <news:keywords>PQC consulting banking, quantum advisory pricing, CBOM engagement cost, cryptographic migration services</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>http://127.0.0.1:8000/solutions/</loc>
   <news:news>
     <news:publication>
@@ -143,6 +287,42 @@
     <news:publication_date></news:publication_date>
     <news:title>Thank You | Banking On Quantum</news:title>
     <news:keywords>thank you, message received, banking on quantum</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/toolkit/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Open Source Engineering Toolkit: KyberLib, hsh & Cryptographic Utilities</news:title>
+    <news:keywords>KyberLib, Rust PQC, ML-KEM Rust, hsh digest, open source financial cryptography</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/trust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility</news:title>
+    <news:keywords>trust page banking on quantum, sigstore signed, WCAG AAA compliance, SBOM cycloneDX</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>http://127.0.0.1:8000/vendors/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Sebastien Rousseau</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Independent Vendor Landscape: Discovery, PQC Libraries, HSMs & PKI</news:title>
+    <news:keywords>PQC vendors banking, SandboxAQ review, PQShield, QuSecure, IBM Quantum Safe, post-quantum market map</news:keywords>
   </news:news>
 </url>
 </urlset>

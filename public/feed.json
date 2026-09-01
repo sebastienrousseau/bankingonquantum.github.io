@@ -20,16 +20,16 @@
     {
       "authors": [
         {
-          "name": "The Banking On Quantum Team"
+          "name": "Sebastien Rousseau"
         }
       ],
-      "content_html": "Discover the mission behind Banking On Quantum: securing the world's financial systems against quantum threats while harnessing quantum computation.",
+      "content_html": "Background, credentials, and 19-year engineering history of Sebastien Rousseau in production financial cryptography.",
       "date_modified": "",
       "date_published": "",
       "id": "http://127.0.0.1:8000/about/",
       "language": "en-GB",
       "tags": [],
-      "title": "About Mission & Quantum Research | Banking On Quantum",
+      "title": "About Sebastien Rousseau & Banking On Quantum",
       "url": "http://127.0.0.1:8000/about/"
     },
     {
@@ -46,6 +46,111 @@
       "tags": [],
       "title": "Accessibility Statement | Banking On Quantum",
       "url": "http://127.0.0.1:8000/accessibility/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "End-to-end PQC migration blueprint for core banking ledgers, SWIFT MT/MX rails, hybrid TLS tunnels, and hardware security modules.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/banks/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Banks & Payment Infrastructures: The Quantum Architecture Blueprint",
+      "url": "http://127.0.0.1:8000/banks/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Comprehensive, regulator-by-regulator mapping of post-quantum cryptographic mandates, discovery expectations, and compliance deadlines.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/banks/comply/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Global PQC Regulatory Matrix: G7, US, EU, UK, Singapore & Israel",
+      "url": "http://127.0.0.1:8000/banks/comply/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Honest state of play on quantum computational finance: Monte Carlo acceleration, QAOA portfolio balancing, and HSBC/IBM benchmarks.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/banks/compute/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Quantum Algorithms in Finance: Derivative Pricing, Risk & Optimization",
+      "url": "http://127.0.0.1:8000/banks/compute/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Deep technical guide on executing a post-quantum cryptographic migration across banking networks.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/banks/secure/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "PQC Migration: Inventory, CBOM, Hybrid TLS & HSM Architecture",
+      "url": "http://127.0.0.1:8000/banks/secure/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Boardroom-level guidance for Non-Executive Directors, Chief Risk Officers, and Audit Committees on quantum cryptographic exposure.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/boards/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Board & Risk Committee Briefing: Fiduciary Oversight in the Quantum Era",
+      "url": "http://127.0.0.1:8000/boards/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Public bank disclosures, pilot benchmarks, and anonymised production CBOM discovery engagements.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/case-studies/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Bank Programmes & Case Studies: Quantum-Safe Deployments in Practice",
+      "url": "http://127.0.0.1:8000/case-studies/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/clock/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "The Quantum-Safe Deadline Tracker: Global Regulatory & Technology Clock",
+      "url": "http://127.0.0.1:8000/clock/"
     },
     {
       "authors": [
@@ -80,6 +185,21 @@
     {
       "authors": [
         {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "How fintechs, payment processors, and scale-ups prepare for Tier-1 bank cryptographic security audits and DORA vendor compliance.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/fintech/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Fintech & Scale-ups: PQC for Third-Party Bank Due Diligence",
+      "url": "http://127.0.0.1:8000/fintech/"
+    },
+    {
+      "authors": [
+        {
           "name": "The Banking On Quantum Team"
         }
       ],
@@ -91,6 +211,21 @@
       "tags": [],
       "title": "Made with Static Site Generator (SSG) | Banking On Quantum",
       "url": "http://127.0.0.1:8000/made-with-ssg/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Monthly executive newsletter delivering regulator-accurate analysis, migration benchmarks, and cryptographic engineering updates.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/newsletter/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "The Quantum-Safe Briefing: Monthly Intelligence for Financial Leaders",
+      "url": "http://127.0.0.1:8000/newsletter/"
     },
     {
       "authors": [
@@ -140,6 +275,51 @@
     {
       "authors": [
         {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financial practitioners.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/research/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Research & Technical Essays: Quantum-Safe Banking Architecture",
+      "url": "http://127.0.0.1:8000/research/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Interactive self-assessment evaluating financial institution quantum readiness across 6 core governance and cryptographic dimensions.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/scorecard/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard",
+      "url": "http://127.0.0.1:8000/scorecard/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Transparent advisory tiers and hands-on cryptographic engineering for banks, payment rails, and fintechs.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/services/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Advisory & Engineering Services: Scopes, Deliverables & Price Bands",
+      "url": "http://127.0.0.1:8000/services/"
+    },
+    {
+      "authors": [
+        {
           "name": "The Banking On Quantum Team"
         }
       ],
@@ -181,6 +361,51 @@
       "tags": [],
       "title": "Thank You | Banking On Quantum",
       "url": "http://127.0.0.1:8000/thanks/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and financial messaging.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/toolkit/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Open Source Engineering Toolkit: KyberLib, hsh & Cryptographic Utilities",
+      "url": "http://127.0.0.1:8000/toolkit/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/trust/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Security Posture, Provenance & Trust: Sigstore, SBOMs & Accessibility",
+      "url": "http://127.0.0.1:8000/trust/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Vendor-neutral analysis of commercial post-quantum software vendors, orchestration platforms, and hardware providers.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/vendors/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Independent Vendor Landscape: Discovery, PQC Libraries, HSMs & PKI",
+      "url": "http://127.0.0.1:8000/vendors/"
     }
   ],
   "language": "en-GB",

@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financi",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Banking On Quantum",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "bankingonqua",
+  "start_url": ".",
+  "theme_color": null
+}

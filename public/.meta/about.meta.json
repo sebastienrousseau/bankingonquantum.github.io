@@ -1,10 +1,10 @@
 {
-  "author": "The Banking On Quantum Team",
+  "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
   "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
   "date": "2026-09-01",
-  "description": "Discover the mission behind Banking On Quantum: securing the world's financial systems against quantum threats while harnessing quantum computation.",
-  "keywords": "about banking on quantum, quantum finance research, post-quantum security mission",
+  "description": "Background, credentials, and 19-year engineering history of Sebastien Rousseau in production financial cryptography.",
+  "keywords": "Sebastien Rousseau, Banking On Quantum founder, financial cryptography architect, KyberLib author",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -12,6 +12,6 @@
   "permalink": "https://bankingonquantum.com/about/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "About Mission & Quantum Research | Banking On Quantum",
-  "word_count": 91
+  "title": "About Sebastien Rousseau & Banking On Quantum",
+  "word_count": 187
 }

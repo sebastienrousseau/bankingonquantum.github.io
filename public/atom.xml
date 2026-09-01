@@ -15,13 +15,13 @@
     <author><name>The Banking On Quantum Team</name></author>
   </entry>
   <entry>
-    <title>About Mission &amp; Quantum Research | Banking On Quantum</title>
+    <title>About Sebastien Rousseau &amp; Banking On Quantum</title>
     <link href="http://127.0.0.1:8000/about/"/>
     <id>http://127.0.0.1:8000/about/</id>
     <updated></updated>
     <published></published>
-    <summary>Discover the mission behind Banking On Quantum: securing the world&apos;s financial systems against quantum threats while harnessing quantum computation.</summary>
-    <author><name>The Banking On Quantum Team</name></author>
+    <summary>Background, credentials, and 19-year engineering history of Sebastien Rousseau in production financial cryptography.</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
     <title>Accessibility Statement | Banking On Quantum</title>
@@ -31,6 +31,69 @@
     <published></published>
     <summary>Accessibility conformance standards for Banking On Quantum, adhering to WCAG 2.2 Level AAA standards.</summary>
     <author><name>The Banking On Quantum Team</name></author>
+  </entry>
+  <entry>
+    <title>Banks &amp; Payment Infrastructures: The Quantum Architecture Blueprint</title>
+    <link href="http://127.0.0.1:8000/banks/"/>
+    <id>http://127.0.0.1:8000/banks/</id>
+    <updated></updated>
+    <published></published>
+    <summary>End-to-end PQC migration blueprint for core banking ledgers, SWIFT MT/MX rails, hybrid TLS tunnels, and hardware security modules.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Global PQC Regulatory Matrix: G7, US, EU, UK, Singapore &amp; Israel</title>
+    <link href="http://127.0.0.1:8000/banks/comply/"/>
+    <id>http://127.0.0.1:8000/banks/comply/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Comprehensive, regulator-by-regulator mapping of post-quantum cryptographic mandates, discovery expectations, and compliance deadlines.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Quantum Algorithms in Finance: Derivative Pricing, Risk &amp; Optimization</title>
+    <link href="http://127.0.0.1:8000/banks/compute/"/>
+    <id>http://127.0.0.1:8000/banks/compute/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Honest state of play on quantum computational finance: Monte Carlo acceleration, QAOA portfolio balancing, and HSBC/IBM benchmarks.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>PQC Migration: Inventory, CBOM, Hybrid TLS &amp; HSM Architecture</title>
+    <link href="http://127.0.0.1:8000/banks/secure/"/>
+    <id>http://127.0.0.1:8000/banks/secure/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Deep technical guide on executing a post-quantum cryptographic migration across banking networks.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Board &amp; Risk Committee Briefing: Fiduciary Oversight in the Quantum Era</title>
+    <link href="http://127.0.0.1:8000/boards/"/>
+    <id>http://127.0.0.1:8000/boards/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Boardroom-level guidance for Non-Executive Directors, Chief Risk Officers, and Audit Committees on quantum cryptographic exposure.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Bank Programmes &amp; Case Studies: Quantum-Safe Deployments in Practice</title>
+    <link href="http://127.0.0.1:8000/case-studies/"/>
+    <id>http://127.0.0.1:8000/case-studies/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Public bank disclosures, pilot benchmarks, and anonymised production CBOM discovery engagements.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>The Quantum-Safe Deadline Tracker: Global Regulatory &amp; Technology Clock</title>
+    <link href="http://127.0.0.1:8000/clock/"/>
+    <id>http://127.0.0.1:8000/clock/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Live, maintained tracker of global post-quantum cryptographic deadlines, supervisory milestones, and hardware sunsets.</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
     <title>Get in Touch | Banking On Quantum</title>
@@ -51,6 +114,15 @@
     <author><name>The Banking On Quantum Team</name></author>
   </entry>
   <entry>
+    <title>Fintech &amp; Scale-ups: PQC for Third-Party Bank Due Diligence</title>
+    <link href="http://127.0.0.1:8000/fintech/"/>
+    <id>http://127.0.0.1:8000/fintech/</id>
+    <updated></updated>
+    <published></published>
+    <summary>How fintechs, payment processors, and scale-ups prepare for Tier-1 bank cryptographic security audits and DORA vendor compliance.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
     <title>Made with Static Site Generator (SSG) | Banking On Quantum</title>
     <link href="http://127.0.0.1:8000/made-with-ssg/"/>
     <id>http://127.0.0.1:8000/made-with-ssg/</id>
@@ -58,6 +130,15 @@
     <published></published>
     <summary>Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibility.</summary>
     <author><name>The Banking On Quantum Team</name></author>
+  </entry>
+  <entry>
+    <title>The Quantum-Safe Briefing: Monthly Intelligence for Financial Leaders</title>
+    <link href="http://127.0.0.1:8000/newsletter/"/>
+    <id>http://127.0.0.1:8000/newsletter/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Monthly executive newsletter delivering regulator-accurate analysis, migration benchmarks, and cryptographic engineering updates.</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
     <title>Quantum Architecture &amp; Cryptographic Agility | Banking On Quantum</title>
@@ -87,6 +168,33 @@
     <author><name>The Banking On Quantum Team</name></author>
   </entry>
   <entry>
+    <title>Research &amp; Technical Essays: Quantum-Safe Banking Architecture</title>
+    <link href="http://127.0.0.1:8000/research/"/>
+    <id>http://127.0.0.1:8000/research/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financial practitioners.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Post-Quantum Banking Resilience Index (PQ-BRI): Interactive Scorecard</title>
+    <link href="http://127.0.0.1:8000/scorecard/"/>
+    <id>http://127.0.0.1:8000/scorecard/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Interactive self-assessment evaluating financial institution quantum readiness across 6 core governance and cryptographic dimensions.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Advisory &amp; Engineering Services: Scopes, Deliverables &amp; Price Bands</title>
+    <link href="http://127.0.0.1:8000/services/"/>
+    <id>http://127.0.0.1:8000/services/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Transparent advisory tiers and hands-on cryptographic engineering for banks, payment rails, and fintechs.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
     <title>Quantum Solutions by Banking Sector | Banking On Quantum</title>
     <link href="http://127.0.0.1:8000/solutions/"/>
     <id>http://127.0.0.1:8000/solutions/</id>
@@ -112,5 +220,32 @@
     <published></published>
     <summary>Thank you for reaching out to Banking On Quantum.</summary>
     <author><name>The Banking On Quantum Team</name></author>
+  </entry>
+  <entry>
+    <title>Open Source Engineering Toolkit: KyberLib, hsh &amp; Cryptographic Utilities</title>
+    <link href="http://127.0.0.1:8000/toolkit/"/>
+    <id>http://127.0.0.1:8000/toolkit/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and financial messaging.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Security Posture, Provenance &amp; Trust: Sigstore, SBOMs &amp; Accessibility</title>
+    <link href="http://127.0.0.1:8000/trust/"/>
+    <id>http://127.0.0.1:8000/trust/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Transparency into our cryptographic supply chain, digital signatures, accessibility validation, and carbon footprint.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Independent Vendor Landscape: Discovery, PQC Libraries, HSMs &amp; PKI</title>
+    <link href="http://127.0.0.1:8000/vendors/"/>
+    <id>http://127.0.0.1:8000/vendors/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Vendor-neutral analysis of commercial post-quantum software vendors, orchestration platforms, and hardware providers.</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
 </feed>
