@@ -129,7 +129,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-tag">Cryptographic Discovery</div>
 <h3 class="bento-title">"You Cannot Migrate What You Cannot Enumerate"</h3>
 <p class="bento-desc">Cryptographic dependencies are frequently undocumented across legacy batch jobs, database storage engines, and internal microservice meshes. Automated Cryptographic Bill of Materials (CBOM) generation is the mandatory foundation of post-quantum resilience.</p>
-<div class="bento-citation">Source: S. Rousseau, "You Cannot Migrate What You Cannot Enumerate", June 2026.</div>
+<div class="bento-citation">Source: S. Rousseau, "You Cannot Migrate What You Cannot Enumerate", July 2026.</div>
 <a href="/banks/secure/index.html" class="btn-secondary-quantum">Read CBOM Technical Architecture →</a>
 </div>
 <div class="bento-card bento-col-4">
@@ -150,10 +150,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-grid">
 <div class="bento-card bento-col-6">
 <div class="bento-tag">Algorithmic Trading & Liquidity</div>
-<h3 class="bento-title">HSBC & IBM: 34% Fill-Probability Lift</h3>
+<h3 class="bento-title">HSBC & IBM: Up to 34% Fill-Probability Lift</h3>
 <p class="bento-desc">In September 2025, HSBC and IBM published joint research demonstrating a hybrid quantum-classical pipeline improving bond-trading execution prediction on production market data — a credible real-world computational benchmark.</p>
-<div class="bento-stat-callout">+34% Accuracy</div>
-<div class="bento-citation"><a href="https://www.hsbc.com/news-and-media/media-releases/2025/hsbc-and-ibm-explore-quantum-computing-for-bond-trading" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release (Sep 2025) ↗</a></div>
+<div class="bento-stat-callout">Up to 34% Accuracy</div>
+<div class="bento-citation"><a href="https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-demonstrates-worlds-first-known-quantum-enabled-algorithmic-trading-with-ibm" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release (Sep 2025) ↗</a></div>
 <a href="/banks/compute/index.html" class="author-link">Read Algorithmic State of Play →</a>
 </div>
 <div class="bento-card bento-col-6">
@@ -171,7 +171,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-card bento-col-6">
 <div class="bento-tag">Supervisory Nuance</div>
 <h3 class="bento-title">The Real Regulatory Map (No Sensationalism)</h3>
-<p class="bento-desc">No US or EU financial supervisor has issued a binding PQC private-sector penalty mandate yet. However, <strong>DORA Article 9</strong> (crypto-agility), the <strong>EU Cyber Resilience Act</strong>, and the <strong>G7 CEG Roadmap</strong> mandate inventory readiness. Overclaiming mandates destroys credibility with auditors.</p>
+<p class="bento-desc">No US or European financial supervisors (EBA/ESAs) have issued a binding PQC private-sector penalty mandate yet. However, <strong>DORA Article 9</strong> (crypto-agility), the <strong>EU Cyber Resilience Act</strong>, and the <strong>G7 CEG Roadmap</strong> set supervisory expectations for inventory readiness. Overclaiming mandates destroys credibility with auditors.</p>
 <a href="/banks/comply/index.html" class="btn-secondary-quantum">View Global Matrix by Jurisdiction →</a>
 </div>
 <div class="bento-card bento-col-6">
@@ -215,10 +215,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 </div>
 
 <div class="article-grid">
-<a href="https://sebastienrousseau.com/articles/you-cannot-migrate-what-you-cannot-enumerate/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/articles/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
-<span>28 June 2026</span>
+<span>28 July 2026</span>
 <span class="sigstore-badge">✓ Sigstore Signed</span>
 </div>
 <h3 class="article-title">You Cannot Migrate What You Cannot Enumerate</h3>
@@ -227,10 +227,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="author-link">Read Full Essay ↗</span>
 </a>
 
-<a href="https://sebastienrousseau.com/articles/the-2026-post-quantum-security-scorecard-a-board-level-metric-framework/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/articles/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
-<span>15 June 2026</span>
+<span>29 June 2026</span>
 <span class="sigstore-badge">✓ Sigstore Signed</span>
 </div>
 <h3 class="article-title">The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework</h3>
@@ -239,10 +239,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="author-link">Read Full Essay ↗</span>
 </a>
 
-<a href="https://sebastienrousseau.com/articles/always-on-cib-cyber-recovery-fallback-rails-and-quantum-safe-treasury/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/articles/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
-<span>22 July 2026</span>
+<span>26 June 2026</span>
 <span class="sigstore-badge">✓ Sigstore Signed</span>
 </div>
 <h3 class="article-title">Always-On CIB: Cyber Recovery, Fallback Rails and Quantum-Safe Treasury</h3>
@@ -251,10 +251,10 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="author-link">Read Full Essay ↗</span>
 </a>
 
-<a href="https://sebastienrousseau.com/articles/the-red-team-became-a-supervised-supply-chain/" target="_blank" rel="noopener noreferrer" class="article-card">
+<a href="https://sebastienrousseau.com/articles/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/" target="_blank" rel="noopener noreferrer" class="article-card">
 <div>
 <div class="article-date">
-<span>10 July 2026</span>
+<span>29 July 2026</span>
 <span class="sigstore-badge">✓ Sigstore Signed</span>
 </div>
 <h3 class="article-title">The Red Team Became a Supervised Supply Chain: DORA TLPT & Cryptography</h3>
@@ -304,15 +304,15 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <div class="bento-card bento-col-6">
 <div class="bento-tag">HSBC & IBM</div>
 <h3 class="bento-title">Quantum Algorithmic Bond Trading</h3>
-<p class="bento-desc">Trained hybrid quantum machine learning models on high-volume production fixed-income market data, achieving a 34% lift in bond-fill prediction accuracy.</p>
-<div class="bento-citation"><a href="https://www.hsbc.com/news-and-media/media-releases/2025/hsbc-and-ibm-explore-quantum-computing-for-bond-trading" target="_blank" rel="noopener noreferrer">Source: HSBC Media Release (Sep 2025) ↗</a></div>
+<p class="bento-desc">Trained hybrid quantum machine learning models on high-volume production fixed-income market data, achieving up to 34% lift in bond-fill prediction accuracy.</p>
+<div class="bento-citation"><a href="https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-demonstrates-worlds-first-known-quantum-enabled-algorithmic-trading-with-ibm" target="_blank" rel="noopener noreferrer">Source: HSBC Official Media Release (Sep 2025) ↗</a></div>
 </div>
 
 <div class="bento-card bento-col-6">
-<div class="bento-tag">JPMorgan Chase</div>
+<div class="bento-tag">JPMorgan Chase, Toshiba & Ciena</div>
 <h3 class="bento-title">Quantum Key Distribution (QKD) Research Trial</h3>
-<p class="bento-desc">Demonstrated a research trial of 800 Gbps QKD across a metropolitan optical testbed in partnership with Toshiba and Ciena to evaluate physical-layer key exchange.</p>
-<div class="bento-citation"><a href="https://www.jpmorgan.com/technology/technology-blog/quantum-key-distribution-blockchain" target="_blank" rel="noopener noreferrer">Source: JPMorgan Chase Applied Research ↗</a></div>
+<p class="bento-desc">Demonstrated a research trial of 800 Gbps QKD across a metropolitan optical testbed in partnership with Toshiba and Ciena to evaluate physical-layer key exchange for mission-critical blockchain workloads.</p>
+<div class="bento-citation"><a href="https://arxiv.org/abs/2303.01358" target="_blank" rel="noopener noreferrer">Source: arXiv:2303.01358 Applied Research Paper ↗</a></div>
 </div>
 </div>
 </section>
@@ -471,7 +471,7 @@ banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing 
 <span class="apple-faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
 </summary>
 <div class="apple-faq-body">
-<p>No. Neither the US SEC/Fed nor the European Central Bank has issued a binding private-sector PQC penalty mandate yet. However, <strong>DORA Article 9</strong> enforces cryptographic agility in Europe, the <strong>Bank of Israel</strong> requires transition roadmaps, and the <strong>G7 Cyber Expert Group</strong> has established coordinated transition expectations. Claims of active fines are vendor marketing overreach.</p>
+<p>No. Neither the US SEC/Fed nor European financial supervisors (EBA/ESAs) have issued a binding private-sector PQC penalty mandate yet. However, <strong>DORA Article 9</strong> enforces cryptographic agility in Europe, the <strong>Bank of Israel</strong> requires transition roadmaps, and the <strong>G7 Cyber Expert Group</strong> has established coordinated transition expectations. Claims of active fines are vendor marketing overreach.</p>
 </div>
 </details>
 

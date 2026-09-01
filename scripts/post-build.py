@@ -32,12 +32,32 @@ def post_build():
         with open(os.path.join(api_dir, "clock.json"), "w", encoding="utf-8") as f:
             json.dump(clock_data, f, indent=2)
 
-    # 2. Generate llms.txt
+    # 2. Build full, aggregated sitemap.xml with all HTML pages
+    all_pages = set()
+    for root, dirs, files in os.walk(output_dir):
+        for f in files:
+            if f.endswith(".html"):
+                rel_path = os.path.relpath(os.path.join(root, f), output_dir)
+                if rel_path == "index.html":
+                    all_pages.add(f"{base_url}/")
+                else:
+                    all_pages.add(f"{base_url}/{rel_path}")
+
+    sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for p in sorted(all_pages):
+        sitemap_xml += f'  <url>\n    <loc>{p}</loc>\n    <lastmod>2026-09-01</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+    sitemap_xml += '</urlset>\n'
+
+    for d in [output_dir, docs_dir]:
+        with open(os.path.join(d, "sitemap.xml"), "w", encoding="utf-8") as f:
+            f.write(sitemap_xml)
+
+    # 3. Generate llms.txt
     llms_txt_content = f"""# Banking On Quantum
 > The independent reference desk for quantum-era finance: regulatory clock, readiness index, and open-source cryptography for banks, payment infrastructures and fintechs.
 
 ## Core Documentation & Resources
-- Homepage: {base_url}/index.html
+- Homepage: {base_url}/
 - Banks & Infrastructure: {base_url}/banks/index.html
 - PQC Architecture & CBOM: {base_url}/banks/secure/index.html
 - Quantum Algorithms & Trading: {base_url}/banks/compute/index.html
@@ -60,7 +80,7 @@ def post_build():
         with open(os.path.join(d, "llms.txt"), "w", encoding="utf-8") as f:
             f.write(llms_txt_content)
 
-    # 3. Clean and fix HTML files
+    # 4. Clean and fix HTML files
     for base_path in [output_dir, docs_dir]:
         if not os.path.exists(base_path):
             continue
@@ -95,7 +115,7 @@ def post_build():
         with open(os.path.join(output_dir, "CNAME"), "w", encoding="utf-8") as f:
             f.write("bankingonquantum.com\n")
 
-    print("Post-build optimization and canonical URL fix completed for bankingonquantum.com.")
+    print(f"Post-build optimization and full sitemap generated ({len(all_pages)} URLs).")
 
 if __name__ == "__main__":
     post_build()
