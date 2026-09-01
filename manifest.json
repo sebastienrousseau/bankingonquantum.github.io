@@ -1,6 +1,6 @@
 {
   "name": "Banking On Quantum",
-  "short_name": "bankingonquantum",
+  "short_name": "Banking On Quantum",
   "description": "Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms.",
   "start_url": "/index.html",
   "scope": "/",
@@ -11,16 +11,10 @@
   "lang": "en-GB",
   "icons": [
     {
-      "src": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
       "src": "/favicon.ico",
       "sizes": "16x16 32x32 48x48",
       "type": "image/x-icon",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }

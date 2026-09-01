@@ -22,9 +22,9 @@ manifest_data = {
             "purpose": "any maskable"
         },
         {
-            "src": "https://cloudcdn.pro/cmn/v1/icons/192x192.png",
-            "sizes": "192x192",
-            "type": "image/png",
+            "src": "/favicon.ico",
+            "sizes": "16x16 32x32 48x48",
+            "type": "image/x-icon",
             "purpose": "any maskable"
         }
     ]

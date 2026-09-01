@@ -1,7 +1,9 @@
 'use strict';
 
-// 1. Theme Engine
-(function() {
+(function () {
+  /* ==========================================================================
+     1. Theme Switcher Engine (Light / Dark / System)
+     ========================================================================== */
   var storedTheme = localStorage.getItem('theme-mode') || 'system';
 
   function applyTheme(mode) {
@@ -15,7 +17,7 @@
     localStorage.setItem('theme-mode', mode);
 
     var buttons = document.querySelectorAll('.theme-btn');
-    buttons.forEach(function(btn) {
+    buttons.forEach(function (btn) {
       if (btn.getAttribute('data-theme-mode') === mode) {
         btn.classList.add('active');
       } else {
@@ -24,77 +26,82 @@
     });
   }
 
-  // Apply immediately
   applyTheme(storedTheme);
 
   if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
       if ((localStorage.getItem('theme-mode') || 'system') === 'system') {
         applyTheme('system');
       }
     });
   }
 
+  /* ==========================================================================
+     2. Application Initializer
+     ========================================================================== */
   function initApp() {
     applyTheme(localStorage.getItem('theme-mode') || 'system');
 
-    // Attach theme toggle buttons
+    /* Theme Button Listeners */
     var themeButtons = document.querySelectorAll('.theme-btn');
-    themeButtons.forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
+    themeButtons.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
         e.preventDefault();
         var mode = btn.getAttribute('data-theme-mode');
         if (mode) applyTheme(mode);
       });
     });
 
-    // Mobile Navbar toggle
+    /* Mobile Navbar Toggle */
     var navToggle = document.getElementById('navbarToggle');
     var navMenu = document.getElementById('navbarMenu');
     if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function(e) {
+      navToggle.addEventListener('click', function (e) {
         e.stopPropagation();
         var isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
         navMenu.classList.toggle('show');
       });
     }
 
-    // FAQ Expand / Collapse All Engine
-    var toggleBtn = document.getElementById('toggleAllBtn');
-    var toggleText = document.getElementById('toggleAllText');
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        var allDetails = document.querySelectorAll('.apple-faq-list-exact details, .apple-faq-accordion details, details.apple-faq-item');
-        if (!allDetails.length) return;
-        var allOpen = Array.from(allDetails).every(function(d) { return d.open; });
-        var nextState = !allOpen;
-        allDetails.forEach(function(d) { d.open = nextState; });
-        if (toggleText) toggleText.textContent = nextState ? 'Collapse all' : 'Expand all';
-        toggleBtn.setAttribute('aria-expanded', String(nextState));
-        var icon = toggleBtn.querySelector('svg');
-        if (icon) {
-          icon.style.transform = nextState ? 'rotate(180deg)' : 'rotate(0deg)';
-          icon.style.transition = 'transform 0.25s ease';
-        }
-      });
+    /* Apple FAQ Accordion Controller */
+    var expandBtn = document.getElementById('faqExpandAllBtn');
+    var faqItems = document.querySelectorAll('.apple-faq-item');
+    if (expandBtn && faqItems.length > 0) {
+      var isAllExpanded = false;
 
-      document.querySelectorAll('.apple-faq-list-exact details, .apple-faq-accordion details, details.apple-faq-item').forEach(function(detail) {
-        detail.addEventListener('toggle', function() {
-          var allDetails = document.querySelectorAll('.apple-faq-list-exact details, .apple-faq-accordion details, details.apple-faq-item');
-          var allOpen = Array.from(allDetails).every(function(d) { return d.open; });
-          if (toggleText) toggleText.textContent = allOpen ? 'Collapse all' : 'Expand all';
-          toggleBtn.setAttribute('aria-expanded', String(allOpen));
-          var icon = toggleBtn.querySelector('svg');
-          if (icon) {
-            icon.style.transform = allOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+      function updateBtnState() {
+        var allOpen = true;
+        faqItems.forEach(function (item) {
+          if (!item.hasAttribute('open')) allOpen = false;
+        });
+        isAllExpanded = allOpen;
+        expandBtn.setAttribute('aria-expanded', String(isAllExpanded));
+        var label = expandBtn.querySelector('.apple-faq-btn-text');
+        var chevron = expandBtn.querySelector('.apple-faq-expand-chevron');
+        if (label) label.textContent = isAllExpanded ? 'Collapse all' : 'Expand all';
+        if (chevron) chevron.style.transform = isAllExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+      }
+
+      expandBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var newState = !isAllExpanded;
+        faqItems.forEach(function (item) {
+          if (newState) {
+            item.setAttribute('open', '');
+          } else {
+            item.removeAttribute('open');
           }
         });
+        updateBtnState();
+      });
+
+      faqItems.forEach(function (item) {
+        item.addEventListener('toggle', updateBtnState);
       });
     }
 
-    // Search Engine Modal
+    /* Search Modal Engine */
     var searchIndex = null;
     var isFetching = false;
     var modal = document.getElementById('searchModal');
@@ -133,7 +140,7 @@
       if (!modal) return;
       modal.classList.add('active');
       loadSearch();
-      setTimeout(function() {
+      setTimeout(function () {
         if (input) {
           input.focus();
           if (input.value.trim()) {
@@ -151,8 +158,8 @@
     }
 
     var triggers = document.querySelectorAll('#searchTrigger, #searchTriggerMobile, .search-trigger');
-    triggers.forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
         e.preventDefault();
         openSearch();
       });
@@ -164,7 +171,7 @@
       if (backdrop) backdrop.addEventListener('click', closeSearch);
     }
 
-    window.addEventListener('keydown', function(e) {
+    window.addEventListener('keydown', function (e) {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         openSearch();
@@ -174,7 +181,7 @@
     });
 
     if (input) {
-      input.addEventListener('input', function() {
+      input.addEventListener('input', function () {
         var query = input.value.trim().toLowerCase();
         if (!query) {
           results.innerHTML = '<div class="search-empty">Type to search...</div>';
@@ -182,7 +189,7 @@
         }
         if (!searchIndex) {
           results.innerHTML = '<div class="search-empty">Loading search index...</div>';
-          loadSearch().then(function() {
+          loadSearch().then(function () {
             input.dispatchEvent(new Event('input'));
           });
           return;
@@ -191,29 +198,34 @@
           results.innerHTML = '<div class="search-empty">No results found for "' + escapeHtml(query) + '"</div>';
           return;
         }
-        var tokens = query.split(/\s+/).filter(Boolean);
-        var matches = searchIndex.filter(function(item) {
+
+        var tokens = query.split(/\\s+/).filter(Boolean);
+        var matches = searchIndex.filter(function (item) {
           var t = (item.title || '').toLowerCase();
           var d = (item.description || '').toLowerCase();
           var c = (item.content || '').toLowerCase();
           var u = (item.url || '').toLowerCase();
           var target = t + ' ' + d + ' ' + c + ' ' + u;
-          return tokens.every(function(tok) { return target.includes(tok); });
+          return tokens.every(function (tok) {
+            return target.includes(tok);
+          });
         }).slice(0, 10);
 
         if (matches.length === 0) {
           results.innerHTML = '<div class="search-empty">No results found for "' + escapeHtml(query) + '"</div>';
           return;
         }
-        results.innerHTML = matches.map(function(item) {
+
+        results.innerHTML = matches.map(function (item) {
           return '<a class="search-item" href="' + item.url + '">' +
             '<div class="search-item-title">' + escapeHtml(item.title) + '</div>' +
             '<div class="search-item-desc">' + escapeHtml((item.description || item.content || '').replace(/<[^>]+>/g, '').slice(0, 140)) + '...</div>' +
-          '</a>';
+            '</a>';
         }).join('');
       });
     }
-    // 5. Photo Lightbox Modal Engine
+
+    /* Photo Lightbox Modal Engine */
     var lightboxModal = document.getElementById('photoLightboxModal');
     if (!lightboxModal) {
       lightboxModal = document.createElement('div');
@@ -257,13 +269,13 @@
     if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
     if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
 
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('active')) {
         closeLightbox();
       }
     });
 
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       var photoTarget = e.target.closest('.photo-card, .photo-img-wrapper, .gallery-card, .gallery-img-wrapper, figure');
       if (photoTarget) {
         var img = photoTarget.querySelector('img');
@@ -273,60 +285,11 @@
         }
       }
     });
-
   }
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initApp);
   } else {
     initApp();
-  }
-})();
-
-
-// Apple FAQ Accordion Controller
-(function() {
-  function initFaq() {
-    var expandBtn = document.getElementById('faqExpandAllBtn');
-    var faqItems = document.querySelectorAll('.apple-faq-item');
-    if (!expandBtn || faqItems.length === 0) return;
-
-    var isAllExpanded = false;
-
-    function updateBtnState() {
-      var allOpen = true;
-      faqItems.forEach(function(item) {
-        if (!item.hasAttribute('open')) allOpen = false;
-      });
-      isAllExpanded = allOpen;
-      expandBtn.setAttribute('aria-expanded', isAllExpanded);
-      var label = expandBtn.querySelector('.apple-faq-btn-text');
-      var chevron = expandBtn.querySelector('.apple-faq-expand-chevron');
-      if (label) label.textContent = isAllExpanded ? 'Collapse all' : 'Expand all';
-      if (chevron) chevron.style.transform = isAllExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
-    }
-
-    expandBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      var newState = !isAllExpanded;
-      faqItems.forEach(function(item) {
-        if (newState) {
-          item.setAttribute('open', '');
-        } else {
-          item.removeAttribute('open');
-        }
-      });
-      updateBtnState();
-    });
-
-    faqItems.forEach(function(item) {
-      item.addEventListener('toggle', updateBtnState);
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initFaq);
-  } else {
-    initFaq();
   }
 })();
