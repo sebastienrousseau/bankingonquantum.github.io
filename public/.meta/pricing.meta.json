@@ -1,18 +1,16 @@
 {
-  "author": "The Banking On Quantum Team",
+  "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum",
   "date": "2026-09-01",
-  "description": "Engagement tiers for financial institutions, from open quantum research to PQC cryptographic audits and enterprise co-development.",
-  "keywords": "quantum banking advisory, PQC consulting, quantum risk audit",
+  "description": "Redirecting to Advisory Services & Price Bands...",
   "language": "en-GB",
-  "layout": "pricing",
+  "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
   "name": "Banking On Quantum",
-  "nav_pricing": true,
   "permalink": "https://bankingonquantum.com/pricing/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "Advisory & Engagement Tiers | Banking On Quantum",
-  "word_count": 71
+  "title": "Advisory Services & Price Bands",
+  "word_count": 12
 }

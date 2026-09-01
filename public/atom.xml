@@ -78,12 +78,12 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Bank Programmes &amp; Case Studies: Quantum-Safe Deployments in Practice</title>
+    <title>Bank Programmes &amp; Case Studies: Quantum Deployments in Practice</title>
     <link href="http://127.0.0.1:8000/case-studies/"/>
     <id>http://127.0.0.1:8000/case-studies/</id>
     <updated></updated>
     <published></published>
-    <summary>Public bank disclosures, pilot benchmarks, and anonymised production CBOM discovery engagements.</summary>
+    <summary>Public bank disclosures and research benchmarks across algorithmic trading, risk simulation, and optical quantum key distribution.</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
@@ -105,13 +105,13 @@
     <author><name>The Banking On Quantum Team</name></author>
   </entry>
   <entry>
-    <title>Frequently Asked Questions | Banking On Quantum</title>
+    <title>Frequently Asked Questions: Quantum-Safe Banking &amp; Regulation</title>
     <link href="http://127.0.0.1:8000/faqs/"/>
     <id>http://127.0.0.1:8000/faqs/</id>
     <updated></updated>
     <published></published>
-    <summary>Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.</summary>
-    <author><name>The Banking On Quantum Team</name></author>
+    <summary>Accurate, practitioner-verified answers regarding post-quantum cryptography timelines, regulatory mandates, and financial algorithms.</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
     <title>Fintech &amp; Scale-ups: PQC for Third-Party Bank Due Diligence</title>
@@ -141,22 +141,22 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Quantum Architecture &amp; Cryptographic Agility | Banking On Quantum</title>
+    <title>Banks &amp; Payment Infrastructures</title>
     <link href="http://127.0.0.1:8000/platform/"/>
     <id>http://127.0.0.1:8000/platform/</id>
     <updated></updated>
     <published></published>
-    <summary>Architectural blueprint for post-quantum cryptographic migration, quantum algorithm integration, and hybrid quantum-classical computing.</summary>
-    <author><name>The Banking On Quantum Team</name></author>
+    <summary>Redirecting to Banks &amp; Payment Infrastructures...</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Advisory &amp; Engagement Tiers | Banking On Quantum</title>
+    <title>Advisory Services &amp; Price Bands</title>
     <link href="http://127.0.0.1:8000/pricing/"/>
     <id>http://127.0.0.1:8000/pricing/</id>
     <updated></updated>
     <published></published>
-    <summary>Engagement tiers for financial institutions, from open quantum research to PQC cryptographic audits and enterprise co-development.</summary>
-    <author><name>The Banking On Quantum Team</name></author>
+    <summary>Redirecting to Advisory Services &amp; Price Bands...</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
     <title>Privacy Policy | Banking On Quantum</title>
@@ -173,7 +173,7 @@
     <id>http://127.0.0.1:8000/research/</id>
     <updated></updated>
     <published></published>
-    <summary>Peer-reviewed, Sigstore-signed technical research papers, architectural breakdowns, and supervisory analysis for financial practitioners.</summary>
+    <summary>Sigstore-signed technical research essays, architectural breakdowns, and supervisory analysis for financial practitioners.</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
@@ -195,13 +195,13 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Quantum Solutions by Banking Sector | Banking On Quantum</title>
+    <title>Banks &amp; Payment Infrastructures</title>
     <link href="http://127.0.0.1:8000/solutions/"/>
     <id>http://127.0.0.1:8000/solutions/</id>
     <updated></updated>
     <published></published>
-    <summary>Targeted quantum applications for Treasury, Capital Markets, Enterprise Cybersecurity, and Retail Payment Rails.</summary>
-    <author><name>The Banking On Quantum Team</name></author>
+    <summary>Redirecting to Banks &amp; Payment Infrastructures...</summary>
+    <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
     <title>Terms of Use | Banking On Quantum</title>
@@ -227,7 +227,7 @@
     <id>http://127.0.0.1:8000/toolkit/</id>
     <updated></updated>
     <published></published>
-    <summary>Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, quantum-resistant hashing, and financial messaging.</summary>
+    <summary>Production-grade, zero-allocation Rust libraries for post-quantum key encapsulation, secure password hashing, and financial messaging.</summary>
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>

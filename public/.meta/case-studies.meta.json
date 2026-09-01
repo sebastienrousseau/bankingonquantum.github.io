@@ -1,10 +1,10 @@
 {
   "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure",
   "date": "2026-09-01",
-  "description": "Public bank disclosures, pilot benchmarks, and anonymised production CBOM discovery engagements.",
-  "keywords": "quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM engagement",
+  "description": "Public bank disclosures and research benchmarks across algorithmic trading, risk simulation, and optical quantum key distribution.",
+  "keywords": "quantum banking case studies, HSBC quantum trading, JPMorgan QKD, bank CBOM",
   "language": "en-GB",
   "layout": "page",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
@@ -12,6 +12,6 @@
   "permalink": "https://bankingonquantum.com/case-studies/index.html",
   "reading_time": 1,
   "short_name": "bankingonquantum",
-  "title": "Bank Programmes & Case Studies: Quantum-Safe Deployments in Practice",
-  "word_count": 249
+  "title": "Bank Programmes & Case Studies: Quantum Deployments in Practice",
+  "word_count": 166
 }

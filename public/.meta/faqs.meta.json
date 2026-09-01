@@ -1,17 +1,17 @@
 {
-  "author": "The Banking On Quantum Team",
+  "author": "Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
-  "banner_alt": "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator",
+  "banner_alt": "Banking On Quantum",
   "date": "2026-09-01",
-  "description": "Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.",
-  "keywords": "frequently asked questions, banking on quantum FAQs, quantum banking technology",
+  "description": "Accurate, practitioner-verified answers regarding post-quantum cryptography timelines, regulatory mandates, and financial algorithms.",
+  "keywords": "PQC FAQs, quantum banking questions, DORA crypto agility FAQ, NIST FIPS 203 FAQ",
   "language": "en-GB",
-  "layout": "page",
+  "layout": "faqs",
   "logo": "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg",
   "name": "Banking On Quantum",
   "permalink": "https://bankingonquantum.com/faqs/index.html",
   "reading_time": 3,
   "short_name": "bankingonquantum",
-  "title": "Frequently Asked Questions | Banking On Quantum",
-  "word_count": 722
+  "title": "Frequently Asked Questions: Quantum-Safe Banking & Regulation",
+  "word_count": 649
 }

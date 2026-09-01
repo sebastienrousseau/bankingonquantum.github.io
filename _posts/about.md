@@ -11,14 +11,14 @@ layout: "page"
 permalink: "https://bankingonquantum.com/about/index.html"
 logo: "https://cloudcdn.pro/bankingonquantum/v1/logos/bankingonquantum.svg"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp"
-banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilution Refrigerator"
+banner_alt: "Banking On Quantum — Dilution Refrigerator and Quantum Computing Infrastructure"
 ---
 
 # About Sebastien Rousseau
 
 <div class="author-pedigree-strip my-4">
 <div class="author-avatar-wrap">
-<img src="https://cloudcdn.pro/cmn/v1/logos/cmn.svg" alt="Sebastien Rousseau" class="author-avatar" width="96" height="96" />
+<img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-1-320.webp" alt="Sebastien Rousseau" class="author-avatar" width="96" height="96" />
 </div>
 <div class="author-bio-content">
 <h2 class="author-name mb-1">Sebastien Rousseau</h2>
@@ -30,7 +30,7 @@ banner_alt: "Banking On Quantum — Quantum Computing Infrastructure and Dilutio
 ## Professional Background & Credentials
 
 - **19 Years in Production Systems:** Deep experience across corporate and investment banking (CIB), real-time payment rails, clearing ledgers, and Hardware Security Modules (HSMs).
-- **45.7+ Million Open-Source Downloads:** Author and maintainer of high-performance Rust cryptographic libraries, including [KyberLib](https://github.com/sebastienrousseau/kyberlib) (ML-KEM-512/768/1024), [hsh](https://github.com/sebastienrousseau/hsh) (cryptographic digests), and ISO 20022 message parsers.
+- **45.7+ Million Open-Source Downloads:** Author and maintainer of high-performance Rust cryptographic libraries, including [KyberLib](https://github.com/sebastienrousseau/kyberlib) (ML-KEM-512/768/1024), [hsh](https://github.com/sebastienrousseau/hsh) (cryptographic password and digest utilities), and ISO 20022 message parsers.
 - **Independent Practitioner Voice:** Frequent speaker at international financial technology forums, FINOS working groups, and cryptographic standards roundtables.
 - **Editorial Standard:** Every paper on Banking On Quantum is independently authored, free of vendor sponsorship, and signed with Sigstore cryptographic provenance.
 
