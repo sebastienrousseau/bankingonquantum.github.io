@@ -1,198 +1,195 @@
-{{#extends "base"}}
-{{#block "main"}}
-<section class="hero">
-  <div class="container hero-inner">
-    <p class="eyebrow">{{eyebrow}}</p>
-    <h1>{{headline}}</h1>
-    <p class="lead">{{lead}}</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="{{locale_path}}contact/">{{cta_primary}}</a>
-      <a class="btn btn-secondary" href="{{locale_path}}platform/">{{cta_secondary}}</a>
+<!DOCTYPE html>
+<html lang="en-GB" data-theme-mode="system">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{{title}}</title>
+  
+  <meta name="author" content="Banking On Quantum Team">
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; connect-src 'self' https://formspree.io; img-src 'self' data: https: https://cloudcdn.pro; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self'; form-action 'self' https://formspree.io;" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Banking On Quantum">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{banner}}">
+  <meta property="og:url" content="{{url}}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{banner}}">
+
+  <link rel="alternate" href="{{url}}" hreflang="en" />
+  <link rel="canonical" href="{{url}}" />
+  <link rel="icon" type="image/svg+xml" href="{{logo}}" />
+  <link rel="icon" type="image/x-icon" href="{{icon}}" sizes="16x16 32x32" />
+  <link rel="apple-touch-icon" href="https://cloudcdn.pro/cmn/v1/icons/192x192.png" sizes="192x192" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="navbar-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/index.html" aria-label="Banking On Quantum Homepage">
+          <img src="{{logo}}" alt="Banking On Quantum Logo" width="32" height="32" class="d-inline-block" />
+          <span class="navbar-brand-text">Banking On Quantum</span>
+        </a>
+
+        <!-- Mobile actions (Search + Theme + Toggle) -->
+        <div class="navbar-actions d-flex d-lg-none">
+          <button type="button" class="btn search-trigger" id="searchTriggerMobile" aria-label="Search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+
+          <div class="theme-switcher" role="radiogroup" aria-label="Theme mode">
+            <button type="button" class="theme-btn" data-theme-mode="light" aria-label="Light mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+            <button type="button" class="theme-btn" data-theme-mode="dark" aria-label="Dark mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button type="button" class="theme-btn active" data-theme-mode="system" aria-label="System mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </button>
+          </div>
+
+          <button type="button" class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarMenu" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Links menu -->
+      <div class="navbar-menu" id="navbarMenu">
+        <ul class="nav-list">
+<li class="nav-item"><a class="nav-link" href="/platform/index.html">Platform</a></li>
+<li class="nav-item"><a class="nav-link" href="/solutions/index.html">Solutions</a></li>
+<li class="nav-item"><a class="nav-link" href="/pricing/index.html">Pricing</a></li>
+<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="/faqs/index.html">FAQs</a></li>
+<li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/contact/index.html">Get in touch</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Desktop actions -->
+      <div class="navbar-actions d-none d-lg-flex">
+        <button type="button" class="btn search-trigger" id="searchTrigger" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd class="search-kbd">⌘K</kbd>
+        </button>
+
+        <div class="theme-switcher" role="radiogroup" aria-label="Theme mode">
+          <button type="button" class="theme-btn" data-theme-mode="light" aria-label="Light mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button type="button" class="theme-btn" data-theme-mode="dark" aria-label="Dark mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <button type="button" class="theme-btn active" data-theme-mode="system" aria-label="System mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner (Isolated to Index) -->
+  <header class="hero-banner-container">
+    <img src="{{banner}}" alt="{{banner_alt}}" class="hero-banner-img" width="1200" height="480" />
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" class="content-wrapper" aria-label="Main content">
+    <header class="page-header text-center mb-4">
+      <h1 class="display-5 fw-bold text-headline mb-3">{{title}}</h1>
+      <p class="fs-5 text-muted">{{description}}</p>
+    </header>
+
+    <div class="card-surface">
+      <div class="content-body prose">
+        {{content}}
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Top Anchor -->
+  <div class="text-center py-4">
+    <a href="#main" class="btn btn-outline-dark" aria-label="Back to the top">Back to the top ↑</a>
+  </div>
+
+  <footer>
+    <div class="container-xxl">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h2 class="h5 fw-bold mb-3">Platform</h2>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+<li><a href="/platform/index.html">Platform</a></li>
+<li><a href="/solutions/index.html">Solutions</a></li>
+<li><a href="/pricing/index.html">Pricing</a></li>
+<li><a href="/about/index.html">About</a></li>
+<li><a href="/faqs/index.html">FAQs</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h2 class="h5 fw-bold mb-3">Company</h2>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="/about/index.html">About us</a></li>
+            <li><a href="/made-with-ssg/index.html">Made with SSG</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h2 class="h5 fw-bold mb-3">Legal</h2>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="/accessibility/index.html">Accessibility</a></li>
+            <li><a href="/terms/index.html">Terms of use</a></li>
+            <li><a href="/privacy/index.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h2 class="h5 fw-bold mb-3">Discovery</h2>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="/rss.xml">RSS Feed</a></li>
+            <li><a href="/atom.xml">Atom Feed</a></li>
+            <li><a href="/feed.json">JSON Feed</a></li>
+            <li><a href="/sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center pt-4 mt-4 border-top text-muted">
+        {{copyright}}
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal Dialog -->
+  <div id="searchModal" class="search-modal" role="dialog" aria-modal="true" aria-label="Site Search">
+    <div class="search-backdrop"></div>
+    <div class="search-dialog">
+      <div class="search-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" id="searchInput" class="search-input" placeholder="Search pages, articles, docs..." aria-label="Search query" autocomplete="off">
+        <button type="button" class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      </div>
+      <div id="searchResults" class="search-results" role="listbox">
+        <div class="search-empty">Type to search...</div>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <h2 class="visually-hidden">By the numbers</h2>
-    <!--
-      Illustrative figures for a fictional product. They are marked up as a
-      description list rather than headings so a screen-reader user gets the
-      figure and its label as a pair, not four orphaned numbers.
-    -->
-    <dl class="grid grid-4">
-      <div class="stat">
-        <dt class="stat-label">Teams onboarded</dt>
-        <dd><span class="stat-figure">1,200+</span></dd>
-      </div>
-      <div class="stat">
-        <dt class="stat-label">Median setup time</dt>
-        <dd><span class="stat-figure">18 min</span></dd>
-      </div>
-      <div class="stat">
-        <dt class="stat-label">Integrations</dt>
-        <dd><span class="stat-figure">60</span></dd>
-      </div>
-      <div class="stat">
-        <dt class="stat-label">Uptime, trailing year</dt>
-        <dd><span class="stat-figure">99.98%</span></dd>
-      </div>
-    </dl>
-  </div>
-</section>
-
-<section class="section" id="platform">
-  <div class="container stack">
-    <h2>One workspace, four surfaces</h2>
-    <p class="lead">
-      Each surface is a full page of content on its own. The tab strip is an
-      enhancement, not the structure.
-    </p>
-
-    <!--
-      The complete, correct answer without JavaScript is the stack of
-      labelled sections below. The island adds a tab strip that shows one at
-      a time; it never renders a control it cannot wire up, so nothing here
-      is broken when the bundle fails to arrive.
-    -->
-    <ssg-island component="feature-tabs" hydrate="visible" props='{"label":"Platform surfaces"}'>
-      <div data-tabs>
-        <section class="tab-panel" id="panel-plan" data-tab-title="Plan">
-          <h3>Plan</h3>
-          <p>
-            Break an objective into work that fits in a week. Dependencies
-            are declared once and drawn everywhere, so a slipped date shows
-            up on the plan it affects rather than in someone's inbox.
-          </p>
-        </section>
-        <section class="tab-panel" id="panel-build" data-tab-title="Build">
-          <h3>Build</h3>
-          <p>
-            Boards, lists and a calendar over the same records. Changing the
-            view never changes the data, so two teams can look at one
-            backlog through the lens each prefers.
-          </p>
-        </section>
-        <section class="tab-panel" id="panel-review" data-tab-title="Review">
-          <h3>Review</h3>
-          <p>
-            Comments resolve against a revision rather than floating free,
-            and an approval records who approved what, not merely that
-            somebody did.
-          </p>
-        </section>
-        <section class="tab-panel" id="panel-report" data-tab-title="Report">
-          <h3>Report</h3>
-          <p>
-            Dashboards read from the same records the work lives in. There
-            is no export step, so a number on a dashboard is never a
-            fortnight behind the thing it describes.
-          </p>
-        </section>
-      </div>
-    </ssg-island>
-  </div>
-</section>
-
-<section class="section" class="section bg-soft">
-  <div class="container stack">
-    <h2>What you get on day one</h2>
-    <div class="grid grid-3">
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7" /></svg>
-        </div>
-        <h3>Structured work</h3>
-        <p>
-          Tasks, docs and decisions in one record type, so a search returns
-          the decision as readily as the ticket that prompted it.
-        </p>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" /></svg>
-        </div>
-        <h3>Views that compose</h3>
-        <p>
-          Filter, group and sort are independent. Any combination is a URL,
-          which means a view is something you can send to a colleague.
-        </p>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg>
-        </div>
-        <h3>Automation you can read</h3>
-        <p>
-          Rules are stated as sentences and shown in full before they run.
-          An automation nobody can read is an outage waiting for a quiet
-          afternoon.
-        </p>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
-        </div>
-        <h3>History that survives</h3>
-        <p>
-          Every field keeps its previous values. Reverting is reading the
-          record, not restoring a backup.
-        </p>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z" /></svg>
-        </div>
-        <h3>Permissions by default</h3>
-        <p>
-          A workspace starts closed. Sharing is a deliberate act with an
-          audit line attached to it.
-        </p>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M4 17V7l8 5 8-5v10" /></svg>
-        </div>
-        <h3>Exports that round-trip</h3>
-        <p>
-          What you export imports again. Leaving is supported rather than
-          merely permitted.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container stack">
-    <h2>Built for the way teams actually split up</h2>
-    <div class="grid grid-3">
-      <article class="card">
-        <h3>Product</h3>
-        <p>Roadmaps that survive contact with a shipping date.</p>
-      </article>
-      <article class="card">
-        <h3>Marketing</h3>
-        <p>Campaign calendars with the assets attached to the dates.</p>
-      </article>
-      <article class="card">
-        <h3>Operations</h3>
-        <p>Recurring work that does not depend on anyone remembering it.</p>
-      </article>
-    </div>
-    <p>
-      <a href="{{locale_path}}solutions/">See all team templates</a>
-    </p>
-  </div>
-</section>
-
-<section class="section" class="section bg-soft">
-  <div class="container stack">
-    <div class="prose">{{!content}}</div>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="{{locale_path}}contact/">{{cta_primary}}</a>
-      <a class="btn btn-secondary" href="{{locale_path}}pricing/">See pricing</a>
-    </div>
-  </div>
-</section>
-{{/block}}
+  <script src="/main.js" defer></script>
+</body>
+</html>
