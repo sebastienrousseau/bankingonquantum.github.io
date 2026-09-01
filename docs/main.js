@@ -1,100 +1,135 @@
+// Combined Antigravity ServiceWorker + Theme Switcher + Search Engine + Mobile Nav Drawer
 "use strict";
-
-/**
- * Class to handle registration of a service worker.
- */
 class ServiceWorkerSetup {
-  /**
-   * Constructor for the ServiceWorkerSetup class.
-   * Checks if service workers are supported and initiates registration if they are.
-   * If not, logs a warning to the console.
-   */
   constructor() {
     if ("serviceWorker" in navigator) {
-      // Deferring service worker registration until after the page has loaded.
-      window.addEventListener("load", () => {
-        this.registerServiceWorker();
-      });
-    } else {
-      console.warn("Service workers are not supported by this browser");
+      window.addEventListener("load", () => { this.registerServiceWorker(); });
     }
   }
-
-  /**
-   * Method to register a service worker.
-   * Logs a success message with the registration scope if registration succeeds,
-   * or an error message if registration fails.
-   * Also checks for a new service worker installation and triggers an update if found.
-   */
   registerServiceWorker() {
-    navigator.serviceWorker
-      .register("/sw.js", { scope: "./" })
-      .then((registration) => {
-        console.log(
-          "ServiceWorker registration successful with scope: ",
-          registration.scope
-        );
-
-        // If there's no controller, this page wasn't loaded via a service worker, so they're looking at the latest version.
-        // Exit early
-        if (!navigator.serviceWorker.controller) return;
-
-        // If there's a worker waiting, that means a new version has been found and the waiting worker can be updated
-        if (registration.waiting) {
-          this.updateServiceWorker(registration.waiting);
-          return;
-        }
-
-        // If there's a worker installing, track its progress. If it becomes "installed", we can update the service worker.
-        if (registration.installing) {
-          this.trackInstallingWorker(registration.installing);
-          return;
-        }
-
-        // If none of the above, then listen for new installing workers arriving.
-        // If one arrives, track its progress.
-        // If it becomes "installed", our service worker code can be updated.
-        registration.addEventListener("updatefound", () => {
-          this.trackInstallingWorker(registration.installing);
-        });
-      })
-      .catch((error) => {
-        console.error("ServiceWorker registration failed: ", error);
-      });
-
-    // Ensure refresh is only called once.
-    // This works around a bug in "force update on reload".
-    let refreshing;
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (refreshing) return;
-      window.location.reload();
-      refreshing = true;
-    });
-  }
-
-  /**
-   * Sends a 'skipWaiting' message to a service worker indicating that it should activate immediately.
-   * @param {ServiceWorker} worker - The service worker that should be updated.
-   */
-  updateServiceWorker(worker) {
-    worker.postMessage({ action: "skipWaiting" });
-  }
-
-  /**
-   * Listens for a state change on a service worker. If the state becomes 'installed',
-   * this means the service worker is ready to take over from the current one.
-   * Call updateServiceWorker() to trigger the new service worker to become active immediately.
-   * @param {ServiceWorker} worker - The service worker that is being installed.
-   */
-  trackInstallingWorker(worker) {
-    worker.addEventListener("statechange", () => {
-      if (worker.state === "installed") {
-        this.updateServiceWorker(worker);
-      }
-    });
+    navigator.serviceWorker.register("/sw.js", { scope: "./" }).catch(() => {});
   }
 }
-
-// Create an instance of the ServiceWorkerSetup class and attach it to the global window object.
-// This makes the instance accessible from anywhere in your code that has access to the global scope.
 window.serviceWorkerSetup = new ServiceWorkerSetup();
+
+(function() {
+  const storedTheme = localStorage.getItem("theme-mode") || "system";
+  function applyTheme(mode) {
+    if (mode === "system") {
+      const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme-mode", isDark ? "dark" : "light");
+    } else {
+      document.documentElement.setAttribute("data-theme-mode", mode);
+    }
+    localStorage.setItem("theme-mode", mode);
+    document.querySelectorAll(".theme-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-theme-mode") === mode);
+    });
+  }
+
+  applyTheme(storedTheme);
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if ((localStorage.getItem("theme-mode") || "system") === "system") {
+      applyTheme("system");
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    applyTheme(localStorage.getItem("theme-mode") || "system");
+    document.querySelectorAll(".theme-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        applyTheme(btn.getAttribute("data-theme-mode"));
+      });
+    });
+
+    const navToggle = document.getElementById("navbarToggle");
+    const navMenu = document.getElementById("navbarMenu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", () => {
+        const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", !isExpanded);
+        navMenu.classList.toggle("show");
+      });
+    }
+
+    let searchIndex = null;
+    const modal = document.getElementById("searchModal");
+    const input = document.getElementById("searchInput");
+    const results = document.getElementById("searchResults");
+    const trigger = document.getElementById("searchTrigger");
+    const closeBtn = document.getElementById("searchClose");
+
+    async function loadSearch() {
+      if (!searchIndex) {
+        try {
+          const res = await fetch("/search-index.json");
+          if (res.ok) {
+            const data = await res.json();
+            searchIndex = Array.isArray(data) ? data : (data.entries || []);
+          }
+        } catch (e) {
+          searchIndex = [];
+        }
+      }
+    }
+
+    function openSearch() {
+      if (!modal) return;
+      modal.classList.add("active");
+      loadSearch();
+      setTimeout(() => input && input.focus(), 50);
+    }
+
+    function closeSearch() {
+      if (!modal) return;
+      modal.classList.remove("active");
+      if (input) input.value = "";
+      if (results) results.innerHTML = "<div class=\"search-empty\">Type to search...</div>";
+    }
+
+    if (trigger) trigger.addEventListener("click", openSearch);
+    if (closeBtn) closeBtn.addEventListener("click", closeSearch);
+    if (modal) {
+      const backdrop = modal.querySelector(".search-backdrop");
+      if (backdrop) backdrop.addEventListener("click", closeSearch);
+    }
+
+    window.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        openSearch();
+      } else if (e.key === "Escape" && modal && modal.classList.contains("active")) {
+        closeSearch();
+      }
+    });
+
+    if (input) {
+      input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+        if (!query || !searchIndex || searchIndex.length === 0) {
+          results.innerHTML = "<div class=\"search-empty\">Type to search...</div>";
+          return;
+        }
+        const matches = searchIndex.filter(item => {
+          const t = (item.title || "").toLowerCase();
+          const d = (item.description || "").toLowerCase();
+          const c = (item.content || "").toLowerCase();
+          return t.includes(query) || d.includes(query) || c.includes(query);
+        }).slice(0, 8);
+
+        if (matches.length === 0) {
+          results.innerHTML = "<div class=\"search-empty\">No results found for \"" + query + "\"</div>";
+          return;
+        }
+
+        results.innerHTML = matches.map(item => `
+          <a class="search-item" href="${item.url}">
+            <div class="search-item-title">${item.title}</div>
+            <div class="search-item-desc">${(item.description || item.content || "").replace(/<[^>]+>/g, "").slice(0, 100)}...</div>
+          </a>
+        `).join("");
+      });
+    }
+  });
+})();

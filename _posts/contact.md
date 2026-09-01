@@ -1,105 +1,44 @@
 ---
-
-# Front Matter (YAML)
-
+name: "Banking On Quantum"
+short_name: "bankingonquantum"
+title: "Get in Touch | Banking On Quantum"
+description: "Contact the Banking On Quantum team for PQC readiness assessments, keynote speaking, and quantum algorithmic advisory."
+keywords: "contact banking on quantum, quantum finance consulting, PQC advisory"
 author: "The Banking On Quantum Team"
-banner_alt: "Man using a laptop"
-banner_height: "100vh"
-banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/rawpixel-com-369782.webp"
-cdn: "https://kura.pro"
-changefreq: "weekly"
-charset: "utf-8"
-cname: ""
-copyright: "© 2023 Banking On Quantum. All rights reserved."
-date: "Dec 18, 2023"
-description: "Contact us today to learn more about how Banking On Quantum is your go-to solution for unlocking your financial potential."
-format-detection: "telephone=no"
-form-id: "mrgwokzz"
-hreflang: "en"
-icon: "https://kura.pro/bankingonquantum/images/favicon.ico"
-id: "https://bankingonquantum.com/contact/index.html"
-image_alt: "Logo of Banking On Quantum: Revolutionising the Financial Industry with Quantum Computing"
-image_height: "100vh"
-image_width: "100vw"
-image: "https://kura.pro/bankingonquantum/images/logos/bankingonquantum.webp"
-keywords: "Contact us, contact, contact us form"
+date: "2026-09-01"
 language: "en-GB"
 layout: "contact"
-locale: "en_GB"
-logo_alt: "Logo of Banking On Quantum: Revolutionising the Financial Industry with Quantum Computing"
-logo_height: "44"
-logo_width: "44"
-logo: "https://kura.pro/bankingonquantum/images/logos/bankingonquantum.webp"
-menu: "active"
-measurementID: "G-6BQMFZ772M"
-name: "Contact"
 permalink: "https://bankingonquantum.com/contact/index.html"
-rating: "general"
-referrer: "no-referrer"
-revisit-after: "7 days"
-robots: "index, follow"
-short_name: "bankingonquantum"
-subtitle: "Want to know more about Banking On Quantum? Let’s connect!"
-theme-color: "2, 83, 233"
-title: "Banking On Quantum Contact: Get in Touch"
-url: "https://bankingonquantum.com/contact/index.html"
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
-atom_link: https://bankingonquantum.com/contact/rss.xml
-category: "Software, Static Site Generator, Rust"
-docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
-item_description: "Contact us today to learn more about how Banking On Quantum is your go-to solution for unlocking your financial potential."
-item_guid: https://bankingonquantum.com/contact/rss.xml
-item_link: https://bankingonquantum.com/contact/rss.xml
-item_pub_date: "2023-12-18T06:06:06+01:00"
-item_title: "Banking On Quantum Contact: Get in Touch"
-last_build_date: "2023-12-18T06:06:06+01:00"
-managing_editor: "contact@bankingonquantum.com"
-pub_date: "2023-12-18T06:06:06+01:00"
-ttl: "60"
-type: "website"
-webmaster: "contact@bankingonquantum.com"
-
-# Apple - The Apple front matter (YAML).
-
-apple_mobile_web_app_orientations: "portrait"
-apple_touch_icon_sizes: "192x192"
-apple-mobile-web-app-capable: "yes"
-apple-mobile-web-app-status-bar-inset: "black"
-apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Banking On Quantum Contact: Get in Touch"
-apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
-msapplication-config: "https://bankingonquantum.com/browserconfig.xml"
-msapplication-tap-highlight: "no"
-msapplication-TileColor: "2, 83, 233"
-msapplication_tile_image: "https://kura.pro/bankingonquantum/images/logos/bankingonquantum.webp"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
-twitter_card: "summary"
-twitter_creator: "@BankingOnQT"
-twitter_description: "Contact us today to learn more about how Banking On Quantum is your go-to solution for unlocking your financial potential."
-twitter_image: "https://kura.pro/bankingonquantum/images/logos/bankingonquantum.webp"
-twitter_image_alt: "Logo of Banking On Quantum: Revolutionising the Financial Industry with Quantum Computing"
-twitter_site: "@BankingOnQT"
-twitter_title: "Banking On Quantum Contact: Get in Touch"
-twitter_url: "https://bankingonquantum.com/"
-
-# Humans.txt - The Humans.txt front matter (YAML).
-
-author_website: "https://bankingonquantum.com/contact/index.html"
-author_twitter: "@BankingOnQT"
-author_location: "London, UK"
-thanks: "Thanks for reading!"
-site_last_updated: "2023-12-18"
-site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
-site_components: "Shokunin SSG, Shokunin CLI, Shokunin Templates, Shokunin Themes, Kaishi SSG, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
-
+banner: "https://cloudcdn.pro/bankingonquantum/v1/github/github-bankingonquantum.svg"
+banner_alt: "Banking On Quantum — Post-Quantum Cryptography and Quantum Computing in Finance"
+nav_contact: true
+form_origin: "https://formspree.io"
+form_action: "https://formspree.io/f/contact"
 ---
+
+# Contact & Quantum Advisory
+
+Connect with our quantum cryptographers and engineering team to assess institutional readiness, explore research partnerships, or book speaking engagements.
+
+<div class="card" style="margin-top: 2rem;">
+  <h2>Send a Brief</h2>
+  <form action="https://formspree.io/f/contact" method="POST" class="stack" style="gap: 1rem; margin-top: 1rem;">
+    <div>
+      <label for="name"><strong>Full Name *</strong></label>
+      <input type="text" id="name" name="name" required placeholder="Jane Doe" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-color);">
+    </div>
+    <div>
+      <label for="email"><strong>Corporate Email *</strong></label>
+      <input type="email" id="email" name="email" required placeholder="jane.doe@bank.com" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-color);">
+    </div>
+    <div>
+      <label for="org"><strong>Financial Institution / Organisation</strong></label>
+      <input type="text" id="org" name="organisation" placeholder="Institution Name" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-color);">
+    </div>
+    <div>
+      <label for="message"><strong>Project Brief or Inquiry *</strong></label>
+      <textarea id="message" name="message" rows="4" required placeholder="Describe your quantum readiness inquiry or advisory requirement..." style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-color);"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="padding: 0.8rem 1.5rem; cursor: pointer;">Submit Brief ❯</button>
+  </form>
+</div>

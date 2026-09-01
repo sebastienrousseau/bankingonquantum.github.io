@@ -1,0 +1,110 @@
+[
+  {
+    "date": "2026-09-01",
+    "description": "Discover the mission behind Banking On Quantum: securing the world's financial systems against quantum threats while harnessing quantum computation.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "About Mission & Quantum Research | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/about/",
+    "wordCount": 91
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Accessibility conformance standards for Banking On Quantum, adhering to WCAG 2.2 Level AAA standards.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Accessibility Statement | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/accessibility/",
+    "wordCount": 84
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Contact the Banking On Quantum team for PQC readiness assessments, keynote speaking, and quantum algorithmic advisory.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Get in Touch | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/contact/",
+    "wordCount": 167
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Answers to common questions regarding post-quantum cryptography, quantum threat timelines, and quantum computing in banking.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Frequently Asked Questions | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/faqs/",
+    "wordCount": 163
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "The Future of Banking and Finance | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/index.html",
+    "wordCount": 177
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Learn how Banking On Quantum is built with Static Site Generator (SSG) for high performance and WCAG 2.2 AAA accessibility.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Made with Static Site Generator (SSG) | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/made-with-ssg/",
+    "wordCount": 79
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Architectural blueprint for post-quantum cryptographic migration, quantum algorithm integration, and hybrid quantum-classical computing.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Quantum Architecture & Cryptographic Agility | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/platform/",
+    "wordCount": 134
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Engagement tiers for financial institutions, from open quantum research to PQC cryptographic audits and enterprise co-development.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Advisory & Engagement Tiers | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/pricing/",
+    "wordCount": 71
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Privacy policy and data governance practices for Banking On Quantum.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Privacy Policy | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/privacy/",
+    "wordCount": 65
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Targeted quantum applications for Treasury, Capital Markets, Enterprise Cybersecurity, and Retail Payment Rails.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Quantum Solutions by Banking Sector | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/solutions/",
+    "wordCount": 142
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Terms of service and usage conditions for Banking On Quantum.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Terms of Use | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/terms/",
+    "wordCount": 64
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Thank you for reaching out to Banking On Quantum.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Thank You | Banking On Quantum",
+    "url": "http://127.0.0.1:8000/thanks/",
+    "wordCount": 26
+  }
+]

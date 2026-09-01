@@ -1,0 +1,18 @@
+{
+  "api": {
+    "is_user_authenticated": false,
+    "type": "openapi",
+    "url": "https://bankingonquantum.com/openapi.yaml"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "contact_email": "support@bankingonquantum.com",
+  "description_for_human": "Exploring quantum computing implications, threat modeling, and PQC transition strategies for global finance.",
+  "description_for_model": "Exploring quantum computing implications, threat modeling, and PQC transition strategies for global finance.",
+  "legal_info_url": "https://bankingonquantum.com/legal",
+  "logo_url": "https://bankingonquantum.com/favicon.ico",
+  "name_for_human": "Banking on Quantum | Post-Quantum Cryptography & Financial Security",
+  "name_for_model": "banking_on_quantum",
+  "schema_version": "v1"
+}

@@ -1,0 +1,19 @@
+site_name = "Banking On Quantum"
+site_title = "Banking On Quantum — Post-Quantum Cryptography & Quantum Computing in Banking"
+site_description = "Prepare financial institutions for the post-quantum era with Post-Quantum Cryptography (PQC), Quantum Key Distribution (QKD), and quantum algorithms."
+base_url = "https://bankingonquantum.com"
+language = "en-GB"
+
+content_dir = "_posts"
+template_dir = "_layouts"
+output_dir = "public"
+
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true
+
+[edge_headers]
+targets = ["netlify", "cloudflare", "vercel"]
