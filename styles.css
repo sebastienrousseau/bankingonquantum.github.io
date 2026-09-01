@@ -883,3 +883,168 @@ img[src*="banner-static-site-generator"] {
 :root:not([data-theme-mode="light"]) img[src*="banner-static-site-generator"] {
   background-color: #111827;
 }
+
+
+/* ==========================================================================
+   Apple at Work FAQ Accordion & List Alignment Precision Styles
+   ========================================================================== */
+
+/* Unordered & Ordered List Alignment Fix */
+.content-body ul,
+.prose ul,
+main ul {
+  list-style-type: disc !important;
+  margin: 1.25rem 0 1.75rem 0 !important;
+  padding-left: 1.75rem !important;
+  padding-inline-start: 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.6rem !important;
+}
+
+.content-body ol,
+.prose ol,
+main ol {
+  list-style-type: decimal !important;
+  margin: 1.25rem 0 1.75rem 0 !important;
+  padding-left: 1.75rem !important;
+  padding-inline-start: 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.6rem !important;
+}
+
+.content-body li,
+.prose li,
+main li {
+  line-height: 1.65 !important;
+  color: var(--text-body) !important;
+  text-align: left !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Apple FAQ Container & Header */
+.apple-faq-section {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
+.apple-faq-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.apple-faq-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.25rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.1 !important;
+  color: var(--text-headline) !important;
+  margin: 0 !important;
+}
+
+.apple-faq-expand-btn {
+  background: transparent;
+  border: none;
+  color: var(--cl-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  padding: 0.4rem 0;
+  transition: opacity 0.2s ease;
+  font-family: inherit;
+}
+
+.apple-faq-expand-btn:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.apple-faq-expand-chevron {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Apple FAQ Accordion List */
+.apple-faq-list {
+  border-top: 1px solid var(--border-hairline);
+}
+
+.apple-faq-item {
+  border-bottom: 1px solid var(--border-hairline);
+  transition: background-color 0.2s ease;
+}
+
+.apple-faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.75rem 0;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  gap: 1.5rem;
+}
+
+.apple-faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.apple-faq-question {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-headline);
+  letter-spacing: -0.015em;
+  transition: color 0.2s ease;
+  text-align: left;
+}
+
+.apple-faq-summary:hover .apple-faq-question {
+  color: var(--cl-primary);
+}
+
+.apple-faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+}
+
+.apple-faq-item[open] .apple-faq-icon {
+  transform: rotate(180deg);
+  color: var(--cl-primary);
+}
+
+.apple-faq-body {
+  padding: 0 0 2rem 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.apple-faq-body p {
+  margin-bottom: 1rem;
+}
+
+.apple-faq-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Active navigation item highlight */
+.nav-link.active,
+.nav-link[aria-current="page"] {
+  color: var(--cl-primary) !important;
+  font-weight: 600 !important;
+}

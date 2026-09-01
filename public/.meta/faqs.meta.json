@@ -3,14 +3,14 @@
   "banner": "https://cloudcdn.pro/bankingonquantum/v1/github/github-bankingonquantum.svg",
   "banner_alt": "Banking On Quantum — Post-Quantum Cryptography and Quantum Computing in Finance",
   "date": "2026-09-01",
-  "description": "Answers to common questions regarding post-quantum cryptography, quantum threat timelines, and quantum computing in banking.",
-  "keywords": "quantum banking FAQs, PQC timeline, harvest now decrypt later FAQ",
+  "description": "Authoritative answers to common questions regarding Banking On Quantum platform architecture, regulatory compliance, and implementation.",
+  "keywords": "frequently asked questions, banking on quantum FAQs, quantum banking technology",
   "language": "en-GB",
   "layout": "page",
   "name": "Banking On Quantum",
   "permalink": "https://bankingonquantum.com/faqs/index.html",
-  "reading_time": 1,
+  "reading_time": 3,
   "short_name": "bankingonquantum",
   "title": "Frequently Asked Questions | Banking On Quantum",
-  "word_count": 163
+  "word_count": 722
 }
